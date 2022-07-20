@@ -1,6 +1,6 @@
 ﻿namespace Facade
 {
-    public enum UnitTypes
+    public enum UnitType
     {
         Aircraft,
         Helicopter,
