@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquadronManager", "SquadronManager\SquadronManager.csproj", "{2C824CC0-FFB2-4838-95C8-0EAB1C8FAE30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquadronManager", "SquadronManager\SquadronManager.csproj", "{2C824CC0-FFB2-4838-95C8-0EAB1C8FAE30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{75C5AE0B-F9E6-4457-A27C-D1AB026C55A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{75C5AE0B-F9E6-4457-A27C-D1AB026C55A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightLogReader", "FlightLogReader\FlightLogReader.csproj", "{C12C8515-A5C0-465F-BB2D-42D5EF2A5198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightLogReaderTests", "FlightLogReaderTests\FlightLogReaderTests.csproj", "{988EBA25-1F7C-4DF9-9D10-B97DD8D4B47B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{75C5AE0B-F9E6-4457-A27C-D1AB026C55A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75C5AE0B-F9E6-4457-A27C-D1AB026C55A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75C5AE0B-F9E6-4457-A27C-D1AB026C55A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12C8515-A5C0-465F-BB2D-42D5EF2A5198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12C8515-A5C0-465F-BB2D-42D5EF2A5198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12C8515-A5C0-465F-BB2D-42D5EF2A5198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12C8515-A5C0-465F-BB2D-42D5EF2A5198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988EBA25-1F7C-4DF9-9D10-B97DD8D4B47B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988EBA25-1F7C-4DF9-9D10-B97DD8D4B47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988EBA25-1F7C-4DF9-9D10-B97DD8D4B47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988EBA25-1F7C-4DF9-9D10-B97DD8D4B47B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
