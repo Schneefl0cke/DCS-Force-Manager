@@ -11,10 +11,6 @@ namespace FlightLogReaderTests
         public XmlDocument ReadXml()
         {
             var path = Path.Combine(Directory.GetCurrentDirectory(), "FlightLog.xml");
-
-
-            
-
             var xml = new XmlDocument();
             xml.LoadXml(File.ReadAllText(path));
             return xml;
@@ -24,6 +20,7 @@ namespace FlightLogReaderTests
         public void ReadFlightLogTest_HasBeenDestroyedEvents()
         {
             var hasBeenDestroyedEvents = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(ReadXml());
+            Assert.IsTrue(hasBeenDestroyedEvents.Count > 0);
         }
     }
 }
