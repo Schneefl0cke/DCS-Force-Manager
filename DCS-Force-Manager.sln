@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquadronManager", "Squadron
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{75C5AE0B-F9E6-4457-A27C-D1AB026C55A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightLogReader", "FlightLogReader\FlightLogReader.csproj", "{C12C8515-A5C0-465F-BB2D-42D5EF2A5198}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightLogReader", "FlightLogReader\FlightLogReader.csproj", "{C12C8515-A5C0-465F-BB2D-42D5EF2A5198}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightLogReaderTests", "FlightLogReaderTests\FlightLogReaderTests.csproj", "{988EBA25-1F7C-4DF9-9D10-B97DD8D4B47B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightLogReaderTests", "FlightLogReaderTests\FlightLogReaderTests.csproj", "{988EBA25-1F7C-4DF9-9D10-B97DD8D4B47B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CXmlWriter", "CXmlWriter\CXmlWriter.csproj", "{A3D621AB-92F1-4CBD-BC45-07211DEC2521}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{988EBA25-1F7C-4DF9-9D10-B97DD8D4B47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{988EBA25-1F7C-4DF9-9D10-B97DD8D4B47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{988EBA25-1F7C-4DF9-9D10-B97DD8D4B47B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D621AB-92F1-4CBD-BC45-07211DEC2521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D621AB-92F1-4CBD-BC45-07211DEC2521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D621AB-92F1-4CBD-BC45-07211DEC2521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D621AB-92F1-4CBD-BC45-07211DEC2521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

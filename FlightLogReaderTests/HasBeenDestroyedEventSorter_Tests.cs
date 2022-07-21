@@ -37,6 +37,8 @@ namespace FlightLogReaderTests
             var d_Enemies_Helicopter = HasBeenDestroyedEventSorter.DestroyedEnemyHelicopter;
             var d_Enemies_Tanks = HasBeenDestroyedEventSorter.DestroyedEnemyTanks;
             var d_Enemies_Sam = HasBeenDestroyedEventSorter.DestroyedEnemySam;
+
+            var plane = HasBeenDestroyedEventSorter.DestroyedEnemyPlanes_KillStatistic;
         }
     }
 }
