@@ -12,6 +12,7 @@ namespace Facade
         public string Type { get; set; } = "";
         public string UnitTypeName { get; set; } = "";
         public string Coalition { get; set; } = "";
+        //public bool Kia { get; set; } = true;
         //public string Country { get; set; } = "";
     }
 }

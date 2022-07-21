@@ -83,6 +83,7 @@ namespace FlightLogReader.Sorter
             DestroyedEnemyShips_KillStatistic = CalculateKillStatistic_ByUnitTypeName(DestroyedEnemyShips);
         }
 
+        //KIA, TODO: MIA
         private static List<KillStatistic_ByUnitType> CalculateKillStatistic_ByUnitTypeName(List<HasBeenDestroyedEvent> list)
         {
             var killStatistics = new List<KillStatistic_ByUnitType>();
