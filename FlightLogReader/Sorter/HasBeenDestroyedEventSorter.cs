@@ -93,11 +93,25 @@ namespace FlightLogReader.Sorter
                 var entry = killStatistics.FirstOrDefault(x => x.UnitTypeName == unit.PrimaryUnitTypeName);
                 if (entry == null)
                 {
-                    killStatistics.Add(new KillStatistic_ByUnitType() { Coalition = unit.PrimaryCoalition, /*Country = unit.PrimaryCountry,*/ Type = unit.PrimaryType, UnitTypeName = unit.PrimaryUnitTypeName});
+                    if (unit.SecondaryPilot == string.Empty)
+                    {
+                        killStatistics.Add(new KillStatistic_ByUnitType() { Destroyed = 1, Coalition = unit.PrimaryCoalition, /*Country = unit.PrimaryCountry,*/ Type = unit.PrimaryType, UnitTypeName = unit.PrimaryUnitTypeName });
+                    }
+                    else
+                    {
+                        killStatistics.Add(new KillStatistic_ByUnitType() { Killed = 1, Coalition = unit.PrimaryCoalition, /*Country = unit.PrimaryCountry,*/ Type = unit.PrimaryType, UnitTypeName = unit.PrimaryUnitTypeName });
+                    }
                 }
                 else
                 {
-                    entry.Killed++;
+                    if (unit.SecondaryPilot == string.Empty)
+                    {
+                        entry.Destroyed++;
+                    }
+                    else
+                    {
+                        entry.Killed++;
+                    }
                 }
             }
 

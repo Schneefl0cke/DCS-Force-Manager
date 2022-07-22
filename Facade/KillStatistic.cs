@@ -8,7 +8,8 @@ namespace Facade
 {
     public class KillStatistic_ByUnitType
     {
-        public int Killed { get; set; } = 1;
+        public int Killed { get; set; } = 0;
+        public int Destroyed { get; set; } = 0;
         public string Type { get; set; } = "";
         public string UnitTypeName { get; set; } = "";
         public string Coalition { get; set; } = "";
