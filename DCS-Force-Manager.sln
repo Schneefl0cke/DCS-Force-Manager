@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightLogReader", "FlightLo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightLogReaderTests", "FlightLogReaderTests\FlightLogReaderTests.csproj", "{988EBA25-1F7C-4DF9-9D10-B97DD8D4B47B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CXmlWriter", "CXmlWriter\CXmlWriter.csproj", "{A3D621AB-92F1-4CBD-BC45-07211DEC2521}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CXmlWriter", "CXmlWriter\CXmlWriter.csproj", "{A3D621AB-92F1-4CBD-BC45-07211DEC2521}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCS-Force-Manager", "DCS-Force-Manager\DCS-Force-Manager.csproj", "{AAF7EA36-A6B2-49F8-A7E1-8567F4DE0144}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A3D621AB-92F1-4CBD-BC45-07211DEC2521}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3D621AB-92F1-4CBD-BC45-07211DEC2521}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3D621AB-92F1-4CBD-BC45-07211DEC2521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF7EA36-A6B2-49F8-A7E1-8567F4DE0144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF7EA36-A6B2-49F8-A7E1-8567F4DE0144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF7EA36-A6B2-49F8-A7E1-8567F4DE0144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF7EA36-A6B2-49F8-A7E1-8567F4DE0144}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
