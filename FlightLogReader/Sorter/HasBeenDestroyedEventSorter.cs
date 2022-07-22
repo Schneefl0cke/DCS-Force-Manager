@@ -9,78 +9,37 @@ namespace FlightLogReader.Sorter
 {
     public static class HasBeenDestroyedEventSorter
     {
-        public static List<HasBeenDestroyedEvent> DestroyedAllies = new List<HasBeenDestroyedEvent>();
-
-        public static List<HasBeenDestroyedEvent> DestroyedAlliedPlanes = new List<HasBeenDestroyedEvent> ();
-        public static List <KillStatistic_ByUnitType> DestroyedAlliedPlanes_KillStatistic = new List<KillStatistic_ByUnitType> ();
-
-        public static List<HasBeenDestroyedEvent> DestroyedAlliedHelicopter = new List<HasBeenDestroyedEvent>();
-        public static List<KillStatistic_ByUnitType> DestroyedAlliedHelicopter_KillStatistic = new List<KillStatistic_ByUnitType>();
-
-        public static List<HasBeenDestroyedEvent> DestroyedAlliedTanks = new List<HasBeenDestroyedEvent>();
-        public static List<KillStatistic_ByUnitType> DestroyedAlliedTanks_KillStatistic = new List<KillStatistic_ByUnitType>();
-
-        public static List<HasBeenDestroyedEvent> DestroyedAlliedSam = new List<HasBeenDestroyedEvent>();
-        public static List<KillStatistic_ByUnitType> DestroyedAlliedSam_KillStatistic = new List<KillStatistic_ByUnitType>();
-
-        public static List<HasBeenDestroyedEvent> DestroyedAlliedShips = new List<HasBeenDestroyedEvent>();
-        public static List<KillStatistic_ByUnitType> DestroyedAlliedShips_KillStatistic = new List<KillStatistic_ByUnitType>();
-
-
-        //Enemies **********************************************************************************************
-        public static List<HasBeenDestroyedEvent> DestroyedEnemies = new List<HasBeenDestroyedEvent>();
-
-        public static List<HasBeenDestroyedEvent> DestroyedEnemyPlanes = new List<HasBeenDestroyedEvent>();
-        public static List<KillStatistic_ByUnitType> DestroyedEnemyPlanes_KillStatistic = new List<KillStatistic_ByUnitType>();
-
-        public static List<HasBeenDestroyedEvent> DestroyedEnemyHelicopter = new List<HasBeenDestroyedEvent>();
-        public static List<KillStatistic_ByUnitType> DestroyedEnemyHelicopter_KillStatistic = new List<KillStatistic_ByUnitType>();
-
-        public static List<HasBeenDestroyedEvent> DestroyedEnemyTanks = new List<HasBeenDestroyedEvent>();
-        public static List<KillStatistic_ByUnitType> DestroyedEnemyTanks_KillStatistic = new List<KillStatistic_ByUnitType>();
-
-        public static List<HasBeenDestroyedEvent> DestroyedEnemySam = new List<HasBeenDestroyedEvent>();
-        public static List<KillStatistic_ByUnitType> DestroyedEnemySam_KillStatistic = new List<KillStatistic_ByUnitType>();
-
-        public static List<HasBeenDestroyedEvent> DestroyedEnemyShips = new List<HasBeenDestroyedEvent>();
-        public static List<KillStatistic_ByUnitType> DestroyedEnemyShips_KillStatistic = new List<KillStatistic_ByUnitType>();
-
-
-        public static void Sort(List<HasBeenDestroyedEvent> hbdEvents)
+        public static KillStatisticSingleMission Sort(List<HasBeenDestroyedEvent> hbdEvents)
         {
+            var killStatisticSingleMission = new KillStatisticSingleMission();
+
             //Infantry has no coalition!
-            DestroyedAllies = hbdEvents.FindAll(x => x.PrimaryCoalition == "Allies");
-            DestroyedAlliedPlanes = DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "aircraft");
-            DestroyedAlliedPlanes_KillStatistic = CalculateKillStatistic_ByUnitTypeName(DestroyedAlliedPlanes);
-
-            DestroyedAlliedHelicopter = DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "helicopter");
-            DestroyedAlliedHelicopter_KillStatistic = CalculateKillStatistic_ByUnitTypeName(DestroyedAlliedHelicopter);
-
-            DestroyedAlliedTanks = DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "tank");
-            DestroyedAlliedTanks_KillStatistic = CalculateKillStatistic_ByUnitTypeName(DestroyedAlliedTanks);
-
-            DestroyedAlliedSam = DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa");
-            DestroyedAlliedSam_KillStatistic = CalculateKillStatistic_ByUnitTypeName(DestroyedAlliedSam);
-
-            DestroyedAlliedShips = DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "ship");
-            DestroyedAlliedShips_KillStatistic = CalculateKillStatistic_ByUnitTypeName(DestroyedAlliedShips);
+            killStatisticSingleMission.DestroyedAllies = hbdEvents.FindAll(x => x.PrimaryCoalition == "Allies");
+            killStatisticSingleMission.DestroyedAlliedPlanes = killStatisticSingleMission.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "aircraft");
+            killStatisticSingleMission.DestroyedAlliedPlanes_KillStatistic = CalculateKillStatistic_ByUnitTypeName(killStatisticSingleMission.DestroyedAlliedPlanes);
+            killStatisticSingleMission.DestroyedAlliedHelicopter = killStatisticSingleMission.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "helicopter");
+            killStatisticSingleMission.DestroyedAlliedHelicopter_KillStatistic = CalculateKillStatistic_ByUnitTypeName(killStatisticSingleMission.DestroyedAlliedHelicopter);
+            killStatisticSingleMission.DestroyedAlliedTanks = killStatisticSingleMission.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "tank");
+            killStatisticSingleMission.DestroyedAlliedTanks_KillStatistic = CalculateKillStatistic_ByUnitTypeName(killStatisticSingleMission.DestroyedAlliedTanks);
+            killStatisticSingleMission.DestroyedAlliedSam = killStatisticSingleMission.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa");
+            killStatisticSingleMission.DestroyedAlliedSam_KillStatistic = CalculateKillStatistic_ByUnitTypeName(killStatisticSingleMission.DestroyedAlliedSam);
+            killStatisticSingleMission.DestroyedAlliedShips = killStatisticSingleMission.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "ship");
+            killStatisticSingleMission.DestroyedAlliedShips_KillStatistic = CalculateKillStatistic_ByUnitTypeName(killStatisticSingleMission.DestroyedAlliedShips);
 
             //***************
-            DestroyedEnemies = hbdEvents.FindAll(x => x.PrimaryCoalition == "Enemies");
-            DestroyedEnemyPlanes = DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "aircraft");
-            DestroyedEnemyPlanes_KillStatistic = CalculateKillStatistic_ByUnitTypeName(DestroyedEnemyPlanes);
+            killStatisticSingleMission.DestroyedEnemies = hbdEvents.FindAll(x => x.PrimaryCoalition == "Enemies");
+            killStatisticSingleMission.DestroyedEnemyPlanes = killStatisticSingleMission.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "aircraft");
+            killStatisticSingleMission.DestroyedEnemyPlanes_KillStatistic = CalculateKillStatistic_ByUnitTypeName(killStatisticSingleMission.DestroyedEnemyPlanes);
+            killStatisticSingleMission.DestroyedEnemyHelicopter = killStatisticSingleMission.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "helicopter");
+            killStatisticSingleMission.DestroyedEnemyHelicopter_KillStatistic = CalculateKillStatistic_ByUnitTypeName(killStatisticSingleMission.DestroyedEnemyHelicopter);
+            killStatisticSingleMission.DestroyedEnemyTanks = killStatisticSingleMission.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "tank");
+            killStatisticSingleMission.DestroyedEnemyTanks_KillStatistic = CalculateKillStatistic_ByUnitTypeName(killStatisticSingleMission.DestroyedEnemyTanks);
+            killStatisticSingleMission.DestroyedEnemySam = killStatisticSingleMission.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa");
+            killStatisticSingleMission.DestroyedEnemySam_KillStatistic = CalculateKillStatistic_ByUnitTypeName(killStatisticSingleMission.DestroyedEnemySam);
+            killStatisticSingleMission.DestroyedEnemyShips = killStatisticSingleMission.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "ship");
+            killStatisticSingleMission.DestroyedEnemyShips_KillStatistic = CalculateKillStatistic_ByUnitTypeName(killStatisticSingleMission.DestroyedEnemyShips);
 
-            DestroyedEnemyHelicopter = DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "helicopter");
-            DestroyedEnemyHelicopter_KillStatistic = CalculateKillStatistic_ByUnitTypeName(DestroyedEnemyHelicopter);
-
-            DestroyedEnemyTanks = DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "tank");
-            DestroyedEnemyTanks_KillStatistic = CalculateKillStatistic_ByUnitTypeName(DestroyedEnemyTanks);
-
-            DestroyedEnemySam = DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa");
-            DestroyedEnemySam_KillStatistic = CalculateKillStatistic_ByUnitTypeName(DestroyedEnemySam);
-
-            DestroyedEnemyShips = DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "ship");
-            DestroyedEnemyShips_KillStatistic = CalculateKillStatistic_ByUnitTypeName(DestroyedEnemyShips);
+            return killStatisticSingleMission;
         }
 
         //KIA, TODO: MIA

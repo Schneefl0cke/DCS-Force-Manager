@@ -14,5 +14,10 @@ namespace CXmlWriter
                 //workbook.SaveAs(savePath + ".xlsx"); //savePath
             }
         }
+
+        private static void WriteCoalitionStatistics(XLWorkbook workbook)
+        {
+
+        }
     }
 }

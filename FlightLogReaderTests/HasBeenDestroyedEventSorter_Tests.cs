@@ -24,21 +24,21 @@ namespace FlightLogReaderTests
         public void Sort_Test()
         {
             var hasBeenDestroyedEvents = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(ReadXml());
-            HasBeenDestroyedEventSorter.Sort(hasBeenDestroyedEvents);
+            var statistic = HasBeenDestroyedEventSorter.Sort(hasBeenDestroyedEvents);
 
-            var d_Allies = HasBeenDestroyedEventSorter.DestroyedAllies;
-            var d_Allies_Planes = HasBeenDestroyedEventSorter.DestroyedAlliedPlanes;
-            var d_Allies_Helicopter = HasBeenDestroyedEventSorter.DestroyedAlliedHelicopter;
-            var d_Allies_Tanks = HasBeenDestroyedEventSorter.DestroyedAlliedTanks;
-            var d_Allies_Sam = HasBeenDestroyedEventSorter.DestroyedAlliedSam;
+            var d_Allies = statistic.DestroyedAllies;
+            var d_Allies_Planes = statistic.DestroyedAlliedPlanes;
+            var d_Allies_Helicopter = statistic.DestroyedAlliedHelicopter;
+            var d_Allies_Tanks = statistic.DestroyedAlliedTanks;
+            var d_Allies_Sam = statistic.DestroyedAlliedSam;
 
-            var d_Enemies = HasBeenDestroyedEventSorter.DestroyedEnemies;
-            var d_Enemies_Planes = HasBeenDestroyedEventSorter.DestroyedEnemyPlanes;
-            var d_Enemies_Helicopter = HasBeenDestroyedEventSorter.DestroyedEnemyHelicopter;
-            var d_Enemies_Tanks = HasBeenDestroyedEventSorter.DestroyedEnemyTanks;
-            var d_Enemies_Sam = HasBeenDestroyedEventSorter.DestroyedEnemySam;
+            var d_Enemies = statistic.DestroyedEnemies;
+            var d_Enemies_Planes = statistic.DestroyedEnemyPlanes;
+            var d_Enemies_Helicopter = statistic.DestroyedEnemyHelicopter;
+            var d_Enemies_Tanks = statistic.DestroyedEnemyTanks;
+            var d_Enemies_Sam = statistic.DestroyedEnemySam;
 
-            var plane = HasBeenDestroyedEventSorter.DestroyedEnemyPlanes_KillStatistic;
+            var plane = statistic.DestroyedEnemyPlanes_KillStatistic;
         }
     }
 }
