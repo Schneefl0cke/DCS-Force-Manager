@@ -11,4 +11,8 @@
     <PackageReference Include="OxyPlot.OpenXml" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Facade\Facade.csproj" />
+  </ItemGroup>
+
 </Project>

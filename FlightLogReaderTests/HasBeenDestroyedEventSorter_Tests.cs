@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using CXmlWriter;
 
 namespace FlightLogReaderTests
 {
@@ -27,18 +28,13 @@ namespace FlightLogReaderTests
             var statistic = HasBeenDestroyedEventSorter.Sort(hasBeenDestroyedEvents);
 
             var d_Allies = statistic.DestroyedAllies;
-            var d_Allies_Planes = statistic.DestroyedAlliedPlanes;
-            var d_Allies_Helicopter = statistic.DestroyedAlliedHelicopter;
-            var d_Allies_Tanks = statistic.DestroyedAlliedTanks;
-            var d_Allies_Sam = statistic.DestroyedAlliedSam;
+           Assert.IsNotNull(d_Allies);
 
             var d_Enemies = statistic.DestroyedEnemies;
-            var d_Enemies_Planes = statistic.DestroyedEnemyPlanes;
-            var d_Enemies_Helicopter = statistic.DestroyedEnemyHelicopter;
-            var d_Enemies_Tanks = statistic.DestroyedEnemyTanks;
-            var d_Enemies_Sam = statistic.DestroyedEnemySam;
+            Assert.IsNotNull(d_Enemies);
 
-            var plane = statistic.DestroyedEnemyPlanes_KillStatistic;
+            var safePath = "C:\\Users\\z003ddaz\\Desktop\\testXlsLib\\test";
+            WriteCxml.WriteKillStatistics_SingleMission(safePath, statistic);
         }
     }
 }
