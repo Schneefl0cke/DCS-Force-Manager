@@ -8,10 +8,7 @@ namespace FlightLogReader
         private const string HasBeenDestroyedText = "HasBeenDestroyed";
         private const string PrimaryObjectText = "PrimaryObject";
         private const string SecondaryObjectText = "SecondaryObject";
-        public static void ReadFlightLog(XmlDocument flightLog)
-        {
 
-        }
 
         public static List<HasBeenDestroyedEvent> ReadHasBeenDestroyedEvents(XmlDocument flightLog)
         {
