@@ -10,8 +10,8 @@ namespace CXmlWriter
             using (var workbook = new XLWorkbook())
             {
                 int position = 1;
-                var alliedWorksheet = workbook.AddWorksheet("Allies - Statistic");
-                alliedWorksheet.Cell("A" + position).Value = "Allies - Statistic";
+                var alliedWorksheet = workbook.AddWorksheet("Blue - Statistic");
+                alliedWorksheet.Cell("A" + position).Value = "Blue - Statistic";
                 alliedWorksheet.Cell("A" + position).Style.Font.Bold = true;
                 position += 2;
 
@@ -21,8 +21,8 @@ namespace CXmlWriter
                 }
 
                 position = 1;
-                var enemyWorksheet = workbook.AddWorksheet("Enemy - Statistic");
-                enemyWorksheet.Cell("A" + position).Value = "Enemy - Statistic";
+                var enemyWorksheet = workbook.AddWorksheet("Red - Statistic");
+                enemyWorksheet.Cell("A" + position).Value = "Red - Statistic";
                 enemyWorksheet.Cell("A" + position).Style.Font.Bold = true;
                 position += 2;
                 foreach (var enemyLosses in statistic.EnemyStatistic)

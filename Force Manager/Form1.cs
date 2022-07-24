@@ -16,7 +16,6 @@ namespace Force_Manager
                 // SO THE APP ITSELF IS BLOCKED
                 e.Cancel = true;
             }
-
         }
     }
 }
