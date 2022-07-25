@@ -22,6 +22,8 @@ namespace FlightLogReader.Sorter
             ksSM.AlliedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "tank")));
             ksSM.AlliedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa")));
             ksSM.AlliedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "ship")));
+            ksSM.AlliedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() != "ship" 
+                && x.PrimaryType.ToLower() != "sam/aaa" && x.PrimaryType.ToLower() != "tank" && x.PrimaryType.ToLower() != "helicopter" && x.PrimaryType.ToLower() != "aircraft")));
 
             //***************
             ksSM.EnemyStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "aircraft")));
@@ -29,6 +31,8 @@ namespace FlightLogReader.Sorter
             ksSM.EnemyStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "tank")));
             ksSM.EnemyStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa")));
             ksSM.EnemyStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "ship")));
+            ksSM.EnemyStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() != "ship"
+                && x.PrimaryType.ToLower() != "sam/aaa" && x.PrimaryType.ToLower() != "tank" && x.PrimaryType.ToLower() != "helicopter" && x.PrimaryType.ToLower() != "aircraft")));
 
             return ksSM;
         }

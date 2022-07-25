@@ -8,6 +8,10 @@ namespace Facade
 {
     public class KillStatistic_ByUnitType
     {
+        public string Display
+        {
+            get { return $"{UnitTypeName}: KIA: {Killed}, MIA: {Destroyed}"; }
+        }
         public int Killed { get; set; } = 0;
         public int Destroyed { get; set; } = 0;
         public string Type { get; set; } = "";

@@ -37,6 +37,11 @@ namespace Force_Manager
                 try
                 {
                     killStatisticSingleMission = SingleMissionHandler.AnalzyeSingleMission(path);
+
+                    var killedAircraft =
+                        killStatisticSingleMission.AlliedStatistic.FirstOrDefault(x => x[0].Type.ToLower() == "aircraft");
+                    listBox_aircraft_blue.DataSource = killedAircraft;
+                    listBox_aircraft_blue.DisplayMember = "Display";
                 }
                 catch (Exception exception)
                 {
@@ -46,6 +51,21 @@ namespace Force_Manager
                         MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
