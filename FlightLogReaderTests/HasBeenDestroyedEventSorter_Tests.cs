@@ -33,7 +33,7 @@ namespace FlightLogReaderTests
             var d_Enemies = statistic.DestroyedEnemies;
             Assert.IsNotNull(d_Enemies);
 
-            var safePath = "C:\\Users\\z003ddaz\\Desktop\\testXlsLib\\test";
+            var safePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             WriteCxml.WriteKillStatistics_SingleMission(safePath, statistic);
         }
     }
