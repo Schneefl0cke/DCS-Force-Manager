@@ -21,6 +21,7 @@ namespace FlightLogReaderTests
             return xml;
         }
 
+        //manual test
         [TestMethod]
         public void Sort_Test()
         {
