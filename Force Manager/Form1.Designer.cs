@@ -61,6 +61,8 @@
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.button_exportSingleMission = new System.Windows.Forms.Button();
             this.button_loadSingleMission = new System.Windows.Forms.Button();
+            this.listBox_other_blue = new System.Windows.Forms.ListBox();
+            this.listBox_other_red = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -70,12 +72,14 @@
             this.tabPage11.SuspendLayout();
             this.tabPage12.SuspendLayout();
             this.tabPage13.SuspendLayout();
+            this.tabPage14.SuspendLayout();
             this.tabControl_sm_blueSide.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tabPage9.SuspendLayout();
+            this.tabPage10.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -268,6 +272,7 @@
             // 
             // tabPage14
             // 
+            this.tabPage14.Controls.Add(this.listBox_other_blue);
             this.tabPage14.Location = new System.Drawing.Point(4, 24);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Size = new System.Drawing.Size(371, 544);
@@ -388,6 +393,7 @@
             // 
             // tabPage10
             // 
+            this.tabPage10.Controls.Add(this.listBox_other_red);
             this.tabPage10.Location = new System.Drawing.Point(4, 24);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Size = new System.Drawing.Size(346, 554);
@@ -415,6 +421,24 @@
             this.button_loadSingleMission.UseVisualStyleBackColor = true;
             this.button_loadSingleMission.Click += new System.EventHandler(this.button_loadSingleMission_Click);
             // 
+            // listBox_other_blue
+            // 
+            this.listBox_other_blue.FormattingEnabled = true;
+            this.listBox_other_blue.ItemHeight = 15;
+            this.listBox_other_blue.Location = new System.Drawing.Point(3, 6);
+            this.listBox_other_blue.Name = "listBox_other_blue";
+            this.listBox_other_blue.Size = new System.Drawing.Size(365, 529);
+            this.listBox_other_blue.TabIndex = 0;
+            // 
+            // listBox_other_red
+            // 
+            this.listBox_other_red.FormattingEnabled = true;
+            this.listBox_other_red.ItemHeight = 15;
+            this.listBox_other_red.Location = new System.Drawing.Point(11, 7);
+            this.listBox_other_red.Name = "listBox_other_red";
+            this.listBox_other_red.Size = new System.Drawing.Size(330, 529);
+            this.listBox_other_red.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -436,12 +460,14 @@
             this.tabPage11.ResumeLayout(false);
             this.tabPage12.ResumeLayout(false);
             this.tabPage13.ResumeLayout(false);
+            this.tabPage14.ResumeLayout(false);
             this.tabControl_sm_blueSide.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             this.tabPage9.ResumeLayout(false);
+            this.tabPage10.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -481,5 +507,7 @@
         private ListBox listBox_tank_red;
         private ListBox listBox_ship_red;
         private Button button_sm_reanalyze;
+        private ListBox listBox_other_blue;
+        private ListBox listBox_other_red;
     }
 }

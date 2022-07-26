@@ -71,6 +71,13 @@ namespace Force_Manager
                 listBox_helicopter_blue.DataSource = killedhelicopter;
                 listBox_helicopter_blue.DisplayMember = "Display";
             }
+            
+            var killedSam = killStatisticSingleMission.BlueStatistic.FirstOrDefault(x => x.Count > 0 && x[0].Type.ToLower() == "sam/aaa");
+            if (killedSam != null)
+            {
+                listBox_sam_blue.DataSource = killedSam;
+                listBox_sam_blue.DisplayMember = "Display";
+            }
 
             var killedtanks = killStatisticSingleMission.BlueStatistic.FirstOrDefault(x => x.Count > 0 && x[0].Type.ToLower() == "tank");
             if (killedtanks != null)
@@ -84,6 +91,17 @@ namespace Force_Manager
             {
                 listBox_ship_blue.DataSource = killedships;
                 listBox_ship_blue.DisplayMember = "Display";
+            }
+
+            var killedOther = killStatisticSingleMission.BlueStatistic.FirstOrDefault(x => x.Count > 0
+            && x[0].Type.ToLower() != "aircraft"
+            && x[0].Type.ToLower() != "helicopter"
+            && x[0].Type.ToLower() != "tank"
+            && x[0].Type.ToLower() != "ship");
+            if (killedOther != null)
+            {
+                listBox_other_blue.DataSource = killedOther;
+                listBox_other_blue.DisplayMember = "Display";
             }
         }
 
@@ -103,6 +121,13 @@ namespace Force_Manager
                 listBox_helicopter_red.DisplayMember = "Display";
             }
 
+            var killedSam = killStatisticSingleMission.RedStatistic.FirstOrDefault(x => x.Count > 0 && x[0].Type.ToLower() == "sam/aaa");
+            if (killedSam != null)
+            {
+                listBox_sam_red.DataSource = killedSam;
+                listBox_sam_red.DisplayMember = "Display";
+            }
+
             var killedtanks = killStatisticSingleMission.RedStatistic.FirstOrDefault(x => x.Count > 0 && x[0].Type.ToLower() == "tank");
             if (killedtanks != null)
             {
@@ -115,6 +140,17 @@ namespace Force_Manager
             {
                 listBox_ship_red.DataSource = killedships;
                 listBox_ship_red.DisplayMember = "Display";
+            }
+
+            var killedOther = killStatisticSingleMission.RedStatistic.FirstOrDefault(x => x.Count > 0
+            && x[0].Type.ToLower() != "aircraft"
+            && x[0].Type.ToLower() != "helicopter"
+            && x[0].Type.ToLower() != "tank"
+            && x[0].Type.ToLower() != "ship");
+            if (killedOther != null)
+            {
+                listBox_other_red.DataSource = killedOther;
+                listBox_other_red.DisplayMember = "Display";
             }
         }
 
