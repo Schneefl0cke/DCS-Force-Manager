@@ -27,10 +27,10 @@ namespace FlightLogReaderTests
             var hasBeenDestroyedEvents = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(ReadXml());
             var statistic = HasBeenDestroyedEventSorter.Sort(hasBeenDestroyedEvents);
 
-            var d_Allies = statistic.DestroyedAllies;
+            var d_Allies = statistic.DestroyedRed;
            Assert.IsNotNull(d_Allies);
 
-            var d_Enemies = statistic.DestroyedEnemies;
+            var d_Enemies = statistic.DestroyedBlue;
             Assert.IsNotNull(d_Enemies);
 
             var safePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);

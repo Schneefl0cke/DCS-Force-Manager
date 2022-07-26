@@ -10,14 +10,12 @@ namespace Facade
     {
         public string Display
         {
-            get { return $"{UnitTypeName}: KIA: {Killed}, MIA: {Destroyed}"; }
+            get { return $"{UnitTypeName}: KIA: {Killed}, MIA: {Destroyed}, Total: {Killed+Destroyed}"; }
         }
         public int Killed { get; set; } = 0;
         public int Destroyed { get; set; } = 0;
         public string Type { get; set; } = "";
         public string UnitTypeName { get; set; } = "";
         public string Coalition { get; set; } = "";
-        //public bool Kia { get; set; } = true;
-        //public string Country { get; set; } = "";
     }
 }

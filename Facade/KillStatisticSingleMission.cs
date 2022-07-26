@@ -8,10 +8,10 @@ namespace Facade
 {
     public class KillStatisticSingleMission
     {
-        public List<HasBeenDestroyedEvent> DestroyedAllies = new List<HasBeenDestroyedEvent>();
-        public List<List<KillStatistic_ByUnitType>> AlliedStatistic = new List<List<KillStatistic_ByUnitType>>();
+        public List<HasBeenDestroyedEvent> DestroyedRed = new List<HasBeenDestroyedEvent>();
+        public List<List<KillStatistic_ByUnitType>> RedStatistic = new List<List<KillStatistic_ByUnitType>>();
         
-        public List<HasBeenDestroyedEvent> DestroyedEnemies = new List<HasBeenDestroyedEvent>();
-        public List<List<KillStatistic_ByUnitType>> EnemyStatistic = new List<List<KillStatistic_ByUnitType>>();
+        public List<HasBeenDestroyedEvent> DestroyedBlue = new List<HasBeenDestroyedEvent>();
+        public List<List<KillStatistic_ByUnitType>> BlueStatistic = new List<List<KillStatistic_ByUnitType>>();
     }
 }

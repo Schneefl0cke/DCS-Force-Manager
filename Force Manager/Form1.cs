@@ -37,11 +37,7 @@ namespace Force_Manager
                 try
                 {
                     killStatisticSingleMission = SingleMissionHandler.AnalzyeSingleMission(path);
-
-                    var killedAircraft =
-                        killStatisticSingleMission.AlliedStatistic.FirstOrDefault(x => x[0].Type.ToLower() == "aircraft");
-                    listBox_aircraft_blue.DataSource = killedAircraft;
-                    listBox_aircraft_blue.DisplayMember = "Display";
+                    FillListBoxes_SingleMission();
                 }
                 catch (Exception exception)
                 {
@@ -51,6 +47,18 @@ namespace Force_Manager
                         MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void FillListBoxes_SingleMission()
+        {
+            //TODO: check for null
+            var killedAircraft_red = killStatisticSingleMission.RedStatistic.FirstOrDefault(x => x.Count > 0 && x[0].Type.ToLower() == "aircraft");
+            listBox_aircraft_red.DataSource = killedAircraft_red;
+            listBox_aircraft_red.DisplayMember = "Display";
+
+            var killedAircraft_blue = killStatisticSingleMission.BlueStatistic.FirstOrDefault(x => x.Count > 0 && x[0].Type.ToLower() == "aircraft");
+            listBox_aircraft_blue.DataSource = killedAircraft_blue;
+            listBox_aircraft_blue.DisplayMember = "Display";
         }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)

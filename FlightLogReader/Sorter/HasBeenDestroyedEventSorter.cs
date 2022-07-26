@@ -14,24 +14,24 @@ namespace FlightLogReader.Sorter
             var ksSM = new KillStatisticSingleMission();
 
             //Infantry has no coalition!
-            ksSM.DestroyedAllies = hbdEvents.FindAll(x => x.PrimaryCoalition == "Allies");
-            ksSM.DestroyedEnemies = hbdEvents.FindAll(x => x.PrimaryCoalition == "Enemies");
+            ksSM.DestroyedRed = hbdEvents.FindAll(x => x.PrimaryCoalition == "Allies");
+            ksSM.DestroyedBlue = hbdEvents.FindAll(x => x.PrimaryCoalition == "Enemies");
 
-            ksSM.AlliedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "aircraft")));
-            ksSM.AlliedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "helicopter")));
-            ksSM.AlliedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "tank")));
-            ksSM.AlliedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa")));
-            ksSM.AlliedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() == "ship")));
-            ksSM.AlliedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() != "ship" 
+            ksSM.RedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => x.PrimaryType.ToLower() == "aircraft")));
+            ksSM.RedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => x.PrimaryType.ToLower() == "helicopter")));
+            ksSM.RedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => x.PrimaryType.ToLower() == "tank")));
+            ksSM.RedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa")));
+            ksSM.RedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => x.PrimaryType.ToLower() == "ship")));
+            ksSM.RedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => x.PrimaryType.ToLower() != "ship" 
                 && x.PrimaryType.ToLower() != "sam/aaa" && x.PrimaryType.ToLower() != "tank" && x.PrimaryType.ToLower() != "helicopter" && x.PrimaryType.ToLower() != "aircraft")));
 
             //***************
-            ksSM.EnemyStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "aircraft")));
-            ksSM.EnemyStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "helicopter")));
-            ksSM.EnemyStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "tank")));
-            ksSM.EnemyStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa")));
-            ksSM.EnemyStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedEnemies.FindAll(x => x.PrimaryType.ToLower() == "ship")));
-            ksSM.EnemyStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedAllies.FindAll(x => x.PrimaryType.ToLower() != "ship"
+            ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => x.PrimaryType.ToLower() == "aircraft")));
+            ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => x.PrimaryType.ToLower() == "helicopter")));
+            ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => x.PrimaryType.ToLower() == "tank")));
+            ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa")));
+            ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => x.PrimaryType.ToLower() == "ship")));
+            ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => x.PrimaryType.ToLower() != "ship"
                 && x.PrimaryType.ToLower() != "sam/aaa" && x.PrimaryType.ToLower() != "tank" && x.PrimaryType.ToLower() != "helicopter" && x.PrimaryType.ToLower() != "aircraft")));
 
             return ksSM;

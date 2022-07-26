@@ -10,22 +10,22 @@ namespace CXmlWriter
             using (var workbook = new XLWorkbook())
             {
                 int position = 1;
-                var alliedWorksheet = workbook.AddWorksheet("Blue - Statistic");
-                alliedWorksheet.Cell("A" + position).Value = "Blue - Statistic";
+                var alliedWorksheet = workbook.AddWorksheet("Red - Statistic");
+                alliedWorksheet.Cell("A" + position).Value = "Red - Statistic";
                 alliedWorksheet.Cell("A" + position).Style.Font.Bold = true;
                 position += 2;
 
-                foreach (var alliedLosses in statistic.AlliedStatistic)
+                foreach (var alliedLosses in statistic.RedStatistic)
                 {
                     WriteTypeStatistic(alliedWorksheet, alliedLosses, ref position);
                 }
 
                 position = 1;
-                var enemyWorksheet = workbook.AddWorksheet("Red - Statistic");
-                enemyWorksheet.Cell("A" + position).Value = "Red - Statistic";
+                var enemyWorksheet = workbook.AddWorksheet("Blue - Statistic");
+                enemyWorksheet.Cell("A" + position).Value = "Blue - Statistic";
                 enemyWorksheet.Cell("A" + position).Style.Font.Bold = true;
                 position += 2;
-                foreach (var enemyLosses in statistic.EnemyStatistic)
+                foreach (var enemyLosses in statistic.BlueStatistic)
                 {
                     WriteTypeStatistic(enemyWorksheet, enemyLosses, ref position);
                 }
