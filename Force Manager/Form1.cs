@@ -135,9 +135,33 @@ namespace Force_Manager
 
         private void button_sm_reanalyze_Click(object sender, EventArgs e)
         {
-            if (path_singleMission != null)
+            if (killStatisticSingleMission != null)
             {
                 FillListBoxes_SingleMission();
+            }
+            else
+            {
+                MessageBox.Show("No Mission has been provided yet! Please 'Load Single Mission' first!",
+                   "User Error",
+                   MessageBoxButtons.OK,
+                   MessageBoxIcon.Error);
+            }
+        }
+
+        private void button_exportSingleMission_Click(object sender, EventArgs e)
+        {
+            if (killStatisticSingleMission != null)
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                saveFileDialog.Filter = "xml files (*.xml)|*.xml|All Files (*.*)|*.*";
+                saveFileDialog.FilterIndex = 1;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    var safePath = saveFileDialog.FileName;
+                    CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, killStatisticSingleMission);
+                }
             }
             else
             {

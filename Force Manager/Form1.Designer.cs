@@ -32,6 +32,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button_sm_reanalyze = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl_sm_redSide = new System.Windows.Forms.TabControl();
@@ -60,7 +61,6 @@
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.button_exportSingleMission = new System.Windows.Forms.Button();
             this.button_loadSingleMission = new System.Windows.Forms.Button();
-            this.button_sm_reanalyze = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -124,6 +124,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Single Mission";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button_sm_reanalyze
+            // 
+            this.button_sm_reanalyze.Location = new System.Drawing.Point(8, 41);
+            this.button_sm_reanalyze.Name = "button_sm_reanalyze";
+            this.button_sm_reanalyze.Size = new System.Drawing.Size(136, 32);
+            this.button_sm_reanalyze.TabIndex = 6;
+            this.button_sm_reanalyze.Text = "Re-Analyze Mission";
+            this.button_sm_reanalyze.UseVisualStyleBackColor = true;
+            this.button_sm_reanalyze.Click += new System.EventHandler(this.button_sm_reanalyze_Click);
             // 
             // label3
             // 
@@ -393,6 +403,7 @@
             this.button_exportSingleMission.TabIndex = 1;
             this.button_exportSingleMission.Text = "Export Statistic as xss";
             this.button_exportSingleMission.UseVisualStyleBackColor = true;
+            this.button_exportSingleMission.Click += new System.EventHandler(this.button_exportSingleMission_Click);
             // 
             // button_loadSingleMission
             // 
@@ -403,16 +414,6 @@
             this.button_loadSingleMission.Text = "Load Single Mission";
             this.button_loadSingleMission.UseVisualStyleBackColor = true;
             this.button_loadSingleMission.Click += new System.EventHandler(this.button_loadSingleMission_Click);
-            // 
-            // button_sm_reanalyze
-            // 
-            this.button_sm_reanalyze.Location = new System.Drawing.Point(8, 41);
-            this.button_sm_reanalyze.Name = "button_sm_reanalyze";
-            this.button_sm_reanalyze.Size = new System.Drawing.Size(136, 32);
-            this.button_sm_reanalyze.TabIndex = 6;
-            this.button_sm_reanalyze.Text = "Re-Analyze Mission";
-            this.button_sm_reanalyze.UseVisualStyleBackColor = true;
-            this.button_sm_reanalyze.Click += new System.EventHandler(this.button_sm_reanalyze_Click);
             // 
             // Form1
             // 
