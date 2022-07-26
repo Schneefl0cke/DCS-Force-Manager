@@ -1,0 +1,5611 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TacviewDebriefing Version="1.2.6">
+	<!--Flight Recording Properties-->
+	<FlightRecording>
+		<Source>DCS 2.7.15.25026</Source>
+		<Recorder>DCS2ACMI 1.8.7.200</Recorder>
+		<RecordingTime>2022-06-21T17:43:25.635Z</RecordingTime>
+		<Author>Server</Author>
+	</FlightRecording>
+	<!--Mission Properties-->
+	<Mission>
+		<Title>Operation-Medusa-12-wp</Title>
+		<MissionTime>2022-02-03T08:30:00Z</MissionTime>
+		<Duration>7907.19</Duration>
+		<Comments>Funkfrequenzen:
+
+Overlordbot: 255.00
+ATC Bot: 149.70
+KC-135: 251.00, 1X
+KC-130: 252.00, 2X</Comments>
+	</Mission>
+	<!--Flight Log-->
+	<Events>
+		<Event>
+			<Time>4.18</Time>
+			<Location>
+				<Longitude>44.9595807</Longitude>
+				<Latitude>41.6737669</Latitude>
+				<Altitude>481.55</Altitude>
+			</Location>
+			<PrimaryObject ID="253763">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>4.18</Time>
+			<Location>
+				<Longitude>45.0377579</Longitude>
+				<Latitude>41.6207971</Latitude>
+				<Altitude>466.38</Altitude>
+			</Location>
+			<PrimaryObject ID="253762">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>WOLF 1-1 | CHIEF</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>4.18</Time>
+			<Location>
+				<Longitude>44.9575384</Longitude>
+				<Latitude>41.6747343</Latitude>
+				<Altitude>481.23</Altitude>
+			</Location>
+			<PrimaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>4.18</Time>
+			<Location>
+				<Longitude>45.0380953</Longitude>
+				<Latitude>41.620935</Latitude>
+				<Altitude>466.38</Altitude>
+			</Location>
+			<PrimaryObject ID="253760">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>Wolf 1-2 EmoJack</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>4.18</Time>
+			<Location>
+				<Longitude>44.9592931</Longitude>
+				<Latitude>41.6735319</Latitude>
+				<Altitude>481.55</Altitude>
+			</Location>
+			<PrimaryObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>4.18</Time>
+			<Location>
+				<Longitude>44.9590094</Longitude>
+				<Latitude>41.6732939</Latitude>
+				<Altitude>481.55</Altitude>
+			</Location>
+			<PrimaryObject ID="253758">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>4.18</Time>
+			<Location>
+				<Longitude>44.9617094</Longitude>
+				<Latitude>41.6714573</Latitude>
+				<Altitude>481.55</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>139.65</Time>
+			<Location>
+				<Longitude>44.957254</Longitude>
+				<Latitude>41.6744967</Latitude>
+				<Altitude>481.23</Altitude>
+			</Location>
+			<PrimaryObject ID="253764">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>161.10</Time>
+			<Location>
+				<Longitude>44.6032804</Longitude>
+				<Latitude>43.2034621</Latitude>
+				<Altitude>527.15</Altitude>
+			</Location>
+			<PrimaryObject ID="253766">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#001</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>161.10</Time>
+			<Location>
+				<Longitude>44.6033523</Longitude>
+				<Latitude>43.2037241</Latitude>
+				<Altitude>527.15</Altitude>
+			</Location>
+			<PrimaryObject ID="253765">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#001-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#001</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>397.09</Time>
+			<Location>
+				<Longitude>44.604608</Longitude>
+				<Latitude>43.2032647</Latitude>
+				<Altitude>527.15</Altitude>
+			</Location>
+			<PrimaryObject ID="253768">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#002-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#002</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>397.09</Time>
+			<Location>
+				<Longitude>44.6047532</Longitude>
+				<Latitude>43.2037882</Latitude>
+				<Altitude>527.15</Altitude>
+			</Location>
+			<PrimaryObject ID="253767">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#002-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#002</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>429.09</Time>
+			<Location>
+				<Longitude>43.6403039</Longitude>
+				<Latitude>43.5112286</Latitude>
+				<Altitude>432.33</Altitude>
+			</Location>
+			<PrimaryObject ID="253770">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#003-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#003</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>429.09</Time>
+			<Location>
+				<Longitude>43.6409705</Longitude>
+				<Latitude>43.5114492</Latitude>
+				<Altitude>432.33</Altitude>
+			</Location>
+			<PrimaryObject ID="253769">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#003</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>472.06</Time>
+			<Location>
+				<Longitude>44.6181427</Longitude>
+				<Latitude>43.2038594</Latitude>
+				<Altitude>527.17</Altitude>
+			</Location>
+			<PrimaryObject ID="253765">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#001-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#001</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>539.10</Time>
+			<Location>
+				<Longitude>43.6389798</Longitude>
+				<Latitude>43.5107601</Latitude>
+				<Altitude>432.33</Altitude>
+			</Location>
+			<PrimaryObject ID="253772">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#004-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#004</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>539.10</Time>
+			<Location>
+				<Longitude>43.6396463</Longitude>
+				<Latitude>43.510989</Latitude>
+				<Altitude>432.33</Altitude>
+			</Location>
+			<PrimaryObject ID="253771">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#004-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#004</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>651.77</Time>
+			<Location>
+				<Longitude>43.6294375</Longitude>
+				<Latitude>43.5114043</Latitude>
+				<Altitude>432.34</Altitude>
+			</Location>
+			<PrimaryObject ID="253769">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#003</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>653.45</Time>
+			<Location>
+				<Longitude>44.6182082</Longitude>
+				<Latitude>43.2038495</Latitude>
+				<Altitude>527.17</Altitude>
+			</Location>
+			<PrimaryObject ID="253766">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#001</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>674.05</Time>
+			<Location>
+				<Longitude>43.6295212</Longitude>
+				<Latitude>43.511434</Latitude>
+				<Altitude>432.35</Altitude>
+			</Location>
+			<PrimaryObject ID="253770">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#003-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#003</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>746.20</Time>
+			<Location>
+				<Longitude>43.6293802</Longitude>
+				<Latitude>43.5113819</Latitude>
+				<Altitude>432.34</Altitude>
+			</Location>
+			<PrimaryObject ID="253771">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#004-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#004</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>769.00</Time>
+			<Location>
+				<Longitude>43.6295587</Longitude>
+				<Latitude>43.5114472</Latitude>
+				<Altitude>432.35</Altitude>
+			</Location>
+			<PrimaryObject ID="253772">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#004-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#004</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>818.08</Time>
+			<Location>
+				<Longitude>44.9494699</Longitude>
+				<Latitude>41.6724529</Latitude>
+				<Altitude>481.52</Altitude>
+			</Location>
+			<PrimaryObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>822.31</Time>
+			<Location>
+				<Longitude>44.9490429</Longitude>
+				<Latitude>41.6725775</Latitude>
+				<Altitude>481.52</Altitude>
+			</Location>
+			<PrimaryObject ID="253763">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>826.90</Time>
+			<Location>
+				<Longitude>44.9489926</Longitude>
+				<Latitude>41.6728076</Latitude>
+				<Altitude>481.54</Altitude>
+			</Location>
+			<PrimaryObject ID="253758">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>837.92</Time>
+			<Location>
+				<Longitude>44.618235</Longitude>
+				<Latitude>43.2038455</Latitude>
+				<Altitude>527.17</Altitude>
+			</Location>
+			<PrimaryObject ID="253767">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#002-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#002</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>882.35</Time>
+			<Location>
+				<Longitude>45.0339188</Longitude>
+				<Latitude>41.6223993</Latitude>
+				<Altitude>466.32</Altitude>
+			</Location>
+			<PrimaryObject ID="253760">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>Wolf 1-2 EmoJack</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>885.21</Time>
+			<Location>
+				<Longitude>45.0303722</Longitude>
+				<Latitude>41.625594</Latitude>
+				<Altitude>466.55</Altitude>
+			</Location>
+			<PrimaryObject ID="253762">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>WOLF 1-1 | CHIEF</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>912.40</Time>
+			<Location>
+				<Longitude>44.9486154</Longitude>
+				<Latitude>41.672848</Latitude>
+				<Altitude>481.29</Altitude>
+			</Location>
+			<PrimaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>917.37</Time>
+			<Location>
+				<Longitude>44.9485687</Longitude>
+				<Latitude>41.6731014</Latitude>
+				<Altitude>481.3</Altitude>
+			</Location>
+			<PrimaryObject ID="253764">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>1023.10</Time>
+			<Location>
+				<Longitude>44.6182171</Longitude>
+				<Latitude>43.2038481</Latitude>
+				<Altitude>527.17</Altitude>
+			</Location>
+			<PrimaryObject ID="253768">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#002-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#002</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>1026.72</Time>
+			<Location>
+				<Longitude>44.9612497</Longitude>
+				<Latitude>41.6663721</Latitude>
+				<Altitude>481.53</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>1832.34</Time>
+			<Location>
+				<Longitude>43.0383701</Longitude>
+				<Latitude>42.1536009</Latitude>
+				<Altitude>5921.04</Altitude>
+			</Location>
+			<PrimaryObject ID="253758">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253773">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253758</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>1851.84</Time>
+			<Location>
+				<Longitude>43.0216259</Longitude>
+				<Latitude>42.1913636</Latitude>
+				<Altitude>4802.99</Altitude>
+			</Location>
+			<PrimaryObject ID="253758">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253774">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253758</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>1866.19</Time>
+			<Location>
+				<Longitude>42.0353158</Longitude>
+				<Latitude>42.2452788</Latitude>
+				<Altitude>14.85</Altitude>
+			</Location>
+			<PrimaryObject ID="253777">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#002-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#002</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>1866.19</Time>
+			<Location>
+				<Longitude>42.0380809</Longitude>
+				<Latitude>42.2436074</Latitude>
+				<Altitude>14.85</Altitude>
+			</Location>
+			<PrimaryObject ID="253776">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>1866.19</Time>
+			<Location>
+				<Longitude>42.0374023</Longitude>
+				<Latitude>42.2432565</Latitude>
+				<Altitude>14.85</Altitude>
+			</Location>
+			<PrimaryObject ID="253775">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>1868.81</Time>
+			<Location>
+				<Longitude>42.9317287</Longitude>
+				<Latitude>42.3328735</Latitude>
+				<Altitude>591.76</Altitude>
+			</Location>
+			<PrimaryObject ID="253558">
+				<Type>SAM/AAA</Type>
+				<Name>SA-8 Gecko</Name>
+				<Pilot>Tank-10-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Tank-10</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="253773">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253758</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253758">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>1868.83</Time>
+			<Location>
+				<Longitude>42.9317287</Longitude>
+				<Latitude>42.3328735</Latitude>
+				<Altitude>591.76</Altitude>
+			</Location>
+			<PrimaryObject ID="253558">
+				<Type>SAM/AAA</Type>
+				<Name>SA-8 Gecko</Name>
+				<Pilot>Tank-10-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Tank-10</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253758">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>1887.58</Time>
+			<Location>
+				<Longitude>42.8836019</Longitude>
+				<Latitude>42.35517</Latitude>
+				<Altitude>509.13</Altitude>
+			</Location>
+			<PrimaryObject ID="253574">
+				<Type>SAM/AAA</Type>
+				<Name>SA-8 Gecko</Name>
+				<Pilot>Tank-9-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Tank-9</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="253774">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253758</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253758">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>1896.30</Time>
+			<Location>
+				<Longitude>42.0378253</Longitude>
+				<Latitude>42.2443814</Latitude>
+				<Altitude>14.85</Altitude>
+			</Location>
+			<PrimaryObject ID="253778">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#003</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>1928.47</Time>
+			<Location>
+				<Longitude>43.1930365</Longitude>
+				<Latitude>42.1118598</Latitude>
+				<Altitude>8783.43</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253779">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>1964.73</Time>
+			<Location>
+				<Longitude>43.120214</Longitude>
+				<Latitude>42.1586529</Latitude>
+				<Altitude>9895.21</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253780">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>1972.68</Time>
+			<Location>
+				<Longitude>43.1121766</Longitude>
+				<Latitude>42.1713266</Latitude>
+				<Altitude>9682.16</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253781">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>1980.65</Time>
+			<Location>
+				<Longitude>43.1034835</Longitude>
+				<Latitude>42.1851899</Latitude>
+				<Altitude>9310.29</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253782">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>1989.57</Time>
+			<Location>
+				<Longitude>42.851452</Longitude>
+				<Latitude>42.3418963</Latitude>
+				<Altitude>498.34</Altitude>
+			</Location>
+			<PrimaryObject ID="253575">
+				<Type>SAM/AAA</Type>
+				<Name>SA-8 Gecko</Name>
+				<Pilot>Tank-11-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Tank-11</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>1989.64</Time>
+			<Location>
+				<Longitude>42.8515573</Longitude>
+				<Latitude>42.341773</Latitude>
+				<Altitude>498.53</Altitude>
+			</Location>
+			<PrimaryObject ID="253575">
+				<Type>SAM/AAA</Type>
+				<Name>SA-8 Gecko</Name>
+				<Pilot>Tank-11-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Tank-11</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="253779">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>2010.32</Time>
+			<Location>
+				<Longitude>42.8836019</Longitude>
+				<Latitude>42.35517</Latitude>
+				<Altitude>509.13</Altitude>
+			</Location>
+			<PrimaryObject ID="253574">
+				<Type>SAM/AAA</Type>
+				<Name>SA-8 Gecko</Name>
+				<Pilot>Tank-9-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Tank-9</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="253780">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>2010.42</Time>
+			<Location>
+				<Longitude>42.8836019</Longitude>
+				<Latitude>42.35517</Latitude>
+				<Altitude>509.13</Altitude>
+			</Location>
+			<PrimaryObject ID="253574">
+				<Type>SAM/AAA</Type>
+				<Name>SA-8 Gecko</Name>
+				<Pilot>Tank-9-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Tank-9</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2016.36</Time>
+			<Location>
+				<Longitude>42.883385</Longitude>
+				<Latitude>42.3551696</Latitude>
+				<Altitude>507.95</Altitude>
+			</Location>
+			<PrimaryObject ID="253781">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2020.09</Time>
+			<Location>
+				<Longitude>42.883597</Longitude>
+				<Latitude>42.3555043</Latitude>
+				<Altitude>509.58</Altitude>
+			</Location>
+			<PrimaryObject ID="253782">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2076.90</Time>
+			<Location>
+				<Longitude>41.873497</Longitude>
+				<Latitude>41.9293147</Latitude>
+				<Altitude>19.51</Altitude>
+			</Location>
+			<PrimaryObject ID="253788">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#003</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>2076.90</Time>
+			<Location>
+				<Longitude>41.8779623</Longitude>
+				<Latitude>41.9297606</Latitude>
+				<Altitude>19.51</Altitude>
+			</Location>
+			<PrimaryObject ID="253787">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#002-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#002</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>2076.90</Time>
+			<Location>
+				<Longitude>41.8756596</Longitude>
+				<Latitude>41.9296716</Latitude>
+				<Altitude>19.51</Altitude>
+			</Location>
+			<PrimaryObject ID="253786">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#001</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>2076.90</Time>
+			<Location>
+				<Longitude>41.8786594</Longitude>
+				<Latitude>41.9311816</Latitude>
+				<Altitude>19.51</Altitude>
+			</Location>
+			<PrimaryObject ID="253785">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#001-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#001</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>2156.17</Time>
+			<Location>
+				<Longitude>41.8720204</Longitude>
+				<Latitude>41.9315618</Latitude>
+				<Altitude>19.52</Altitude>
+			</Location>
+			<PrimaryObject ID="253785">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#001-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#001</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>2187.64</Time>
+			<Location>
+				<Longitude>41.871806</Longitude>
+				<Latitude>41.9315217</Latitude>
+				<Altitude>19.52</Altitude>
+			</Location>
+			<PrimaryObject ID="253786">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#001</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>2193.73</Time>
+			<Location>
+				<Longitude>42.0565266</Longitude>
+				<Latitude>42.2396288</Latitude>
+				<Altitude>14.87</Altitude>
+			</Location>
+			<PrimaryObject ID="253775">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>2219.54</Time>
+			<Location>
+				<Longitude>42.0564638</Longitude>
+				<Latitude>42.2396373</Latitude>
+				<Altitude>14.87</Altitude>
+			</Location>
+			<PrimaryObject ID="253776">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>2220.59</Time>
+			<Location>
+				<Longitude>41.8719157</Longitude>
+				<Latitude>41.9315417</Latitude>
+				<Altitude>19.52</Altitude>
+			</Location>
+			<PrimaryObject ID="253787">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#002-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#002</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>2247.97</Time>
+			<Location>
+				<Longitude>42.0564749</Longitude>
+				<Latitude>42.2396357</Latitude>
+				<Altitude>14.87</Altitude>
+			</Location>
+			<PrimaryObject ID="253777">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#002-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#002</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>2259.38</Time>
+			<Location>
+				<Longitude>41.8718713</Longitude>
+				<Latitude>41.9315339</Latitude>
+				<Altitude>19.52</Altitude>
+			</Location>
+			<PrimaryObject ID="253788">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#003</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>2269.05</Time>
+			<Location>
+				<Longitude>42.0565312</Longitude>
+				<Latitude>42.2396274</Latitude>
+				<Altitude>14.87</Altitude>
+			</Location>
+			<PrimaryObject ID="253778">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#003</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>2305.57</Time>
+			<Location>
+				<Longitude>43.015347</Longitude>
+				<Latitude>42.3688443</Latitude>
+				<Altitude>695.63</Altitude>
+			</Location>
+			<PrimaryObject ID="253542">
+				<Type>SAM/AAA</Type>
+				<Name>SA-19 Grison</Name>
+				<Pilot>Ground-3-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253789">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2319.85</Time>
+			<Location>
+				<Longitude>43.015347</Longitude>
+				<Latitude>42.3688443</Latitude>
+				<Altitude>695.63</Altitude>
+			</Location>
+			<PrimaryObject ID="253542">
+				<Type>SAM/AAA</Type>
+				<Name>SA-19 Grison</Name>
+				<Pilot>Ground-3-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253790">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2320.94</Time>
+			<Location>
+				<Longitude>43.0243462</Longitude>
+				<Latitude>42.4179355</Latitude>
+				<Altitude>3802.47</Altitude>
+			</Location>
+			<PrimaryObject ID="253789">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2326.87</Time>
+			<Location>
+				<Longitude>43.0117326</Longitude>
+				<Latitude>42.372109</Latitude>
+				<Altitude>715.38</Altitude>
+			</Location>
+			<PrimaryObject ID="253541">
+				<Type>SAM/AAA</Type>
+				<Name>SA-13 Gopher</Name>
+				<Pilot>Ground-2-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253791">
+				<Type>Missile</Type>
+				<Name>SA9M333</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253541</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2328.38</Time>
+			<Location>
+				<Longitude>43.015347</Longitude>
+				<Latitude>42.3688443</Latitude>
+				<Altitude>695.63</Altitude>
+			</Location>
+			<PrimaryObject ID="253542">
+				<Type>SAM/AAA</Type>
+				<Name>SA-19 Grison</Name>
+				<Pilot>Ground-3-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253792">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2335.22</Time>
+			<Location>
+				<Longitude>43.037855</Longitude>
+				<Latitude>42.3707386</Latitude>
+				<Altitude>3567.07</Altitude>
+			</Location>
+			<PrimaryObject ID="253758">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="253791">
+				<Type>Missile</Type>
+				<Name>SA9M333</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253541</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253541">
+				<Type>SAM/AAA</Type>
+				<Name>SA-13 Gopher</Name>
+				<Pilot>Ground-2-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>2335.50</Time>
+			<Location>
+				<Longitude>43.015347</Longitude>
+				<Latitude>42.3688443</Latitude>
+				<Altitude>695.63</Altitude>
+			</Location>
+			<PrimaryObject ID="253542">
+				<Type>SAM/AAA</Type>
+				<Name>SA-19 Grison</Name>
+				<Pilot>Ground-3-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253799">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2336.35</Time>
+			<Location>
+				<Longitude>43.0501731</Longitude>
+				<Latitude>42.3850575</Latitude>
+				<Altitude>5295.07</Altitude>
+			</Location>
+			<PrimaryObject ID="253790">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2344.09</Time>
+			<Location>
+				<Longitude>43.015347</Longitude>
+				<Latitude>42.3688443</Latitude>
+				<Altitude>695.63</Altitude>
+			</Location>
+			<PrimaryObject ID="253542">
+				<Type>SAM/AAA</Type>
+				<Name>SA-19 Grison</Name>
+				<Pilot>Ground-3-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253806">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2348.14</Time>
+			<Location>
+				<Longitude>43.047056</Longitude>
+				<Latitude>42.3461658</Latitude>
+				<Altitude>4871.34</Altitude>
+			</Location>
+			<PrimaryObject ID="253792">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2355.75</Time>
+			<Location>
+				<Longitude>43.0181528</Longitude>
+				<Latitude>42.3280501</Latitude>
+				<Altitude>4925.08</Altitude>
+			</Location>
+			<PrimaryObject ID="253799">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2372.37</Time>
+			<Location>
+				<Longitude>42.9842585</Longitude>
+				<Latitude>42.2928266</Latitude>
+				<Altitude>5711.19</Altitude>
+			</Location>
+			<PrimaryObject ID="253806">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2435.06</Time>
+			<Location>
+				<Longitude>42.4703409</Longitude>
+				<Latitude>42.092503</Latitude>
+				<Altitude>7540.33</Altitude>
+			</Location>
+			<PrimaryObject ID="253764">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253841">
+				<Type>Missile</Type>
+				<Name>Super 530D</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253764</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2437.03</Time>
+			<Location>
+				<Longitude>42.4380068</Longitude>
+				<Latitude>42.1096179</Latitude>
+				<Altitude>4509.84</Altitude>
+			</Location>
+			<PrimaryObject ID="253776">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253848">
+				<Type>Missile</Type>
+				<Name>R-60 (AA-8 Aphid-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253776</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2443.24</Time>
+			<Location>
+				<Longitude>42.4519226</Longitude>
+				<Latitude>42.106195</Latitude>
+				<Altitude>7640.37</Altitude>
+			</Location>
+			<PrimaryObject ID="253764">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="253848">
+				<Type>Missile</Type>
+				<Name>R-60 (AA-8 Aphid-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253776</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253776">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>2443.24</Time>
+			<Location>
+				<Longitude>42.4519226</Longitude>
+				<Latitude>42.106195</Latitude>
+				<Altitude>7640.37</Altitude>
+			</Location>
+			<PrimaryObject ID="253764">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253776">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2450.03</Time>
+			<Location>
+				<Longitude>42.3828555</Longitude>
+				<Latitude>42.1767633</Latitude>
+				<Altitude>6725.68</Altitude>
+			</Location>
+			<PrimaryObject ID="253786">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#001</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253764">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2450.04</Time>
+			<Location>
+				<Longitude>42.3829847</Longitude>
+				<Latitude>42.1766455</Latitude>
+				<Altitude>6724.12</Altitude>
+			</Location>
+			<PrimaryObject ID="253786">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#001</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="253841">
+				<Type>Missile</Type>
+				<Name>Super 530D</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253764</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253764">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>2505.41</Time>
+			<Location>
+				<Longitude>44.957254</Longitude>
+				<Latitude>41.6744967</Latitude>
+				<Altitude>481.23</Altitude>
+			</Location>
+			<PrimaryObject ID="253880">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>2507.14</Time>
+			<Location>
+				<Longitude>42.7533132</Longitude>
+				<Latitude>42.1940173</Latitude>
+				<Altitude>6252.12</Altitude>
+			</Location>
+			<PrimaryObject ID="253758">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253881">
+				<Type>Missile</Type>
+				<Name>AIM-9X Sidewinder</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253758</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2518.80</Time>
+			<Location>
+				<Longitude>42.8236261</Longitude>
+				<Latitude>42.1103602</Latitude>
+				<Altitude>4036.24</Altitude>
+			</Location>
+			<PrimaryObject ID="253775">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253882">
+				<Type>Missile</Type>
+				<Name>R-27R (AA-10 Alamo-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253775</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2520.12</Time>
+			<Location>
+				<Longitude>43.0401027</Longitude>
+				<Latitude>42.1294666</Latitude>
+				<Altitude>3091.84</Altitude>
+			</Location>
+			<PrimaryObject ID="253763">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253883">
+				<Type>Missile</Type>
+				<Name>AIM-120C AMRAAM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253763</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2544.13</Time>
+			<Location>
+				<Longitude>42.8733002</Longitude>
+				<Latitude>42.1506115</Latitude>
+				<Altitude>1531.01</Altitude>
+			</Location>
+			<PrimaryObject ID="253775">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="253883">
+				<Type>Missile</Type>
+				<Name>AIM-120C AMRAAM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253763</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253763">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>2544.15</Time>
+			<Location>
+				<Longitude>42.8733333</Longitude>
+				<Latitude>42.1506304</Latitude>
+				<Altitude>1527.88</Altitude>
+			</Location>
+			<PrimaryObject ID="253775">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253763">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2547.23</Time>
+			<Location>
+				<Longitude>42.8794306</Longitude>
+				<Latitude>42.1538006</Latitude>
+				<Altitude>903.24</Altitude>
+			</Location>
+			<PrimaryObject ID="253921">
+				<Type>Parachutist</Type>
+				<Name>Parachutist</Name>
+				<Country>ru</Country>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>2556.23</Time>
+			<Location>
+				<Longitude>42.701141</Longitude>
+				<Latitude>42.122339</Latitude>
+				<Altitude>3271.73</Altitude>
+			</Location>
+			<PrimaryObject ID="253776">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253922">
+				<Type>Missile</Type>
+				<Name>R-27R (AA-10 Alamo-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253776</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2559.03</Time>
+			<Location>
+				<Longitude>42.5732241</Longitude>
+				<Latitude>42.1053918</Latitude>
+				<Altitude>6030.45</Altitude>
+			</Location>
+			<PrimaryObject ID="253881">
+				<Type>Missile</Type>
+				<Name>AIM-9X Sidewinder</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253758</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2562.29</Time>
+			<Location>
+				<Longitude>42.6945017</Longitude>
+				<Latitude>42.1405092</Latitude>
+				<Altitude>5503.99</Altitude>
+			</Location>
+			<PrimaryObject ID="253758">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="253922">
+				<Type>Missile</Type>
+				<Name>R-27R (AA-10 Alamo-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253776</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253776">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>2562.29</Time>
+			<Location>
+				<Longitude>42.6945017</Longitude>
+				<Latitude>42.1405092</Latitude>
+				<Altitude>5503.99</Altitude>
+			</Location>
+			<PrimaryObject ID="253758">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253776">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2563.86</Time>
+			<Location>
+				<Longitude>43.1387521</Longitude>
+				<Latitude>42.0627547</Latitude>
+				<Altitude>6487.95</Altitude>
+			</Location>
+			<PrimaryObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253938">
+				<Type>Missile</Type>
+				<Name>AIM-120C AMRAAM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253759</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2585.89</Time>
+			<Location>
+				<Longitude>42.9507526</Longitude>
+				<Latitude>42.0393446</Latitude>
+				<Altitude>5036.83</Altitude>
+			</Location>
+			<PrimaryObject ID="253785">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#001-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#001</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="253938">
+				<Type>Missile</Type>
+				<Name>AIM-120C AMRAAM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253759</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>2585.92</Time>
+			<Location>
+				<Longitude>42.9507302</Longitude>
+				<Latitude>42.0393486</Latitude>
+				<Altitude>5030.16</Altitude>
+			</Location>
+			<PrimaryObject ID="253785">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#001-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#001</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2597.52</Time>
+			<Location>
+				<Longitude>43.1242875</Longitude>
+				<Latitude>42.1628346</Latitude>
+				<Altitude>483.48</Altitude>
+			</Location>
+			<PrimaryObject ID="253882">
+				<Type>Missile</Type>
+				<Name>R-27R (AA-10 Alamo-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253775</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2599.53</Time>
+			<Location>
+				<Longitude>43.0401504</Longitude>
+				<Latitude>42.0270165</Latitude>
+				<Altitude>6422.81</Altitude>
+			</Location>
+			<PrimaryObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253952">
+				<Type>Missile</Type>
+				<Name>AIM-120C AMRAAM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253759</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2605.95</Time>
+			<Location>
+				<Longitude>44.9590094</Longitude>
+				<Latitude>41.6732939</Latitude>
+				<Altitude>481.55</Altitude>
+			</Location>
+			<PrimaryObject ID="253953">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>2617.55</Time>
+			<Location>
+				<Longitude>42.8512412</Longitude>
+				<Latitude>42.1470075</Latitude>
+				<Altitude>9801.68</Altitude>
+			</Location>
+			<PrimaryObject ID="253777">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#002-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#002</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253974">
+				<Type>Missile</Type>
+				<Name>R-27R (AA-10 Alamo-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253777</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2620.11</Time>
+			<Location>
+				<Longitude>42.7513456</Longitude>
+				<Latitude>42.0713872</Latitude>
+				<Altitude>7536.73</Altitude>
+			</Location>
+			<PrimaryObject ID="253778">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#003</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="253979">
+				<Type>Missile</Type>
+				<Name>R-27R (AA-10 Alamo-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253778</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2626.73</Time>
+			<Location>
+				<Longitude>42.8214131</Longitude>
+				<Latitude>41.9705521</Latitude>
+				<Altitude>9265.17</Altitude>
+			</Location>
+			<PrimaryObject ID="253787">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#002-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#002</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="253952">
+				<Type>Missile</Type>
+				<Name>AIM-120C AMRAAM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253759</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>2626.75</Time>
+			<Location>
+				<Longitude>42.8214082</Longitude>
+				<Latitude>41.9705803</Latitude>
+				<Altitude>9261.69</Altitude>
+			</Location>
+			<PrimaryObject ID="253787">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#002-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#002</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2649.35</Time>
+			<Location>
+				<Longitude>43.1249562</Longitude>
+				<Latitude>41.9684298</Latitude>
+				<Altitude>3065.87</Altitude>
+			</Location>
+			<PrimaryObject ID="254030">
+				<Type>Bomb</Type>
+				<Name>Bomb</Name>
+				<Coalition>Neutral</Coalition>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>2649.35</Time>
+			<Location>
+				<Longitude>43.1249632</Longitude>
+				<Latitude>41.9684497</Latitude>
+				<Altitude>3071.53</Altitude>
+			</Location>
+			<PrimaryObject ID="254029">
+				<Type>Bomb</Type>
+				<Name>Bomb</Name>
+				<Coalition>Neutral</Coalition>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>2670.53</Time>
+			<Location>
+				<Longitude>43.055869</Longitude>
+				<Latitude>42.1032567</Latitude>
+				<Altitude>2942.62</Altitude>
+			</Location>
+			<PrimaryObject ID="253974">
+				<Type>Missile</Type>
+				<Name>R-27R (AA-10 Alamo-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253777</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2691.91</Time>
+			<Location>
+				<Longitude>42.9858109</Longitude>
+				<Latitude>41.9290958</Latitude>
+				<Altitude>7219.91</Altitude>
+			</Location>
+			<PrimaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254032">
+				<Type>Missile</Type>
+				<Name>Super 530D</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253761</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2692.33</Time>
+			<Location>
+				<Longitude>42.9034707</Longitude>
+				<Latitude>41.9504155</Latitude>
+				<Altitude>4659.13</Altitude>
+			</Location>
+			<PrimaryObject ID="253778">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#003</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254033">
+				<Type>Missile</Type>
+				<Name>R-60 (AA-8 Aphid-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253778</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2708.61</Time>
+			<Location>
+				<Longitude>44.9598175</Longitude>
+				<Latitude>41.6642299</Latitude>
+				<Altitude>481.53</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasLanded</Action>
+		</Event>
+		<Event>
+			<Time>2715.41</Time>
+			<Location>
+				<Longitude>43.1200915</Longitude>
+				<Latitude>41.9582633</Latitude>
+				<Altitude>905.86</Altitude>
+			</Location>
+			<PrimaryObject ID="253979">
+				<Type>Missile</Type>
+				<Name>R-27R (AA-10 Alamo-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253778</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2718.34</Time>
+			<Location>
+				<Longitude>43.0069711</Longitude>
+				<Latitude>41.9249124</Latitude>
+				<Altitude>8921.67</Altitude>
+			</Location>
+			<PrimaryObject ID="254033">
+				<Type>Missile</Type>
+				<Name>R-60 (AA-8 Aphid-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253778</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2736.88</Time>
+			<Location>
+				<Longitude>42.7009201</Longitude>
+				<Latitude>42.055799</Latitude>
+				<Altitude>25956.55</Altitude>
+			</Location>
+			<PrimaryObject ID="254032">
+				<Type>Missile</Type>
+				<Name>Super 530D</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253761</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2745.37</Time>
+			<Location>
+				<Longitude>42.9503307</Longitude>
+				<Latitude>41.9563921</Latitude>
+				<Altitude>5608.87</Altitude>
+			</Location>
+			<PrimaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254087">
+				<Type>Missile</Type>
+				<Name>R550 Magic II</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253761</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2747.69</Time>
+			<Location>
+				<Longitude>42.9552966</Longitude>
+				<Latitude>41.9440268</Latitude>
+				<Altitude>5155.59</Altitude>
+			</Location>
+			<PrimaryObject ID="253778">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#003</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254087">
+				<Type>Missile</Type>
+				<Name>R550 Magic II</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253761</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>2747.69</Time>
+			<Location>
+				<Longitude>42.9552966</Longitude>
+				<Latitude>41.9440268</Latitude>
+				<Altitude>5155.59</Altitude>
+			</Location>
+			<PrimaryObject ID="253778">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#003</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2750.78</Time>
+			<Location>
+				<Longitude>42.9606201</Longitude>
+				<Latitude>41.9464598</Latitude>
+				<Altitude>4661.88</Altitude>
+			</Location>
+			<PrimaryObject ID="254096">
+				<Type>Parachutist</Type>
+				<Name>Parachutist</Name>
+				<Country>ru</Country>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>2777.78</Time>
+			<Location>
+				<Longitude>42.9499066</Longitude>
+				<Latitude>41.9723151</Latitude>
+				<Altitude>4976.28</Altitude>
+			</Location>
+			<PrimaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254097">
+				<Type>Missile</Type>
+				<Name>Super 530D</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253761</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2789.22</Time>
+			<Location>
+				<Longitude>42.8932044</Longitude>
+				<Latitude>42.0223765</Latitude>
+				<Altitude>3999.48</Altitude>
+			</Location>
+			<PrimaryObject ID="253788">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#003</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2789.23</Time>
+			<Location>
+				<Longitude>42.8933499</Longitude>
+				<Latitude>42.0223283</Latitude>
+				<Altitude>3999.87</Altitude>
+			</Location>
+			<PrimaryObject ID="253788">
+				<Type>Aircraft</Type>
+				<Name>MiG-21bis Fishbed-L/N</Name>
+				<Pilot>Red-Mig21#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig21#003</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254097">
+				<Type>Missile</Type>
+				<Name>Super 530D</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253761</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>2817.33</Time>
+			<Location>
+				<Longitude>43.3148159</Longitude>
+				<Latitude>41.9983639</Latitude>
+				<Altitude>2812.71</Altitude>
+			</Location>
+			<PrimaryObject ID="253776">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254125">
+				<Type>Missile</Type>
+				<Name>R-60 (AA-8 Aphid-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253776</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2822.27</Time>
+			<Location>
+				<Longitude>43.3195299</Longitude>
+				<Latitude>41.9770629</Latitude>
+				<Altitude>2623.57</Altitude>
+			</Location>
+			<PrimaryObject ID="253763">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254125">
+				<Type>Missile</Type>
+				<Name>R-60 (AA-8 Aphid-A)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253776</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253776">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>2822.27</Time>
+			<Location>
+				<Longitude>43.3195299</Longitude>
+				<Latitude>41.9770629</Latitude>
+				<Altitude>2623.57</Altitude>
+			</Location>
+			<PrimaryObject ID="253763">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253776">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>2847.64</Time>
+			<Location>
+				<Longitude>43.0692408</Longitude>
+				<Latitude>42.0120184</Latitude>
+				<Altitude>875.18</Altitude>
+			</Location>
+			<PrimaryObject ID="253777">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#002-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#002</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2850.74</Time>
+			<Location>
+				<Longitude>43.06354</Longitude>
+				<Latitude>42.0083378</Latitude>
+				<Altitude>884.84</Altitude>
+			</Location>
+			<PrimaryObject ID="254139">
+				<Type>Parachutist</Type>
+				<Name>Parachutist</Name>
+				<Country>ru</Country>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>2852.20</Time>
+			<Location>
+				<Longitude>43.324045</Longitude>
+				<Latitude>41.9218391</Latitude>
+				<Altitude>950.08</Altitude>
+			</Location>
+			<PrimaryObject ID="253776">
+				<Type>Aircraft</Type>
+				<Name>MiG-29A Fulcrum-A</Name>
+				<Pilot>Red-Mig29A#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-Mig29A#001</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>2856.12</Time>
+			<Location>
+				<Longitude>44.9595807</Longitude>
+				<Latitude>41.6737669</Latitude>
+				<Altitude>481.55</Altitude>
+			</Location>
+			<PrimaryObject ID="254151">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>2862.29</Time>
+			<Location>
+				<Longitude>44.9490548</Longitude>
+				<Latitude>41.6726348</Latitude>
+				<Altitude>481.3</Altitude>
+			</Location>
+			<PrimaryObject ID="253880">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>3302.06</Time>
+			<Location>
+				<Longitude>43.015347</Longitude>
+				<Latitude>42.3688443</Latitude>
+				<Altitude>695.63</Altitude>
+			</Location>
+			<PrimaryObject ID="253542">
+				<Type>SAM/AAA</Type>
+				<Name>SA-19 Grison</Name>
+				<Pilot>Ground-3-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254152">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>3315.53</Time>
+			<Location>
+				<Longitude>43.015347</Longitude>
+				<Latitude>42.3688443</Latitude>
+				<Altitude>695.63</Altitude>
+			</Location>
+			<PrimaryObject ID="253542">
+				<Type>SAM/AAA</Type>
+				<Name>SA-19 Grison</Name>
+				<Pilot>Ground-3-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254153">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>3322.47</Time>
+			<Location>
+				<Longitude>43.0698794</Longitude>
+				<Latitude>42.3112927</Latitude>
+				<Altitude>3676.57</Altitude>
+			</Location>
+			<PrimaryObject ID="254152">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>3337.79</Time>
+			<Location>
+				<Longitude>43.0879533</Longitude>
+				<Latitude>42.329065</Latitude>
+				<Altitude>2808.29</Altitude>
+			</Location>
+			<PrimaryObject ID="254153">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>3347.15</Time>
+			<Location>
+				<Longitude>43.015347</Longitude>
+				<Latitude>42.3688443</Latitude>
+				<Altitude>695.63</Altitude>
+			</Location>
+			<PrimaryObject ID="253542">
+				<Type>SAM/AAA</Type>
+				<Name>SA-19 Grison</Name>
+				<Pilot>Ground-3-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254154">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>3367.87</Time>
+			<Location>
+				<Longitude>43.0847625</Longitude>
+				<Latitude>42.3270578</Latitude>
+				<Altitude>3178.71</Altitude>
+			</Location>
+			<PrimaryObject ID="254154">
+				<Type>Missile</Type>
+				<Name>SA9M311</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253542</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>3395.99</Time>
+			<Location>
+				<Longitude>44.9631684</Longitude>
+				<Latitude>41.6616509</Latitude>
+				<Altitude>481.53</Altitude>
+			</Location>
+			<PrimaryObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasLanded</Action>
+		</Event>
+		<Event>
+			<Time>3412.41</Time>
+			<Location>
+				<Longitude>44.9493323</Longitude>
+				<Latitude>41.6724091</Latitude>
+				<Altitude>481.5</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>3626.47</Time>
+			<Location>
+				<Longitude>44.9609214</Longitude>
+				<Latitude>41.6634713</Latitude>
+				<Altitude>481.3</Altitude>
+			</Location>
+			<PrimaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasLanded</Action>
+		</Event>
+		<Event>
+			<Time>3689.42</Time>
+			<Location>
+				<Longitude>43.3561785</Longitude>
+				<Latitude>42.2473331</Latitude>
+				<Altitude>732.5</Altitude>
+			</Location>
+			<PrimaryObject ID="253596">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-4-2</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-4</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254155">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253596</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>3689.63</Time>
+			<Location>
+				<Longitude>43.3563525</Longitude>
+				<Latitude>42.2467934</Latitude>
+				<Altitude>729.36</Altitude>
+			</Location>
+			<PrimaryObject ID="253598">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-4-4</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-4</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254156">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253598</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>3697.59</Time>
+			<Location>
+				<Longitude>43.2984982</Longitude>
+				<Latitude>42.245146</Latitude>
+				<Altitude>2889.2</Altitude>
+			</Location>
+			<PrimaryObject ID="253760">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>Wolf 1-2 EmoJack</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254155">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253596</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253596">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-4-2</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-4</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>3697.66</Time>
+			<Location>
+				<Longitude>43.2984789</Longitude>
+				<Latitude>42.2450228</Latitude>
+				<Altitude>2890.23</Altitude>
+			</Location>
+			<PrimaryObject ID="254163">
+				<Type>Missile</Type>
+				<Name>AGM-122 Sidearm</Name>
+				<Coalition>Neutral</Coalition>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>3697.77</Time>
+			<Location>
+				<Longitude>43.298382</Longitude>
+				<Latitude>42.2448511</Latitude>
+				<Altitude>2889.68</Altitude>
+			</Location>
+			<PrimaryObject ID="254163">
+				<Type>Missile</Type>
+				<Name>AGM-122 Sidearm</Name>
+				<Coalition>Neutral</Coalition>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254156">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253598</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253598">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-4-4</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-4</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>3697.85</Time>
+			<Location>
+				<Longitude>43.2982952</Longitude>
+				<Latitude>42.2447301</Latitude>
+				<Altitude>2890.09</Altitude>
+			</Location>
+			<PrimaryObject ID="254170">
+				<Type>Bomb</Type>
+				<Name>Bomb</Name>
+				<Coalition>Neutral</Coalition>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>3751.99</Time>
+			<Location>
+				<Longitude>43.2460689</Longitude>
+				<Latitude>42.1991174</Latitude>
+				<Altitude>2500.95</Altitude>
+			</Location>
+			<PrimaryObject ID="253760">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>Wolf 1-2 EmoJack</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254171">
+				<Type>Parachutist</Type>
+				<Name>Parachutist</Name>
+				<Country>us</Country>
+				<Parent>253760</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>3768.38</Time>
+			<Location>
+				<Longitude>43.2362737</Longitude>
+				<Latitude>42.1948641</Latitude>
+				<Altitude>697.83</Altitude>
+			</Location>
+			<PrimaryObject ID="254171">
+				<Type>Parachutist</Type>
+				<Name>Parachutist</Name>
+				<Country>us</Country>
+				<Parent>253760</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>3770.55</Time>
+			<Location>
+				<Longitude>43.2387581</Longitude>
+				<Latitude>42.1968027</Latitude>
+				<Altitude>697.89</Altitude>
+			</Location>
+			<PrimaryObject ID="253760">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>Wolf 1-2 EmoJack</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253596">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-4-2</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-4</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>3828.87</Time>
+			<Location>
+				<Longitude>45.0380953</Longitude>
+				<Latitude>41.620935</Latitude>
+				<Altitude>466.38</Altitude>
+			</Location>
+			<PrimaryObject ID="254197">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>Wolf 1-2 EmoJack</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>4075.44</Time>
+			<Location>
+				<Longitude>44.9489534</Longitude>
+				<Latitude>41.6726278</Latitude>
+				<Altitude>481.51</Altitude>
+			</Location>
+			<PrimaryObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>4079.37</Time>
+			<Location>
+				<Longitude>44.9489749</Longitude>
+				<Latitude>41.6728882</Latitude>
+				<Altitude>481.51</Altitude>
+			</Location>
+			<PrimaryObject ID="254151">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>4083.08</Time>
+			<Location>
+				<Longitude>44.9492998</Longitude>
+				<Latitude>41.672371</Latitude>
+				<Altitude>481.52</Altitude>
+			</Location>
+			<PrimaryObject ID="253953">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>4180.18</Time>
+			<Location>
+				<Longitude>43.0957755</Longitude>
+				<Latitude>42.2977898</Latitude>
+				<Altitude>5306.69</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254198">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>4189.04</Time>
+			<Location>
+				<Longitude>43.0713635</Longitude>
+				<Latitude>42.3157314</Latitude>
+				<Altitude>4750.54</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254200">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>4196.60</Time>
+			<Location>
+				<Longitude>43.015347</Longitude>
+				<Latitude>42.3688443</Latitude>
+				<Altitude>695.63</Altitude>
+			</Location>
+			<PrimaryObject ID="253542">
+				<Type>SAM/AAA</Type>
+				<Name>SA-19 Grison</Name>
+				<Pilot>Ground-3-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-3</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254198">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>4196.86</Time>
+			<Location>
+				<Longitude>43.0498686</Longitude>
+				<Latitude>42.330449</Latitude>
+				<Altitude>4241.27</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254201">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>4202.95</Time>
+			<Location>
+				<Longitude>43.0152535</Longitude>
+				<Latitude>42.36893</Latitude>
+				<Altitude>695.85</Altitude>
+			</Location>
+			<PrimaryObject ID="253542">
+				<Type>SAM/AAA</Type>
+				<Name>SA-19 Grison</Name>
+				<Pilot>Ground-3-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-3</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254200">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>4202.98</Time>
+			<Location>
+				<Longitude>43.0152527</Longitude>
+				<Latitude>42.3689307</Latitude>
+				<Altitude>695.85</Altitude>
+			</Location>
+			<PrimaryObject ID="253542">
+				<Type>SAM/AAA</Type>
+				<Name>SA-19 Grison</Name>
+				<Pilot>Ground-3-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-3</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>4207.58</Time>
+			<Location>
+				<Longitude>43.015099</Longitude>
+				<Latitude>42.3700639</Latitude>
+				<Altitude>712.63</Altitude>
+			</Location>
+			<PrimaryObject ID="254201">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>4211.45</Time>
+			<Location>
+				<Longitude>43.0117326</Longitude>
+				<Latitude>42.372109</Latitude>
+				<Altitude>715.39</Altitude>
+			</Location>
+			<PrimaryObject ID="253541">
+				<Type>SAM/AAA</Type>
+				<Name>SA-13 Gopher</Name>
+				<Pilot>Ground-2-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254202">
+				<Type>Missile</Type>
+				<Name>SA9M333</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253541</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>4217.49</Time>
+			<Location>
+				<Longitude>43.0070698</Longitude>
+				<Latitude>42.3572863</Latitude>
+				<Altitude>2350.78</Altitude>
+			</Location>
+			<PrimaryObject ID="254202">
+				<Type>Missile</Type>
+				<Name>SA9M333</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>253541</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>4219.62</Time>
+			<Location>
+				<Longitude>42.9821575</Longitude>
+				<Latitude>42.3606682</Latitude>
+				<Altitude>3633.03</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254203">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>4309.46</Time>
+			<Location>
+				<Longitude>44.9488643</Longitude>
+				<Latitude>41.6727041</Latitude>
+				<Altitude>481.27</Altitude>
+			</Location>
+			<PrimaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>4566.88</Time>
+			<Location>
+				<Longitude>41.5271354</Longitude>
+				<Latitude>42.4275938</Latitude>
+				<Altitude>1.12</Altitude>
+			</Location>
+			<PrimaryObject ID="254203">
+				<Type>Missile</Type>
+				<Name>AGM-88 HARM</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253757</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>4770.82</Time>
+			<Location>
+				<Longitude>45.0330905</Longitude>
+				<Latitude>41.6231202</Latitude>
+				<Altitude>466.34</Altitude>
+			</Location>
+			<PrimaryObject ID="253762">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>WOLF 1-1 | CHIEF</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasLanded</Action>
+		</Event>
+		<Event>
+			<Time>4881.10</Time>
+			<Location>
+				<Longitude>44.6032804</Longitude>
+				<Latitude>43.2034621</Latitude>
+				<Altitude>527.15</Altitude>
+			</Location>
+			<PrimaryObject ID="254206">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#005-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#005</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>4881.10</Time>
+			<Location>
+				<Longitude>44.6033523</Longitude>
+				<Latitude>43.2037241</Latitude>
+				<Altitude>527.15</Altitude>
+			</Location>
+			<PrimaryObject ID="254205">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#005-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#005</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>5117.67</Time>
+			<Location>
+				<Longitude>44.9553061</Longitude>
+				<Latitude>41.6676434</Latitude>
+				<Altitude>481.51</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasLanded</Action>
+		</Event>
+		<Event>
+			<Time>5196.93</Time>
+			<Location>
+				<Longitude>44.618232</Longitude>
+				<Latitude>43.203846</Latitude>
+				<Altitude>527.17</Altitude>
+			</Location>
+			<PrimaryObject ID="254205">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#005-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#005</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>5268.41</Time>
+			<Location>
+				<Longitude>45.0333375</Longitude>
+				<Latitude>41.623001</Latitude>
+				<Altitude>466.38</Altitude>
+			</Location>
+			<PrimaryObject ID="254197">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>Wolf 1-2 EmoJack</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>5268.83</Time>
+			<Location>
+				<Longitude>45.032691</Longitude>
+				<Latitude>41.6232406</Latitude>
+				<Altitude>466.31</Altitude>
+			</Location>
+			<PrimaryObject ID="253762">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>WOLF 1-1 | CHIEF</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>5327.44</Time>
+			<Location>
+				<Longitude>42.755563</Longitude>
+				<Latitude>42.3184386</Latitude>
+				<Altitude>3286.57</Altitude>
+			</Location>
+			<PrimaryObject ID="254151">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254207">
+				<Type>Bomb</Type>
+				<Name>GBU_31</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254151</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>5342.11</Time>
+			<Location>
+				<Longitude>44.6047532</Longitude>
+				<Latitude>43.2037882</Latitude>
+				<Altitude>527.15</Altitude>
+			</Location>
+			<PrimaryObject ID="254209">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#006-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#006</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>5342.11</Time>
+			<Location>
+				<Longitude>44.6033523</Longitude>
+				<Latitude>43.2037241</Latitude>
+				<Altitude>527.15</Altitude>
+			</Location>
+			<PrimaryObject ID="254208">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#006-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#006</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>5378.49</Time>
+			<Location>
+				<Longitude>42.869834</Longitude>
+				<Latitude>42.3450729</Latitude>
+				<Altitude>371.62</Altitude>
+			</Location>
+			<PrimaryObject ID="253562">
+				<Type>Car</Type>
+				<Name>ATMZ-5</Name>
+				<Pilot>Ground-1-4</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-1</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>5378.49</Time>
+			<Location>
+				<Longitude>42.870005</Longitude>
+				<Latitude>42.3453205</Latitude>
+				<Altitude>371.49</Altitude>
+			</Location>
+			<PrimaryObject ID="253570">
+				<Type>Tank</Type>
+				<Name>BTR-80</Name>
+				<Pilot>Ground-4-2</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-4</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>5378.71</Time>
+			<Location>
+				<Longitude>44.6180485</Longitude>
+				<Latitude>43.2038734</Latitude>
+				<Altitude>527.17</Altitude>
+			</Location>
+			<PrimaryObject ID="254206">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#005-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#005</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>5381.74</Time>
+			<Location>
+				<Longitude>42.8697877</Longitude>
+				<Latitude>42.345231</Latitude>
+				<Altitude>371.97</Altitude>
+			</Location>
+			<PrimaryObject ID="253571">
+				<Type>Tank</Type>
+				<Name>BTR-80</Name>
+				<Pilot>Ground-4-3</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-4</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254207">
+				<Type>Bomb</Type>
+				<Name>GBU_31</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254151</Parent>
+			</SecondaryObject>
+			<ParentObject ID="254151">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5422.95</Time>
+			<Location>
+				<Longitude>42.8614181</Longitude>
+				<Latitude>42.2522799</Latitude>
+				<Altitude>3879.01</Altitude>
+			</Location>
+			<PrimaryObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<Occurrences>2</Occurrences>
+			<SecondaryObject ID="254212">
+				<Type>Bomb</Type>
+				<Name>CBU-105 SFW</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253759</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>5436.89</Time>
+			<Location>
+				<Longitude>43.644474</Longitude>
+				<Latitude>43.5168714</Latitude>
+				<Altitude>432.62</Altitude>
+			</Location>
+			<PrimaryObject ID="253769">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#003-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#003</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>5437.67</Time>
+			<Location>
+				<Longitude>43.6440078</Longitude>
+				<Latitude>43.5169382</Latitude>
+				<Altitude>432.62</Altitude>
+			</Location>
+			<PrimaryObject ID="253770">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#003-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#003</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>5475.11</Time>
+			<Location>
+				<Longitude>43.6403039</Longitude>
+				<Latitude>43.5112286</Latitude>
+				<Altitude>432.33</Altitude>
+			</Location>
+			<PrimaryObject ID="254234">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>5475.11</Time>
+			<Location>
+				<Longitude>43.6409705</Longitude>
+				<Latitude>43.5114492</Latitude>
+				<Altitude>432.33</Altitude>
+			</Location>
+			<PrimaryObject ID="254233">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>5484.33</Time>
+			<Location>
+				<Longitude>42.8693216</Longitude>
+				<Latitude>42.3433393</Latitude>
+				<Altitude>826.96</Altitude>
+			</Location>
+			<PrimaryObject ID="254212">
+				<Type>Bomb</Type>
+				<Name>CBU-105 SFW</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253759</Parent>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254235">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254212</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5484.71</Time>
+			<Location>
+				<Longitude>42.8679601</Longitude>
+				<Latitude>42.3434218</Latitude>
+				<Altitude>826.47</Altitude>
+			</Location>
+			<PrimaryObject ID="254211">
+				<Type>Bomb</Type>
+				<Name>CBU-105 SFW</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253759</Parent>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254236">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254211</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5498.58</Time>
+			<Location>
+				<Longitude>42.8702889</Longitude>
+				<Latitude>42.3456625</Latitude>
+				<Altitude>371.45</Altitude>
+			</Location>
+			<PrimaryObject ID="253569">
+				<Type>Tank</Type>
+				<Name>BTR-80</Name>
+				<Pilot>Ground-4-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-4</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254235">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254212</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5500.43</Time>
+			<Location>
+				<Longitude>42.8693658</Longitude>
+				<Latitude>42.3453429</Latitude>
+				<Altitude>374.71</Altitude>
+			</Location>
+			<PrimaryObject ID="253573">
+				<Type>Tank</Type>
+				<Name>BTR-80</Name>
+				<Pilot>Ground-4-5</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-4</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254236">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254211</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5500.89</Time>
+			<Location>
+				<Longitude>42.869658</Longitude>
+				<Latitude>42.3451245</Latitude>
+				<Altitude>372.35</Altitude>
+			</Location>
+			<PrimaryObject ID="253572">
+				<Type>Tank</Type>
+				<Name>BTR-80</Name>
+				<Pilot>Ground-4-4</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-4</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254236">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254211</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5501.31</Time>
+			<Location>
+				<Longitude>42.8707023</Longitude>
+				<Latitude>42.3451947</Latitude>
+				<Altitude>369.44</Altitude>
+			</Location>
+			<PrimaryObject ID="253568">
+				<Type>Car</Type>
+				<Name>ATMZ-5</Name>
+				<Pilot>Ground-1-10</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-1</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254235">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254212</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5501.88</Time>
+			<Location>
+				<Longitude>42.8698717</Longitude>
+				<Latitude>42.3452123</Latitude>
+				<Altitude>371.76</Altitude>
+			</Location>
+			<PrimaryObject ID="253571">
+				<Type>Tank</Type>
+				<Name>BTR-80</Name>
+				<Pilot>Ground-4-3</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-4</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254235">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254212</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5502.19</Time>
+			<Location>
+				<Longitude>42.8703947</Longitude>
+				<Latitude>42.3449063</Latitude>
+				<Altitude>369.26</Altitude>
+			</Location>
+			<PrimaryObject ID="253560">
+				<Type>Car</Type>
+				<Name>ATMZ-5</Name>
+				<Pilot>Ground-1-2</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-1</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254235">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254212</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5503.01</Time>
+			<Location>
+				<Longitude>42.871131</Longitude>
+				<Latitude>42.344754</Latitude>
+				<Altitude>366.3</Altitude>
+			</Location>
+			<PrimaryObject ID="253559">
+				<Type>Car</Type>
+				<Name>ATMZ-5</Name>
+				<Pilot>Ground-1-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-1</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254235">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254212</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5504.48</Time>
+			<Location>
+				<Longitude>42.8693701</Longitude>
+				<Latitude>42.3449023</Latitude>
+				<Altitude>372.95</Altitude>
+			</Location>
+			<PrimaryObject ID="253563">
+				<Type>Car</Type>
+				<Name>ATMZ-5</Name>
+				<Pilot>Ground-1-5</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-1</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254236">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254211</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5505.15</Time>
+			<Location>
+				<Longitude>42.8708018</Longitude>
+				<Latitude>42.3444375</Latitude>
+				<Altitude>367.61</Altitude>
+			</Location>
+			<PrimaryObject ID="253561">
+				<Type>Car</Type>
+				<Name>ATMZ-5</Name>
+				<Pilot>Ground-1-3</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-1</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254235">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254212</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5505.64</Time>
+			<Location>
+				<Longitude>42.8696835</Longitude>
+				<Latitude>42.3445943</Latitude>
+				<Altitude>371.46</Altitude>
+			</Location>
+			<PrimaryObject ID="253567">
+				<Type>Car</Type>
+				<Name>ATMZ-5</Name>
+				<Pilot>Ground-1-9</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-1</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>5507.59</Time>
+			<Location>
+				<Longitude>42.8697438</Longitude>
+				<Latitude>42.3444377</Latitude>
+				<Altitude>370.73</Altitude>
+			</Location>
+			<PrimaryObject ID="253564">
+				<Type>Car</Type>
+				<Name>ATMZ-5</Name>
+				<Pilot>Ground-1-6</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-1</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254236">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254211</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5509.22</Time>
+			<Location>
+				<Longitude>42.8698445</Longitude>
+				<Latitude>42.3442426</Latitude>
+				<Altitude>369.53</Altitude>
+			</Location>
+			<PrimaryObject ID="253565">
+				<Type>Car</Type>
+				<Name>ATMZ-5</Name>
+				<Pilot>Ground-1-7</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-1</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>5509.22</Time>
+			<Location>
+				<Longitude>42.8698738</Longitude>
+				<Latitude>42.3443057</Latitude>
+				<Altitude>369.83</Altitude>
+			</Location>
+			<PrimaryObject ID="253566">
+				<Type>Car</Type>
+				<Name>ATMZ-5</Name>
+				<Pilot>Ground-1-8</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Ground-1</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>5564.21</Time>
+			<Location>
+				<Longitude>42.7891827</Longitude>
+				<Latitude>42.3361385</Latitude>
+				<Altitude>3081.17</Altitude>
+			</Location>
+			<PrimaryObject ID="254151">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254237">
+				<Type>Bomb</Type>
+				<Name>GBU_31</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254151</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>5607.62</Time>
+			<Location>
+				<Longitude>42.7936116</Longitude>
+				<Latitude>42.275841</Latitude>
+				<Altitude>4016.56</Altitude>
+			</Location>
+			<PrimaryObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<Occurrences>2</Occurrences>
+			<SecondaryObject ID="254239">
+				<Type>Bomb</Type>
+				<Name>CBU-105 SFW</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253759</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>5651.62</Time>
+			<Location>
+				<Longitude>44.6184271</Longitude>
+				<Latitude>43.2038169</Latitude>
+				<Altitude>527.17</Altitude>
+			</Location>
+			<PrimaryObject ID="254208">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#006-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#006</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>5667.38</Time>
+			<Location>
+				<Longitude>42.8612188</Longitude>
+				<Latitude>42.3409963</Latitude>
+				<Altitude>834.59</Altitude>
+			</Location>
+			<PrimaryObject ID="254239">
+				<Type>Bomb</Type>
+				<Name>CBU-105 SFW</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253759</Parent>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254280">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254239</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5668.64</Time>
+			<Location>
+				<Longitude>42.8600411</Longitude>
+				<Latitude>42.3414875</Latitude>
+				<Altitude>849.95</Altitude>
+			</Location>
+			<PrimaryObject ID="254238">
+				<Type>Bomb</Type>
+				<Name>CBU-105 SFW</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253759</Parent>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254281">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254238</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5682.17</Time>
+			<Location>
+				<Longitude>42.8633299</Longitude>
+				<Latitude>42.3428561</Latitude>
+				<Altitude>389.29</Altitude>
+			</Location>
+			<PrimaryObject ID="253579">
+				<Type>SAM/AAA</Type>
+				<Name>ZU-23-2</Name>
+				<Pilot>Tank-15-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Tank-15</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254280">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254239</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5683.51</Time>
+			<Location>
+				<Longitude>42.8631862</Longitude>
+				<Latitude>42.3427381</Latitude>
+				<Altitude>388.76</Altitude>
+			</Location>
+			<PrimaryObject ID="253577">
+				<Type>SAM/AAA</Type>
+				<Name>ZU-23-2</Name>
+				<Pilot>Tank-13-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Tank-13</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254280">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254239</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5683.51</Time>
+			<Location>
+				<Longitude>42.8632633</Longitude>
+				<Latitude>42.3427947</Latitude>
+				<Altitude>388.95</Altitude>
+			</Location>
+			<PrimaryObject ID="253578">
+				<Type>SAM/AAA</Type>
+				<Name>ZU-23-2</Name>
+				<Pilot>Tank-14-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Tank-14</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254280">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254239</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5686.99</Time>
+			<Location>
+				<Longitude>42.8631066</Longitude>
+				<Latitude>42.3426992</Latitude>
+				<Altitude>388.82</Altitude>
+			</Location>
+			<PrimaryObject ID="253576">
+				<Type>SAM/AAA</Type>
+				<Name>ZU-23-2</Name>
+				<Pilot>Tank-12-1</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Tank-12</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254281">
+				<Type>Bomb</Type>
+				<Name>BLU-108</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>254238</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>5696.68</Time>
+			<Location>
+				<Longitude>43.6293799</Longitude>
+				<Latitude>43.5113828</Latitude>
+				<Altitude>432.34</Altitude>
+			</Location>
+			<PrimaryObject ID="254233">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>5719.79</Time>
+			<Location>
+				<Longitude>43.6299637</Longitude>
+				<Latitude>43.5115991</Latitude>
+				<Altitude>432.35</Altitude>
+			</Location>
+			<PrimaryObject ID="254234">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>5837.81</Time>
+			<Location>
+				<Longitude>44.6183069</Longitude>
+				<Latitude>43.2038347</Latitude>
+				<Altitude>527.17</Altitude>
+			</Location>
+			<PrimaryObject ID="254209">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#006-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#006</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>5929.11</Time>
+			<Location>
+				<Longitude>43.6403039</Longitude>
+				<Latitude>43.5112286</Latitude>
+				<Altitude>432.33</Altitude>
+			</Location>
+			<PrimaryObject ID="254283">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#008-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#008</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>5929.11</Time>
+			<Location>
+				<Longitude>43.6409705</Longitude>
+				<Latitude>43.5114492</Latitude>
+				<Altitude>432.33</Altitude>
+			</Location>
+			<PrimaryObject ID="254282">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#008-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#008</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>6052.89</Time>
+			<Location>
+				<Longitude>44.6193694</Longitude>
+				<Latitude>43.2035694</Latitude>
+				<Altitude>527.51</Altitude>
+			</Location>
+			<PrimaryObject ID="253765">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#001-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#001</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>6053.28</Time>
+			<Location>
+				<Longitude>44.6189868</Longitude>
+				<Latitude>43.2038451</Latitude>
+				<Altitude>527.43</Altitude>
+			</Location>
+			<PrimaryObject ID="253766">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#001-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#001</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>6151.89</Time>
+			<Location>
+				<Longitude>43.6295043</Longitude>
+				<Latitude>43.5114292</Latitude>
+				<Altitude>432.35</Altitude>
+			</Location>
+			<PrimaryObject ID="254282">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#008-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#008</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>6173.92</Time>
+			<Location>
+				<Longitude>43.6294413</Longitude>
+				<Latitude>43.5114042</Latitude>
+				<Altitude>432.34</Altitude>
+			</Location>
+			<PrimaryObject ID="254283">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#008-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#008</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>6210.23</Time>
+			<Location>
+				<Longitude>44.6196406</Longitude>
+				<Latitude>43.2037474</Latitude>
+				<Altitude>527.43</Altitude>
+			</Location>
+			<PrimaryObject ID="253768">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#002-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#002</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>6210.30</Time>
+			<Location>
+				<Longitude>44.6192828</Longitude>
+				<Latitude>43.2035827</Latitude>
+				<Altitude>527.43</Altitude>
+			</Location>
+			<PrimaryObject ID="253767">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#002-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#002</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>6397.97</Time>
+			<Location>
+				<Longitude>43.6446497</Longitude>
+				<Latitude>43.5171759</Latitude>
+				<Altitude>432.62</Altitude>
+			</Location>
+			<PrimaryObject ID="253772">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#004-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#004</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>6398.04</Time>
+			<Location>
+				<Longitude>43.6444978</Longitude>
+				<Latitude>43.5168803</Latitude>
+				<Altitude>432.62</Altitude>
+			</Location>
+			<PrimaryObject ID="253771">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#004-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#004</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>6412.33</Time>
+			<Location>
+				<Longitude>43.2395488</Longitude>
+				<Latitude>42.2767636</Latitude>
+				<Altitude>494.95</Altitude>
+			</Location>
+			<PrimaryObject ID="253587">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-2-3</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254367">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253587</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>6412.60</Time>
+			<Location>
+				<Longitude>43.2386849</Longitude>
+				<Latitude>42.2769374</Latitude>
+				<Altitude>509.61</Altitude>
+			</Location>
+			<PrimaryObject ID="253586">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-2-2</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254368">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253586</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>6419.86</Time>
+			<Location>
+				<Longitude>43.27588</Longitude>
+				<Latitude>42.2450035</Latitude>
+				<Altitude>2097.67</Altitude>
+			</Location>
+			<PrimaryObject ID="253762">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>WOLF 1-1 | CHIEF</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254367">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253587</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253587">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-2-3</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>6419.86</Time>
+			<Location>
+				<Longitude>43.27588</Longitude>
+				<Latitude>42.2450035</Latitude>
+				<Altitude>2097.67</Altitude>
+			</Location>
+			<PrimaryObject ID="253762">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>WOLF 1-1 | CHIEF</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253587">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-2-3</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-2</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>6431.33</Time>
+			<Location>
+				<Longitude>43.2914101</Longitude>
+				<Latitude>42.2508378</Latitude>
+				<Altitude>1373.64</Altitude>
+			</Location>
+			<PrimaryObject ID="254389">
+				<Type>Parachutist</Type>
+				<Name>Parachutist</Name>
+				<Country>us</Country>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>6438.42</Time>
+			<Location>
+				<Longitude>43.2988674</Longitude>
+				<Latitude>42.2519284</Latitude>
+				<Altitude>711.22</Altitude>
+			</Location>
+			<PrimaryObject ID="254389">
+				<Type>Parachutist</Type>
+				<Name>Parachutist</Name>
+				<Country>us</Country>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>6621.00</Time>
+			<Location>
+				<Longitude>43.2386849</Longitude>
+				<Latitude>42.2769374</Latitude>
+				<Altitude>509.61</Altitude>
+			</Location>
+			<PrimaryObject ID="253586">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-2-2</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254415">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253586</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>6626.15</Time>
+			<Location>
+				<Longitude>43.2395488</Longitude>
+				<Latitude>42.2767636</Latitude>
+				<Altitude>494.95</Altitude>
+			</Location>
+			<PrimaryObject ID="253587">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-2-3</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254416">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253587</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>6627.23</Time>
+			<Location>
+				<Longitude>43.2634203</Longitude>
+				<Latitude>42.2862015</Latitude>
+				<Altitude>3472.59</Altitude>
+			</Location>
+			<PrimaryObject ID="254197">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>Wolf 1-2 EmoJack</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254415">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253586</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253586">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-2-2</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>6627.23</Time>
+			<Location>
+				<Longitude>43.2634203</Longitude>
+				<Latitude>42.2862015</Latitude>
+				<Altitude>3472.59</Altitude>
+			</Location>
+			<PrimaryObject ID="254197">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>Wolf 1-2 EmoJack</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253586">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-2-2</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-2</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>6643.17</Time>
+			<Location>
+				<Longitude>43.2948634</Longitude>
+				<Latitude>42.3059222</Latitude>
+				<Altitude>7806.59</Altitude>
+			</Location>
+			<PrimaryObject ID="254416">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253587</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>6716.11</Time>
+			<Location>
+				<Longitude>43.6403039</Longitude>
+				<Latitude>43.5112286</Latitude>
+				<Altitude>432.33</Altitude>
+			</Location>
+			<PrimaryObject ID="254441">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#009-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#009</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>6716.11</Time>
+			<Location>
+				<Longitude>43.6409705</Longitude>
+				<Latitude>43.5114492</Latitude>
+				<Altitude>432.33</Altitude>
+			</Location>
+			<PrimaryObject ID="254440">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#009-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#009</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>6801.58</Time>
+			<Location>
+				<Longitude>42.9511477</Longitude>
+				<Latitude>42.1263584</Latitude>
+				<Altitude>1198.52</Altitude>
+			</Location>
+			<PrimaryObject ID="254521">
+				<Type>Parachutist</Type>
+				<Name>Parachutist</Name>
+				<Country>us</Country>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>6809.38</Time>
+			<Location>
+				<Longitude>42.9488252</Longitude>
+				<Latitude>42.1287714</Latitude>
+				<Altitude>285.32</Altitude>
+			</Location>
+			<PrimaryObject ID="254521">
+				<Type>Parachutist</Type>
+				<Name>Parachutist</Name>
+				<Country>us</Country>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>6852.32</Time>
+			<Location>
+				<Longitude>43.23886</Longitude>
+				<Latitude>42.2763977</Latitude>
+				<Altitude>497.89</Altitude>
+			</Location>
+			<PrimaryObject ID="253588">
+				<Type>SAM/AAA</Type>
+				<Name>FIM-92 Stinger</Name>
+				<Pilot>Stinger-2-4</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Group>Stinger-2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254553">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253588</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>6869.34</Time>
+			<Location>
+				<Longitude>43.1657961</Longitude>
+				<Latitude>42.3144101</Latitude>
+				<Altitude>4959.16</Altitude>
+			</Location>
+			<PrimaryObject ID="254553">
+				<Type>Missile</Type>
+				<Name>FIM-92C Stinger</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ge</Country>
+				<Parent>253588</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>6936.93</Time>
+			<Location>
+				<Longitude>43.6295261</Longitude>
+				<Latitude>43.5114374</Latitude>
+				<Altitude>432.35</Altitude>
+			</Location>
+			<PrimaryObject ID="254440">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#009-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#009</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>6954.22</Time>
+			<Location>
+				<Longitude>43.2781316</Longitude>
+				<Latitude>42.4705655</Latitude>
+				<Altitude>5464.81</Altitude>
+			</Location>
+			<PrimaryObject ID="253880">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254556">
+				<Type>Missile</Type>
+				<Name>Super 530D</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253880</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>6959.26</Time>
+			<Location>
+				<Longitude>43.6296419</Longitude>
+				<Latitude>43.511479</Latitude>
+				<Altitude>432.35</Altitude>
+			</Location>
+			<PrimaryObject ID="254441">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#009-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#009</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>6972.34</Time>
+			<Location>
+				<Longitude>43.3203013</Longitude>
+				<Latitude>42.589701</Latitude>
+				<Altitude>7122.62</Altitude>
+			</Location>
+			<PrimaryObject ID="254233">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254556">
+				<Type>Missile</Type>
+				<Name>Super 530D</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253880</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253880">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>6972.53</Time>
+			<Location>
+				<Longitude>43.3206672</Longitude>
+				<Latitude>42.5895337</Latitude>
+				<Altitude>7076.98</Altitude>
+			</Location>
+			<PrimaryObject ID="254233">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253880">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>6995.71</Time>
+			<Location>
+				<Longitude>43.3305199</Longitude>
+				<Latitude>42.5852959</Latitude>
+				<Altitude>4996.52</Altitude>
+			</Location>
+			<PrimaryObject ID="254599">
+				<Type>Parachutist</Type>
+				<Name>Parachutist</Name>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>7018.78</Time>
+			<Location>
+				<Longitude>43.3046577</Longitude>
+				<Latitude>42.5211161</Latitude>
+				<Altitude>8639.43</Altitude>
+			</Location>
+			<PrimaryObject ID="253880">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254600">
+				<Type>Missile</Type>
+				<Name>Super 530D</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253880</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>7025.19</Time>
+			<Location>
+				<Longitude>43.3190152</Longitude>
+				<Latitude>42.5470415</Latitude>
+				<Altitude>8030.98</Altitude>
+			</Location>
+			<PrimaryObject ID="254234">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254617">
+				<Type>Missile</Type>
+				<Name>R-73 (AA-11 Archer)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>254234</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>7032.26</Time>
+			<Location>
+				<Longitude>43.3167981</Longitude>
+				<Latitude>42.5106528</Latitude>
+				<Altitude>9071.39</Altitude>
+			</Location>
+			<PrimaryObject ID="253880">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254617">
+				<Type>Missile</Type>
+				<Name>R-73 (AA-11 Archer)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>254234</Parent>
+			</SecondaryObject>
+			<ParentObject ID="254234">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>7032.26</Time>
+			<Location>
+				<Longitude>43.3167981</Longitude>
+				<Latitude>42.5106528</Latitude>
+				<Altitude>9071.39</Altitude>
+			</Location>
+			<PrimaryObject ID="253880">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Troll 1-2 Deathbite</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254234">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>7033.51</Time>
+			<Location>
+				<Longitude>43.3266802</Longitude>
+				<Latitude>42.5351058</Latitude>
+				<Altitude>8521.4</Altitude>
+			</Location>
+			<PrimaryObject ID="254234">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254651">
+				<Type>Missile</Type>
+				<Name>R-73 (AA-11 Archer)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>254234</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>7036.49</Time>
+			<Location>
+				<Longitude>43.3288084</Longitude>
+				<Latitude>42.5077974</Latitude>
+				<Altitude>10139.47</Altitude>
+			</Location>
+			<PrimaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasFired</Action>
+			<SecondaryObject ID="254656">
+				<Type>Missile</Type>
+				<Name>Super 530D</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253761</Parent>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>7038.92</Time>
+			<Location>
+				<Longitude>43.3292738</Longitude>
+				<Latitude>42.5117807</Latitude>
+				<Altitude>9883.95</Altitude>
+			</Location>
+			<PrimaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254651">
+				<Type>Missile</Type>
+				<Name>R-73 (AA-11 Archer)</Name>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Parent>254234</Parent>
+			</SecondaryObject>
+			<ParentObject ID="254234">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>7038.92</Time>
+			<Location>
+				<Longitude>43.3292738</Longitude>
+				<Latitude>42.5117807</Latitude>
+				<Altitude>9883.95</Altitude>
+			</Location>
+			<PrimaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="254234">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>7040.83</Time>
+			<Location>
+				<Longitude>43.330444</Longitude>
+				<Latitude>42.5245143</Latitude>
+				<Altitude>8928.24</Altitude>
+			</Location>
+			<PrimaryObject ID="254234">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</PrimaryObject>
+			<Action>HasBeenHitBy</Action>
+			<SecondaryObject ID="254656">
+				<Type>Missile</Type>
+				<Name>Super 530D</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253761</Parent>
+			</SecondaryObject>
+			<ParentObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</ParentObject>
+		</Event>
+		<Event>
+			<Time>7040.90</Time>
+			<Location>
+				<Longitude>43.3304935</Longitude>
+				<Latitude>42.5244398</Latitude>
+				<Altitude>8929.13</Altitude>
+			</Location>
+			<PrimaryObject ID="254234">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#007-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#007</Group>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+			<SecondaryObject ID="253761">
+				<Type>Aircraft</Type>
+				<Name>Mirage 2000C</Name>
+				<Pilot>Dirac 1-1 | Manticore</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Dodge 2</Group>
+			</SecondaryObject>
+		</Event>
+		<Event>
+			<Time>7063.72</Time>
+			<Location>
+				<Longitude>43.4691824</Longitude>
+				<Latitude>42.366397</Latitude>
+				<Altitude>25747.05</Altitude>
+			</Location>
+			<PrimaryObject ID="254600">
+				<Type>Missile</Type>
+				<Name>Super 530D</Name>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Parent>253880</Parent>
+			</PrimaryObject>
+			<Action>HasBeenDestroyed</Action>
+		</Event>
+		<Event>
+			<Time>7120.64</Time>
+			<Location>
+				<Longitude>43.3461883</Longitude>
+				<Latitude>42.515873</Latitude>
+				<Altitude>4996.32</Altitude>
+			</Location>
+			<PrimaryObject ID="254683">
+				<Type>Parachutist</Type>
+				<Name>Parachutist</Name>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>7221.11</Time>
+			<Location>
+				<Longitude>43.6403039</Longitude>
+				<Latitude>43.5112286</Latitude>
+				<Altitude>432.33</Altitude>
+			</Location>
+			<PrimaryObject ID="254685">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#010-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#010</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>7221.11</Time>
+			<Location>
+				<Longitude>43.6409705</Longitude>
+				<Latitude>43.5114492</Latitude>
+				<Altitude>432.33</Altitude>
+			</Location>
+			<PrimaryObject ID="254684">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#010-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#010</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>7441.76</Time>
+			<Location>
+				<Longitude>43.6294247</Longitude>
+				<Latitude>43.5113995</Latitude>
+				<Altitude>432.34</Altitude>
+			</Location>
+			<PrimaryObject ID="254684">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#010-01</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#010</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>7449.88</Time>
+			<Location>
+				<Longitude>45.038835</Longitude>
+				<Latitude>41.6213447</Latitude>
+				<Altitude>466.38</Altitude>
+			</Location>
+			<PrimaryObject ID="254686">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>Overloard | buur</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasEnteredTheArea</Action>
+		</Event>
+		<Event>
+			<Time>7464.04</Time>
+			<Location>
+				<Longitude>43.6295088</Longitude>
+				<Latitude>43.5114294</Latitude>
+				<Altitude>432.35</Altitude>
+			</Location>
+			<PrimaryObject ID="254685">
+				<Type>Aircraft</Type>
+				<Name>Su-27 Flanker</Name>
+				<Pilot>Red-SU27#010-02</Pilot>
+				<Coalition>Allies</Coalition>
+				<Country>ru</Country>
+				<Group>Red-SU27#010</Group>
+			</PrimaryObject>
+			<Action>HasTakenOff</Action>
+		</Event>
+		<Event>
+			<Time>7495.80</Time>
+			<Location>
+				<Longitude>45.0388351</Longitude>
+				<Latitude>41.6213446</Latitude>
+				<Altitude>466.3</Altitude>
+			</Location>
+			<PrimaryObject ID="254686">
+				<Type>Aircraft</Type>
+				<Name>AV-8B Harrier II NA</Name>
+				<Pilot>Overloard | buur</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Enfield 2</Group>
+			</PrimaryObject>
+			<Action>HasLeftTheArea</Action>
+		</Event>
+		<Event>
+			<Time>7496.60</Time>
+			<Location>
+				<Longitude>44.9626924</Longitude>
+				<Latitude>41.6619004</Latitude>
+				<Altitude>481.53</Altitude>
+			</Location>
+			<PrimaryObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasLanded</Action>
+		</Event>
+		<Event>
+			<Time>7570.98</Time>
+			<Location>
+				<Longitude>44.9660437</Longitude>
+				<Latitude>41.659698</Latitude>
+				<Altitude>481.53</Altitude>
+			</Location>
+			<PrimaryObject ID="254151">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasLanded</Action>
+		</Event>
+		<Event>
+			<Time>7576.44</Time>
+			<Location>
+				<Longitude>44.9552322</Longitude>
+				<Latitude>41.6677152</Latitude>
+				<Altitude>481.53</Altitude>
+			</Location>
+			<PrimaryObject ID="253953">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasLanded</Action>
+		</Event>
+		<Event>
+			<Time>7708.00</Time>
+			<Location>
+				<Longitude>44.9642315</Longitude>
+				<Latitude>41.6676245</Latitude>
+				<Altitude>481.53</Altitude>
+			</Location>
+			<PrimaryObject ID="253759">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-1 | Schneeflock</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasLeftTheArea</Action>
+		</Event>
+		<Event>
+			<Time>7738.88</Time>
+			<Location>
+				<Longitude>44.9645534</Longitude>
+				<Latitude>41.667663</Latitude>
+				<Altitude>481.54</Altitude>
+			</Location>
+			<PrimaryObject ID="254151">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-2 | Zyklon641</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasLeftTheArea</Action>
+		</Event>
+		<Event>
+			<Time>7786.18</Time>
+			<Location>
+				<Longitude>44.9653206</Longitude>
+				<Latitude>41.6674284</Latitude>
+				<Altitude>481.53</Altitude>
+			</Location>
+			<PrimaryObject ID="253953">
+				<Type>Aircraft</Type>
+				<Name>F-16C Fighting Falcon</Name>
+				<Pilot>Viper 1-3 | Burner2k3</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 2</Group>
+			</PrimaryObject>
+			<Action>HasLeftTheArea</Action>
+		</Event>
+		<Event>
+			<Time>7907.25</Time>
+			<Location>
+				<Longitude>44.9608518</Longitude>
+				<Latitude>41.6722096</Latitude>
+				<Altitude>481.51</Altitude>
+			</Location>
+			<PrimaryObject ID="253757">
+				<Type>Aircraft</Type>
+				<Name>F/A-18C Hornet</Name>
+				<Pilot>[Eagle 09] Dragon</Pilot>
+				<Coalition>Enemies</Coalition>
+				<Country>us</Country>
+				<Group>Colt 3</Group>
+			</PrimaryObject>
+			<Action>HasLeftTheArea</Action>
+		</Event>
+	</Events>
+</TacviewDebriefing>

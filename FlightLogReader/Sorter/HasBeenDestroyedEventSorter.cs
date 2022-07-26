@@ -22,8 +22,13 @@ namespace FlightLogReader.Sorter
             ksSM.RedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => x.PrimaryType.ToLower() == "tank")));
             ksSM.RedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa")));
             ksSM.RedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => x.PrimaryType.ToLower() == "ship")));
-            ksSM.RedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => x.PrimaryType.ToLower() != "ship" 
-                && x.PrimaryType.ToLower() != "sam/aaa" && x.PrimaryType.ToLower() != "tank" && x.PrimaryType.ToLower() != "helicopter" && x.PrimaryType.ToLower() != "aircraft")));
+            ksSM.RedStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => 
+            x.PrimaryType.ToLower() != "ship" && 
+            x.PrimaryType.ToLower() != "sam/aaa" && 
+            x.PrimaryType.ToLower() != "tank" && 
+            x.PrimaryType.ToLower() != "helicopter" && 
+            x.PrimaryType.ToLower() != "aircraft" &&
+            x.PrimaryType.ToLower() != "missile")));
 
             //***************
             ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => x.PrimaryType.ToLower() == "aircraft")));
@@ -31,8 +36,13 @@ namespace FlightLogReader.Sorter
             ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => x.PrimaryType.ToLower() == "tank")));
             ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa")));
             ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => x.PrimaryType.ToLower() == "ship")));
-            ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => x.PrimaryType.ToLower() != "ship"
-                && x.PrimaryType.ToLower() != "sam/aaa" && x.PrimaryType.ToLower() != "tank" && x.PrimaryType.ToLower() != "helicopter" && x.PrimaryType.ToLower() != "aircraft")));
+            ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => 
+            x.PrimaryType.ToLower() != "ship" &&
+            x.PrimaryType.ToLower() != "sam/aaa" &&
+            x.PrimaryType.ToLower() != "tank" &&
+            x.PrimaryType.ToLower() != "helicopter" &&
+            x.PrimaryType.ToLower() != "aircraft" &&
+            x.PrimaryType.ToLower() != "missile")));
 
             return ksSM;
         }

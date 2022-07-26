@@ -10,12 +10,14 @@
 
   <ItemGroup>
     <None Remove="FlightLog.xml" />
+    <None Remove="Medusa-12-Log.xml" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="FlightLog.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Medusa-12-Log.xml" />
   </ItemGroup>
 
   <ItemGroup>

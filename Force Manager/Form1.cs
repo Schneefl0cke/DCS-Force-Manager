@@ -96,6 +96,8 @@ namespace Force_Manager
             var killedOther = killStatisticSingleMission.BlueStatistic.FirstOrDefault(x => x.Count > 0
             && x[0].Type.ToLower() != "aircraft"
             && x[0].Type.ToLower() != "helicopter"
+            && x[0].Type.ToLower() != "sam/aaa"
+            && x[0].Type.ToLower() != "missile"
             && x[0].Type.ToLower() != "tank"
             && x[0].Type.ToLower() != "ship");
             if (killedOther != null)
@@ -144,8 +146,10 @@ namespace Force_Manager
 
             var killedOther = killStatisticSingleMission.RedStatistic.FirstOrDefault(x => x.Count > 0
             && x[0].Type.ToLower() != "aircraft"
+            && x[0].Type.ToLower() != "sam/aaa"
             && x[0].Type.ToLower() != "helicopter"
             && x[0].Type.ToLower() != "tank"
+            && x[0].Type.ToLower() != "missile"
             && x[0].Type.ToLower() != "ship");
             if (killedOther != null)
             {

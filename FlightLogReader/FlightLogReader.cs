@@ -38,6 +38,7 @@ namespace FlightLogReader
 
         private static HasBeenDestroyedEvent ReadHaseBeenDestroyedEvent(XmlNode node)
         {
+            //TODO: Some units don't have a coalition! Put them in a cache, and sort them out after the rest was sorted.
             /*
             Idee: SAM die geschossen haben über Location aufklären :) 
             <Event>
