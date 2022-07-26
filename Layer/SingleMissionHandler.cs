@@ -22,7 +22,7 @@ namespace Layer
             return statistic;
         }
 
-        public static void ExportStatisticAsXML(string path, KillStatisticSingleMission statistic)
+        public static void ExportSingleMissionStatisticAsXML(string path, KillStatisticSingleMission statistic)
         {
             if (statistic != null)
             {
