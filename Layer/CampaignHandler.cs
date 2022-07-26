@@ -12,6 +12,8 @@ namespace Layer
 
         //SaveCampaign
 
-        //Add new Campaign Mission
+        //Analyze Campaign Mission (like single mission)
+
+        //Analyze all Campaigns (concat all lists, then like single mission), increase counter
     }
 }
