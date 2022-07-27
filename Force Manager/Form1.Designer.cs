@@ -47,6 +47,7 @@
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.listBox_ship_blue = new System.Windows.Forms.ListBox();
             this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.listBox_other_blue = new System.Windows.Forms.ListBox();
             this.tabControl_sm_blueSide = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.listBox_aircraft_red = new System.Windows.Forms.ListBox();
@@ -59,10 +60,9 @@
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.listBox_ship_red = new System.Windows.Forms.ListBox();
             this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.listBox_other_red = new System.Windows.Forms.ListBox();
             this.button_exportSingleMission = new System.Windows.Forms.Button();
             this.button_loadSingleMission = new System.Windows.Forms.Button();
-            this.listBox_other_blue = new System.Windows.Forms.ListBox();
-            this.listBox_other_red = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -86,10 +86,10 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(334, 12);
+            this.tabControl1.Location = new System.Drawing.Point(295, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(912, 641);
+            this.tabControl1.Size = new System.Drawing.Size(1136, 641);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -124,7 +124,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(904, 613);
+            this.tabPage2.Size = new System.Drawing.Size(1128, 613);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Single Mission";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -143,7 +143,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(522, 9);
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(609, 8);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 21);
             this.label3.TabIndex = 5;
@@ -153,7 +154,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(160, 8);
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(154, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 21);
             this.label2.TabIndex = 4;
@@ -167,10 +169,10 @@
             this.tabControl_sm_redSide.Controls.Add(this.tabPage12);
             this.tabControl_sm_redSide.Controls.Add(this.tabPage13);
             this.tabControl_sm_redSide.Controls.Add(this.tabPage14);
-            this.tabControl_sm_redSide.Location = new System.Drawing.Point(522, 31);
+            this.tabControl_sm_redSide.Location = new System.Drawing.Point(609, 31);
             this.tabControl_sm_redSide.Name = "tabControl_sm_redSide";
             this.tabControl_sm_redSide.SelectedIndex = 0;
-            this.tabControl_sm_redSide.Size = new System.Drawing.Size(379, 572);
+            this.tabControl_sm_redSide.Size = new System.Drawing.Size(479, 572);
             this.tabControl_sm_redSide.TabIndex = 3;
             // 
             // tabPage5
@@ -179,7 +181,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 24);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(371, 544);
+            this.tabPage5.Size = new System.Drawing.Size(471, 544);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Aircraft";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -187,10 +189,11 @@
             // listBox_aircraft_blue
             // 
             this.listBox_aircraft_blue.FormattingEnabled = true;
+            this.listBox_aircraft_blue.HorizontalScrollbar = true;
             this.listBox_aircraft_blue.ItemHeight = 15;
             this.listBox_aircraft_blue.Location = new System.Drawing.Point(3, 6);
             this.listBox_aircraft_blue.Name = "listBox_aircraft_blue";
-            this.listBox_aircraft_blue.Size = new System.Drawing.Size(365, 529);
+            this.listBox_aircraft_blue.Size = new System.Drawing.Size(462, 529);
             this.listBox_aircraft_blue.TabIndex = 0;
             // 
             // tabPage6
@@ -199,7 +202,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 24);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(371, 544);
+            this.tabPage6.Size = new System.Drawing.Size(471, 544);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Helicopter";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -207,10 +210,11 @@
             // listBox_helicopter_blue
             // 
             this.listBox_helicopter_blue.FormattingEnabled = true;
+            this.listBox_helicopter_blue.HorizontalScrollbar = true;
             this.listBox_helicopter_blue.ItemHeight = 15;
             this.listBox_helicopter_blue.Location = new System.Drawing.Point(3, 4);
             this.listBox_helicopter_blue.Name = "listBox_helicopter_blue";
-            this.listBox_helicopter_blue.Size = new System.Drawing.Size(362, 529);
+            this.listBox_helicopter_blue.Size = new System.Drawing.Size(462, 529);
             this.listBox_helicopter_blue.TabIndex = 0;
             // 
             // tabPage11
@@ -218,7 +222,7 @@
             this.tabPage11.Controls.Add(this.listBox_sam_blue);
             this.tabPage11.Location = new System.Drawing.Point(4, 24);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(371, 544);
+            this.tabPage11.Size = new System.Drawing.Size(471, 544);
             this.tabPage11.TabIndex = 2;
             this.tabPage11.Text = "AAA/SAM";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -226,10 +230,11 @@
             // listBox_sam_blue
             // 
             this.listBox_sam_blue.FormattingEnabled = true;
+            this.listBox_sam_blue.HorizontalScrollbar = true;
             this.listBox_sam_blue.ItemHeight = 15;
             this.listBox_sam_blue.Location = new System.Drawing.Point(0, 2);
             this.listBox_sam_blue.Name = "listBox_sam_blue";
-            this.listBox_sam_blue.Size = new System.Drawing.Size(374, 529);
+            this.listBox_sam_blue.Size = new System.Drawing.Size(468, 529);
             this.listBox_sam_blue.TabIndex = 0;
             // 
             // tabPage12
@@ -237,7 +242,7 @@
             this.tabPage12.Controls.Add(this.listBox_tank_blue);
             this.tabPage12.Location = new System.Drawing.Point(4, 24);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(371, 544);
+            this.tabPage12.Size = new System.Drawing.Size(471, 544);
             this.tabPage12.TabIndex = 3;
             this.tabPage12.Text = "Armored";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -245,10 +250,11 @@
             // listBox_tank_blue
             // 
             this.listBox_tank_blue.FormattingEnabled = true;
+            this.listBox_tank_blue.HorizontalScrollbar = true;
             this.listBox_tank_blue.ItemHeight = 15;
             this.listBox_tank_blue.Location = new System.Drawing.Point(7, 7);
             this.listBox_tank_blue.Name = "listBox_tank_blue";
-            this.listBox_tank_blue.Size = new System.Drawing.Size(368, 529);
+            this.listBox_tank_blue.Size = new System.Drawing.Size(461, 529);
             this.listBox_tank_blue.TabIndex = 0;
             // 
             // tabPage13
@@ -256,7 +262,7 @@
             this.tabPage13.Controls.Add(this.listBox_ship_blue);
             this.tabPage13.Location = new System.Drawing.Point(4, 24);
             this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Size = new System.Drawing.Size(371, 544);
+            this.tabPage13.Size = new System.Drawing.Size(471, 544);
             this.tabPage13.TabIndex = 4;
             this.tabPage13.Text = "Ship";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -264,10 +270,11 @@
             // listBox_ship_blue
             // 
             this.listBox_ship_blue.FormattingEnabled = true;
+            this.listBox_ship_blue.HorizontalScrollbar = true;
             this.listBox_ship_blue.ItemHeight = 15;
             this.listBox_ship_blue.Location = new System.Drawing.Point(5, 4);
             this.listBox_ship_blue.Name = "listBox_ship_blue";
-            this.listBox_ship_blue.Size = new System.Drawing.Size(362, 529);
+            this.listBox_ship_blue.Size = new System.Drawing.Size(463, 529);
             this.listBox_ship_blue.TabIndex = 0;
             // 
             // tabPage14
@@ -275,10 +282,20 @@
             this.tabPage14.Controls.Add(this.listBox_other_blue);
             this.tabPage14.Location = new System.Drawing.Point(4, 24);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Size = new System.Drawing.Size(371, 544);
+            this.tabPage14.Size = new System.Drawing.Size(471, 544);
             this.tabPage14.TabIndex = 5;
             this.tabPage14.Text = "Other";
             this.tabPage14.UseVisualStyleBackColor = true;
+            // 
+            // listBox_other_blue
+            // 
+            this.listBox_other_blue.FormattingEnabled = true;
+            this.listBox_other_blue.HorizontalScrollbar = true;
+            this.listBox_other_blue.ItemHeight = 15;
+            this.listBox_other_blue.Location = new System.Drawing.Point(3, 6);
+            this.listBox_other_blue.Name = "listBox_other_blue";
+            this.listBox_other_blue.Size = new System.Drawing.Size(465, 529);
+            this.listBox_other_blue.TabIndex = 0;
             // 
             // tabControl_sm_blueSide
             // 
@@ -291,7 +308,7 @@
             this.tabControl_sm_blueSide.Location = new System.Drawing.Point(150, 31);
             this.tabControl_sm_blueSide.Name = "tabControl_sm_blueSide";
             this.tabControl_sm_blueSide.SelectedIndex = 0;
-            this.tabControl_sm_blueSide.Size = new System.Drawing.Size(354, 582);
+            this.tabControl_sm_blueSide.Size = new System.Drawing.Size(453, 582);
             this.tabControl_sm_blueSide.TabIndex = 2;
             // 
             // tabPage3
@@ -300,7 +317,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(346, 554);
+            this.tabPage3.Size = new System.Drawing.Size(445, 554);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Aircraft";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -308,10 +325,11 @@
             // listBox_aircraft_red
             // 
             this.listBox_aircraft_red.FormattingEnabled = true;
+            this.listBox_aircraft_red.HorizontalScrollbar = true;
             this.listBox_aircraft_red.ItemHeight = 15;
             this.listBox_aircraft_red.Location = new System.Drawing.Point(8, 6);
             this.listBox_aircraft_red.Name = "listBox_aircraft_red";
-            this.listBox_aircraft_red.Size = new System.Drawing.Size(332, 544);
+            this.listBox_aircraft_red.Size = new System.Drawing.Size(431, 544);
             this.listBox_aircraft_red.TabIndex = 0;
             // 
             // tabPage4
@@ -320,7 +338,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(346, 554);
+            this.tabPage4.Size = new System.Drawing.Size(445, 554);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Helicopter";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -328,10 +346,11 @@
             // listBox_helicopter_red
             // 
             this.listBox_helicopter_red.FormattingEnabled = true;
+            this.listBox_helicopter_red.HorizontalScrollbar = true;
             this.listBox_helicopter_red.ItemHeight = 15;
             this.listBox_helicopter_red.Location = new System.Drawing.Point(5, 8);
             this.listBox_helicopter_red.Name = "listBox_helicopter_red";
-            this.listBox_helicopter_red.Size = new System.Drawing.Size(335, 529);
+            this.listBox_helicopter_red.Size = new System.Drawing.Size(437, 529);
             this.listBox_helicopter_red.TabIndex = 0;
             // 
             // tabPage7
@@ -339,7 +358,7 @@
             this.tabPage7.Controls.Add(this.listBox_sam_red);
             this.tabPage7.Location = new System.Drawing.Point(4, 24);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(346, 554);
+            this.tabPage7.Size = new System.Drawing.Size(445, 554);
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "AAA/SAM";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -347,10 +366,11 @@
             // listBox_sam_red
             // 
             this.listBox_sam_red.FormattingEnabled = true;
+            this.listBox_sam_red.HorizontalScrollbar = true;
             this.listBox_sam_red.ItemHeight = 15;
             this.listBox_sam_red.Location = new System.Drawing.Point(3, 5);
             this.listBox_sam_red.Name = "listBox_sam_red";
-            this.listBox_sam_red.Size = new System.Drawing.Size(340, 544);
+            this.listBox_sam_red.Size = new System.Drawing.Size(439, 544);
             this.listBox_sam_red.TabIndex = 0;
             // 
             // tabPage8
@@ -358,7 +378,7 @@
             this.tabPage8.Controls.Add(this.listBox_tank_red);
             this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(346, 554);
+            this.tabPage8.Size = new System.Drawing.Size(445, 554);
             this.tabPage8.TabIndex = 3;
             this.tabPage8.Text = "Armored";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -366,10 +386,11 @@
             // listBox_tank_red
             // 
             this.listBox_tank_red.FormattingEnabled = true;
+            this.listBox_tank_red.HorizontalScrollbar = true;
             this.listBox_tank_red.ItemHeight = 15;
             this.listBox_tank_red.Location = new System.Drawing.Point(8, 9);
             this.listBox_tank_red.Name = "listBox_tank_red";
-            this.listBox_tank_red.Size = new System.Drawing.Size(334, 529);
+            this.listBox_tank_red.Size = new System.Drawing.Size(434, 529);
             this.listBox_tank_red.TabIndex = 0;
             // 
             // tabPage9
@@ -377,7 +398,7 @@
             this.tabPage9.Controls.Add(this.listBox_ship_red);
             this.tabPage9.Location = new System.Drawing.Point(4, 24);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(346, 554);
+            this.tabPage9.Size = new System.Drawing.Size(445, 554);
             this.tabPage9.TabIndex = 4;
             this.tabPage9.Text = "Ship";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -385,10 +406,11 @@
             // listBox_ship_red
             // 
             this.listBox_ship_red.FormattingEnabled = true;
+            this.listBox_ship_red.HorizontalScrollbar = true;
             this.listBox_ship_red.ItemHeight = 15;
             this.listBox_ship_red.Location = new System.Drawing.Point(10, 9);
             this.listBox_ship_red.Name = "listBox_ship_red";
-            this.listBox_ship_red.Size = new System.Drawing.Size(333, 529);
+            this.listBox_ship_red.Size = new System.Drawing.Size(432, 529);
             this.listBox_ship_red.TabIndex = 0;
             // 
             // tabPage10
@@ -396,10 +418,20 @@
             this.tabPage10.Controls.Add(this.listBox_other_red);
             this.tabPage10.Location = new System.Drawing.Point(4, 24);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(346, 554);
+            this.tabPage10.Size = new System.Drawing.Size(445, 554);
             this.tabPage10.TabIndex = 5;
             this.tabPage10.Text = "Other";
             this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // listBox_other_red
+            // 
+            this.listBox_other_red.FormattingEnabled = true;
+            this.listBox_other_red.HorizontalScrollbar = true;
+            this.listBox_other_red.ItemHeight = 15;
+            this.listBox_other_red.Location = new System.Drawing.Point(11, 7);
+            this.listBox_other_red.Name = "listBox_other_red";
+            this.listBox_other_red.Size = new System.Drawing.Size(421, 529);
+            this.listBox_other_red.TabIndex = 0;
             // 
             // button_exportSingleMission
             // 
@@ -421,29 +453,11 @@
             this.button_loadSingleMission.UseVisualStyleBackColor = true;
             this.button_loadSingleMission.Click += new System.EventHandler(this.button_loadSingleMission_Click);
             // 
-            // listBox_other_blue
-            // 
-            this.listBox_other_blue.FormattingEnabled = true;
-            this.listBox_other_blue.ItemHeight = 15;
-            this.listBox_other_blue.Location = new System.Drawing.Point(3, 6);
-            this.listBox_other_blue.Name = "listBox_other_blue";
-            this.listBox_other_blue.Size = new System.Drawing.Size(365, 529);
-            this.listBox_other_blue.TabIndex = 0;
-            // 
-            // listBox_other_red
-            // 
-            this.listBox_other_red.FormattingEnabled = true;
-            this.listBox_other_red.ItemHeight = 15;
-            this.listBox_other_red.Location = new System.Drawing.Point(11, 7);
-            this.listBox_other_red.Name = "listBox_other_red";
-            this.listBox_other_red.Size = new System.Drawing.Size(330, 529);
-            this.listBox_other_red.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1258, 665);
+            this.ClientSize = new System.Drawing.Size(1443, 665);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";

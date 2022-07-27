@@ -57,25 +57,36 @@ namespace FlightLogReader.Sorter
                 var entry = killStatistics.FirstOrDefault(x => x.UnitTypeName == unit.PrimaryUnitTypeName);
                 if (entry == null)
                 {
+                    var killStatistic = new KillStatistic_ByUnitType();
+                    if (unit.PlayerKill)
+                        killStatistic.PlayerKills++;
+
+                    if (unit.PlayerDeath)
+                        killStatistic.PlayerDeaths++;
+
                     if (unit.SecondaryPilot == string.Empty)
                     {
-                        killStatistics.Add(new KillStatistic_ByUnitType() { Destroyed = 1, Coalition = unit.PrimaryCoalition, /*Country = unit.PrimaryCountry,*/ Type = unit.PrimaryType, UnitTypeName = unit.PrimaryUnitTypeName });
+                        killStatistic.Destroyed = 1; killStatistic.Coalition = unit.PrimaryCoalition; killStatistic.Type = unit.PrimaryType; killStatistic.Type = unit.PrimaryType; killStatistic.UnitTypeName = unit.PrimaryUnitTypeName;
+                        killStatistics.Add(killStatistic);
                     }
                     else
                     {
-                        killStatistics.Add(new KillStatistic_ByUnitType() { Killed = 1, Coalition = unit.PrimaryCoalition, /*Country = unit.PrimaryCountry,*/ Type = unit.PrimaryType, UnitTypeName = unit.PrimaryUnitTypeName });
+                        killStatistic.Killed = 1; killStatistic.Coalition = unit.PrimaryCoalition; killStatistic.Type = unit.PrimaryType; killStatistic.Type = unit.PrimaryType; killStatistic.UnitTypeName = unit.PrimaryUnitTypeName;
+                        killStatistics.Add(killStatistic);
                     }
                 }
                 else
                 {
+                    if (unit.PlayerKill)
+                        entry.PlayerKills++;
+
+                    if (unit.PlayerDeath)
+                        entry.PlayerDeaths++;
+
                     if (unit.SecondaryPilot == string.Empty)
-                    {
                         entry.Destroyed++;
-                    }
                     else
-                    {
                         entry.Killed++;
-                    }
                 }
             }
 

@@ -194,7 +194,7 @@ namespace Force_Manager
             {
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-                saveFileDialog.Filter = "xml files (*.xml)|*.xml|All Files (*.*)|*.*";
+                saveFileDialog.Filter = "xlsx files (*.xlsx)|*.xlsx|All Files (*.*)|*.*";
                 saveFileDialog.FilterIndex = 1;
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)

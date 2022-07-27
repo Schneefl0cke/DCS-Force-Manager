@@ -50,16 +50,27 @@ namespace CXmlWriter
                 worksheet.Cell("C" + position).Style.Font.Bold = true;
                 worksheet.Cell("D" + position).Value = "Total";
                 worksheet.Cell("D" + position).Style.Font.Bold = true;
+                worksheet.Cell("E" + position).Value = "Dead Players";
+                worksheet.Cell("E" + position).Style.Font.Bold = true;
+                worksheet.Cell("F" + position).Value = "Killed by Players";
+                worksheet.Cell("F" + position).Style.Font.Bold = true;
                 position++;
 
                 var totalLosses = 0;
+                var totalPlayerKills = 0;
+                var totalPlayerDeaths = 0;
+
                 foreach (var killStatistic in statistic)
                 {
                     worksheet.Cell("A" + position).Value = killStatistic.UnitTypeName;
                     worksheet.Cell("B" + position).Value = killStatistic.Killed;
                     worksheet.Cell("C" + position).Value = killStatistic.Destroyed;
                     worksheet.Cell("D" + position).Value = killStatistic.Killed + killStatistic.Destroyed;
+                    worksheet.Cell("E" + position).Value = killStatistic.PlayerDeaths;
+                    worksheet.Cell("F" + position).Value = killStatistic.PlayerKills;
                     totalLosses += killStatistic.Killed + killStatistic.Destroyed;
+                    totalPlayerDeaths += killStatistic.PlayerDeaths;
+                    totalPlayerKills += killStatistic.PlayerKills;
                     position++;
                 }
 
@@ -68,7 +79,13 @@ namespace CXmlWriter
                 worksheet.Cell("D" + position).Value = totalLosses;
                 worksheet.Cell("D" + position).Style.Font.Bold = true;
 
-                position+= 2;
+                worksheet.Cell("E" + position).Value = totalPlayerDeaths;
+                worksheet.Cell("E" + position).Style.Font.Bold = true;
+
+                worksheet.Cell("F" + position).Value = totalPlayerKills;
+                worksheet.Cell("F" + position).Style.Font.Bold = true;
+
+                position += 2;
             }
         }
     }

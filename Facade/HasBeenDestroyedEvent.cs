@@ -14,6 +14,7 @@ namespace Facade
         public string PrimaryCoalition { get; set; } = "";
         public string PrimaryCountry { get; set; } = "";
         public string PrimaryGroup { get; set; } = "";
+        public bool PlayerDeath { get; set; } = false;
 
         public string SecondaryType { get; set; } = "";
         public string SecondaryUnitTypeName { get; set; } = "";
@@ -21,5 +22,6 @@ namespace Facade
         public string SecondaryCoalition { get; set; } = "";
         public string SecondaryCountry { get; set; } = "";
         public string SecondaryGroup { get; set; } = "";
+        public bool PlayerKill { get; set; } = false;
     }
 }

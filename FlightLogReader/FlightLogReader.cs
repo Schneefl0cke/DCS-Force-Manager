@@ -100,7 +100,11 @@ namespace FlightLogReader
                         if (primaryNode.Name == "Name")
                             hbdEvent.PrimaryUnitTypeName = primaryNode.InnerText;
                         if (primaryNode.Name == "Pilot")
+                        {
                             hbdEvent.PrimaryPilot = primaryNode.InnerText;
+                            hbdEvent.PlayerDeath = PilotWasPlayer(hbdEvent.PrimaryPilot);
+                        }
+                            
                         if (primaryNode.Name == "Coalition")
                             hbdEvent.PrimaryCoalition = primaryNode.InnerText;
                         if (primaryNode.Name == "Country")
@@ -118,7 +122,11 @@ namespace FlightLogReader
                         if (secondary.Name == "Name")
                             hbdEvent.SecondaryUnitTypeName = secondary.InnerText;
                         if (secondary.Name == "Pilot")
+                        {
                             hbdEvent.SecondaryPilot = secondary.InnerText;
+                            hbdEvent.PlayerKill = PilotWasPlayer(hbdEvent.SecondaryPilot);
+                        }
+                            
                         if (secondary.Name == "Coalition")
                             hbdEvent.SecondaryCoalition = secondary.InnerText;
                         if (secondary.Name == "Country")
@@ -130,6 +138,20 @@ namespace FlightLogReader
             }
 
             return hbdEvent;
+        }
+
+        private static bool PilotWasPlayer(string pilotName)
+        {
+            // Viper 1-1 | Schneeflocke -> Pilot, Unit123#123 -> AI
+            var splitted = pilotName.Split('|');
+            if (splitted.Count() == 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
