@@ -13,7 +13,7 @@ namespace FlightLogReader.Sorter
         {
             var ksSM = new KillStatisticSingleMission();
 
-            //Infantry has no coalition!
+            //Missile -> HasBeenfired
             ksSM.DestroyedRed = hbdEvents.FindAll(x => x.PrimaryCoalition == "Allies");
             ksSM.DestroyedBlue = hbdEvents.FindAll(x => x.PrimaryCoalition == "Enemies");
 
