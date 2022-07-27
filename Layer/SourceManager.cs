@@ -12,12 +12,18 @@ namespace Layer
 
         public static void SavePlayerList(string path)
         {
-            path = Path.Combine(path, ".txt");
+            path = Path.Combine(path);
             var playerNames = "";
             foreach (var player in PlayerNames)
                 playerNames += player + ';';
 
-            File.WriteAllText(path, playerNames);
+            using (StreamWriter output = new StreamWriter(path))
+            {
+                foreach (var player in PlayerNames)
+                {
+                    output.WriteLine(player + ';');
+                }
+            }
         }
 
         public static void LoadPlayerFile(string path)

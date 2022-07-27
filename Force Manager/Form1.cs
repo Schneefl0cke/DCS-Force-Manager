@@ -8,17 +8,34 @@ namespace Force_Manager
         private KillStatisticSingleMission killStatisticSingleMission;
         private string path_singleMission;
         private List<string> playerList;
+        private const string folderName = "ForceManager";
+        private const string playerFile = "Players.txt";
+        private string playerFilePath;
 
         public Form1()
         {
             InitializeComponent();
+            LoadPlayerList();
         }
 
-        //TODO: Load and Save playerlist when starting and exiting solution
+        private void LoadPlayerList()
+        {
+            var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            if (!Directory.Exists(Path.Combine(appDataPath, folderName)))
+                Directory.CreateDirectory(Path.Combine(appDataPath, folderName));
 
+            playerFilePath = Path.Combine(appDataPath, folderName, playerFile);
+            if (File.Exists(playerFilePath))
+            {
+                SourceManager.LoadPlayerFile(playerFilePath);
+            }
+            
+        }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            SourceManager.SavePlayerList(playerFilePath);
+
             if (MessageBox.Show("Do you really want to exit?", "Force Manager", MessageBoxButtons.YesNo) == DialogResult.No)
             {
                 e.Cancel = true;
