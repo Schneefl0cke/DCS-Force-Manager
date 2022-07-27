@@ -250,5 +250,12 @@ namespace Force_Manager
                 ShowPlayers();
             }
         }
+
+        private void button_removeSelectedPlayer_Click(object sender, EventArgs e)
+        {
+            var selectedPlayer = (string) listBox_players.SelectedItem;
+            SourceManager.PlayerNames.Remove(selectedPlayer);
+            ShowPlayers();
+        }
     }
 }

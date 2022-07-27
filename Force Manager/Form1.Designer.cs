@@ -65,9 +65,10 @@
             this.button_loadSingleMission = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.button_addPlayer = new System.Windows.Forms.Button();
             this.listBox_players = new System.Windows.Forms.ListBox();
             this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.button_addPlayer = new System.Windows.Forms.Button();
+            this.button_removeSelectedPlayer = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -507,6 +508,7 @@
             // 
             // tabPage15
             // 
+            this.tabPage15.Controls.Add(this.button_removeSelectedPlayer);
             this.tabPage15.Controls.Add(this.button_addPlayer);
             this.tabPage15.Controls.Add(this.listBox_players);
             this.tabPage15.Location = new System.Drawing.Point(4, 34);
@@ -516,6 +518,16 @@
             this.tabPage15.TabIndex = 0;
             this.tabPage15.Text = "Players";
             this.tabPage15.UseVisualStyleBackColor = true;
+            // 
+            // button_addPlayer
+            // 
+            this.button_addPlayer.Location = new System.Drawing.Point(9, 1070);
+            this.button_addPlayer.Name = "button_addPlayer";
+            this.button_addPlayer.Size = new System.Drawing.Size(112, 34);
+            this.button_addPlayer.TabIndex = 1;
+            this.button_addPlayer.Text = "Add";
+            this.button_addPlayer.UseVisualStyleBackColor = true;
+            this.button_addPlayer.Click += new System.EventHandler(this.button_addPlayer_Click);
             // 
             // listBox_players
             // 
@@ -536,15 +548,15 @@
             this.tabPage16.Text = "Squadrons";
             this.tabPage16.UseVisualStyleBackColor = true;
             // 
-            // button_addPlayer
+            // button_removeSelectedPlayer
             // 
-            this.button_addPlayer.Location = new System.Drawing.Point(9, 1070);
-            this.button_addPlayer.Name = "button_addPlayer";
-            this.button_addPlayer.Size = new System.Drawing.Size(112, 34);
-            this.button_addPlayer.TabIndex = 1;
-            this.button_addPlayer.Text = "Add";
-            this.button_addPlayer.UseVisualStyleBackColor = true;
-            this.button_addPlayer.Click += new System.EventHandler(this.button_addPlayer_Click);
+            this.button_removeSelectedPlayer.Location = new System.Drawing.Point(127, 1070);
+            this.button_removeSelectedPlayer.Name = "button_removeSelectedPlayer";
+            this.button_removeSelectedPlayer.Size = new System.Drawing.Size(106, 34);
+            this.button_removeSelectedPlayer.TabIndex = 2;
+            this.button_removeSelectedPlayer.Text = "Remove";
+            this.button_removeSelectedPlayer.UseVisualStyleBackColor = true;
+            this.button_removeSelectedPlayer.Click += new System.EventHandler(this.button_removeSelectedPlayer_Click);
             // 
             // Form1
             // 
@@ -623,5 +635,6 @@
         private TabPage tabPage16;
         private ListBox listBox_players;
         private Button button_addPlayer;
+        private Button button_removeSelectedPlayer;
     }
 }
