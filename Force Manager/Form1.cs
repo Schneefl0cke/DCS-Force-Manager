@@ -7,7 +7,6 @@ namespace Force_Manager
     {
         private KillStatisticSingleMission killStatisticSingleMission;
         private string path_singleMission;
-        private List<string> playerList;
         private const string folderName = "ForceManager";
         private const string playerFile = "Players.txt";
         private string playerFilePath;
@@ -16,6 +15,14 @@ namespace Force_Manager
         {
             InitializeComponent();
             LoadPlayerList();
+            ShowPlayers();
+        }
+
+        private void ShowPlayers()
+        {
+            listBox_players.DataSource = new List<string>();
+            listBox_players.DataSource = SourceManager.PlayerNames;
+            listBox_players.Refresh();
         }
 
         private void LoadPlayerList()
@@ -29,7 +36,6 @@ namespace Force_Manager
             {
                 SourceManager.LoadPlayerFile(playerFilePath);
             }
-            
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -227,6 +233,21 @@ namespace Force_Manager
                    "User Error",
                    MessageBoxButtons.OK,
                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void button_addPlayer_Click(object sender, EventArgs e)
+        {
+            AddPlayerForm addPlayerForm = new AddPlayerForm(this);
+            addPlayerForm.Show();
+        }
+
+        public void Button_AddPlayer_Pressed(string playerName)
+        {
+            if (playerName.Trim() != null && playerName.Trim() != string.Empty)
+            {
+                SourceManager.PlayerNames.Add(playerName);
+                ShowPlayers();
             }
         }
     }

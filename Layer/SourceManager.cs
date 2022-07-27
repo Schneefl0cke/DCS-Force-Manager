@@ -13,9 +13,6 @@ namespace Layer
         public static void SavePlayerList(string path)
         {
             path = Path.Combine(path);
-            var playerNames = "";
-            foreach (var player in PlayerNames)
-                playerNames += player + ';';
 
             using (StreamWriter output = new StreamWriter(path))
             {
@@ -29,9 +26,12 @@ namespace Layer
         public static void LoadPlayerFile(string path)
         {
             var fileContent = File.ReadAllText(path);
-            var players = fileContent.Split(';');
-            foreach (var player in players)
-                PlayerNames.Add(player);
+            if (fileContent != string.Empty && fileContent.Contains(";"))
+            {
+                var players = fileContent.Split(';');
+                foreach (var player in players)
+                    PlayerNames.Add(player);
+            }
         }
     }
 }
