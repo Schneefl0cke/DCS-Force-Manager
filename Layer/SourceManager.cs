@@ -20,7 +20,6 @@ namespace Layer
             File.WriteAllText(path, playerNames);
         }
 
-        //Load
         public static void LoadPlayerFile(string path)
         {
             var fileContent = File.ReadAllText(path);

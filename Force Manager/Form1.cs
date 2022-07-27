@@ -7,6 +7,7 @@ namespace Force_Manager
     {
         private KillStatisticSingleMission killStatisticSingleMission;
         private string path_singleMission;
+        private List<string> playerList;
 
         public Form1()
         {
@@ -14,6 +15,7 @@ namespace Force_Manager
         }
 
         //TODO: Load and Save playerlist when starting and exiting solution
+
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
