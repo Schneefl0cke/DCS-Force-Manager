@@ -36,7 +36,7 @@ namespace FlightLogReader.Sorter
             ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => x.PrimaryType.ToLower() == "tank")));
             ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => x.PrimaryType.ToLower() == "sam/aaa")));
             ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => x.PrimaryType.ToLower() == "ship")));
-            ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedRed.FindAll(x => 
+            ksSM.BlueStatistic.Add(CalculateKillStatistic_ByUnitTypeName(ksSM.DestroyedBlue.FindAll(x => 
             x.PrimaryType.ToLower() != "ship" &&
             x.PrimaryType.ToLower() != "sam/aaa" &&
             x.PrimaryType.ToLower() != "tank" &&

@@ -13,6 +13,7 @@ namespace FlightLogReader
         public static List<HasBeenDestroyedEvent> ReadHasBeenDestroyedEvents(XmlDocument flightLog)
         {
             var hasBeenDestroyedEvents = new List<HasBeenDestroyedEvent>();
+            var cache = new List<HasBeenDestroyedEvent>();
 
             var events = flightLog.GetElementsByTagName("Event");
             foreach (XmlNode flightLogEvent in events)
@@ -29,11 +30,31 @@ namespace FlightLogReader
 
                 if (hasBeenDestroyedEvent)
                 {
-                    hasBeenDestroyedEvents.Add(ReadHaseBeenDestroyedEvent(flightLogEvent));
+                    var hbdEvent = ReadHaseBeenDestroyedEvent(flightLogEvent);
+                    if (hbdEvent.PrimaryCoalition == "")
+                        cache.Add(hbdEvent);
+                    else
+                        hasBeenDestroyedEvents.Add(hbdEvent);
                 }
             }
-            
+
+            hasBeenDestroyedEvents = ReadCache(hasBeenDestroyedEvents, cache);
             return hasBeenDestroyedEvents;
+        }
+
+        private static List<HasBeenDestroyedEvent> ReadCache(List<HasBeenDestroyedEvent> eventList, List<HasBeenDestroyedEvent> cache)
+        {
+            foreach (var cacheItem in cache)
+            {
+                var alliedUnit = eventList.FirstOrDefault(x => x.PrimaryCountry == cacheItem.PrimaryCountry);
+                if (alliedUnit != null)
+                {
+                    cacheItem.PrimaryCoalition = alliedUnit.PrimaryCoalition;
+                }
+                eventList.Add(cacheItem);
+            }
+
+            return eventList;
         }
 
         private static HasBeenDestroyedEvent ReadHaseBeenDestroyedEvent(XmlNode node)
@@ -67,6 +88,7 @@ namespace FlightLogReader
 			</SecondaryObject>*/
 
             var hbdEvent = new HasBeenDestroyedEvent();
+
             foreach (XmlNode innerNode in node)
             {
                 if (innerNode.Name == PrimaryObjectText)
