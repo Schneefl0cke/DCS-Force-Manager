@@ -151,7 +151,7 @@ namespace FlightLogReader
             }
             else
             {
-                var playerInList = players.FirstOrDefault(x => x.Contains(pilotName));
+                var playerInList = players.FirstOrDefault(x => x.ToLower().Contains(pilotName.ToLower()));
                 if (playerInList != null)
                     return true;
 
