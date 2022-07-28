@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Xml;
+using AssetsManager;
 using FlightLogReader;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -19,7 +20,7 @@ namespace FlightLogReaderTests
         [TestMethod()]
         public void ReadFlightLogTest_HasBeenDestroyedEvents()
         {
-            var hasBeenDestroyedEvents = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(ReadXml(), new List<string>());
+            var hasBeenDestroyedEvents = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(ReadXml(), new List<Player>());
             Assert.IsTrue(hasBeenDestroyedEvents.Count > 0);
         }
     }

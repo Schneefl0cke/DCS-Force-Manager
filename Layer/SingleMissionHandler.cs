@@ -15,7 +15,7 @@ namespace Layer
         public static KillStatisticSingleMission AnalzyeSingleMission(string path)
         {
             var xml = ReadFlightLog(path);
-            var eventsInMission = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(xml, SourceManager.PlayerNames);
+            var eventsInMission = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(xml, SourceManager.Players);
             var statistic = FlightLogReader.Sorter.HasBeenDestroyedEventSorter.Sort(eventsInMission);
             MissionStatistic = statistic;
             return statistic;

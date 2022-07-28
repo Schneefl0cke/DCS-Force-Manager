@@ -1,4 +1,5 @@
 ﻿using System.Xml;
+using AssetsManager;
 using Facade;
 
 namespace FlightLogReader
@@ -11,7 +12,7 @@ namespace FlightLogReader
         private static List<string> players = new List<string>();
 
 
-        public static List<HasBeenDestroyedEvent> ReadHasBeenDestroyedEvents(XmlDocument flightLog, List<string> players)
+        public static List<HasBeenDestroyedEvent> ReadHasBeenDestroyedEvents(XmlDocument flightLog, List<Player> players)
         {
             var hasBeenDestroyedEvents = new List<HasBeenDestroyedEvent>();
             var cache = new List<HasBeenDestroyedEvent>();

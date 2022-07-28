@@ -1,3 +1,4 @@
+using AssetsManager;
 using Facade;
 using Layer;
 
@@ -8,7 +9,7 @@ namespace Force_Manager
         private KillStatisticSingleMission killStatisticSingleMission;
         private string path_singleMission;
         private const string folderName = "ForceManager";
-        private const string playerFile = "Players.txt";
+        private const string playerFile = "Players.xml";
         private string playerFilePath;
 
         public Form1()
@@ -20,8 +21,9 @@ namespace Force_Manager
 
         private void ShowPlayers()
         {
-            listBox_players.DataSource = new List<string>();
-            listBox_players.DataSource = SourceManager.PlayerNames;
+            listBox_players.DataSource = null;
+            listBox_players.DataSource = SourceManager.Players;
+            listBox_players.DisplayMember = "Name";
             listBox_players.Refresh();
         }
 
@@ -246,15 +248,16 @@ namespace Force_Manager
         {
             if (playerName.Trim() != null && playerName.Trim() != string.Empty)
             {
-                SourceManager.PlayerNames.Add(playerName);
+                var player = new Player() { Name = playerName};
+                SourceManager.Players.Add(player);
                 ShowPlayers();
             }
         }
 
         private void button_removeSelectedPlayer_Click(object sender, EventArgs e)
         {
-            var selectedPlayer = (string) listBox_players.SelectedItem;
-            SourceManager.PlayerNames.Remove(selectedPlayer);
+            var selectedPlayer = (Player) listBox_players.SelectedItem;
+            SourceManager.Players.Remove(selectedPlayer);
             ShowPlayers();
         }
     }

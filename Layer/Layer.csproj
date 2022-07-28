@@ -10,6 +10,7 @@
     <ProjectReference Include="..\CXmlWriter\CXmlWriter.csproj" />
     <ProjectReference Include="..\Facade\Facade.csproj" />
     <ProjectReference Include="..\FlightLogReader\FlightLogReader.csproj" />
+    <ProjectReference Include="..\SquadronManager\AssetsManager.csproj" />
   </ItemGroup>
 
 </Project>
