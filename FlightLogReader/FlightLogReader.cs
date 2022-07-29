@@ -12,7 +12,7 @@ namespace FlightLogReader
         private static List<string> players = new List<string>();
 
 
-        public static List<HasBeenDestroyedEvent> ReadHasBeenDestroyedEvents(XmlDocument flightLog, List<Player> players)
+        public static List<HasBeenDestroyedEvent> ReadHasBeenDestroyedEvents(XmlDocument flightLog)
         {
             var hasBeenDestroyedEvents = new List<HasBeenDestroyedEvent>();
             var cache = new List<HasBeenDestroyedEvent>();

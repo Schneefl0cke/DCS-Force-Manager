@@ -26,7 +26,7 @@ namespace FlightLogReaderTests
         [TestMethod]
         public void Sort_Test()
         {
-            var hasBeenDestroyedEvents = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(ReadXml(), new List<Player>());
+            var hasBeenDestroyedEvents = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(ReadXml());
             var statistic = HasBeenDestroyedEventSorter.Sort(hasBeenDestroyedEvents);
 
             var d_Allies = statistic.DestroyedRed;
