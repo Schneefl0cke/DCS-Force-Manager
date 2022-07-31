@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Facade\Facade.csproj" />
+    <ProjectReference Include="..\SquadronManager\AssetsManager.csproj" />
   </ItemGroup>
 
 </Project>

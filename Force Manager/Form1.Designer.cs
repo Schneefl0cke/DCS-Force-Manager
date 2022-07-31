@@ -65,10 +65,14 @@
             this.button_loadSingleMission = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.button_newPlayerList = new System.Windows.Forms.Button();
+            this.button_savePlayers = new System.Windows.Forms.Button();
+            this.button_loadPlayers = new System.Windows.Forms.Button();
+            this.button_removeSelectedPlayer = new System.Windows.Forms.Button();
             this.button_addPlayer = new System.Windows.Forms.Button();
             this.listBox_players = new System.Windows.Forms.ListBox();
             this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.button_removeSelectedPlayer = new System.Windows.Forms.Button();
+            this.radioButton_includePlayerStatistic = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -125,6 +129,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.radioButton_includePlayerStatistic);
             this.tabPage2.Controls.Add(this.button_sm_reanalyze);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label2);
@@ -508,6 +513,9 @@
             // 
             // tabPage15
             // 
+            this.tabPage15.Controls.Add(this.button_newPlayerList);
+            this.tabPage15.Controls.Add(this.button_savePlayers);
+            this.tabPage15.Controls.Add(this.button_loadPlayers);
             this.tabPage15.Controls.Add(this.button_removeSelectedPlayer);
             this.tabPage15.Controls.Add(this.button_addPlayer);
             this.tabPage15.Controls.Add(this.listBox_players);
@@ -519,11 +527,51 @@
             this.tabPage15.Text = "Players";
             this.tabPage15.UseVisualStyleBackColor = true;
             // 
+            // button_newPlayerList
+            // 
+            this.button_newPlayerList.Location = new System.Drawing.Point(113, 1016);
+            this.button_newPlayerList.Name = "button_newPlayerList";
+            this.button_newPlayerList.Size = new System.Drawing.Size(99, 35);
+            this.button_newPlayerList.TabIndex = 5;
+            this.button_newPlayerList.Text = "New List";
+            this.button_newPlayerList.UseVisualStyleBackColor = true;
+            this.button_newPlayerList.Click += new System.EventHandler(this.button_newPlayerList_Click);
+            // 
+            // button_savePlayers
+            // 
+            this.button_savePlayers.Location = new System.Drawing.Point(268, 1058);
+            this.button_savePlayers.Name = "button_savePlayers";
+            this.button_savePlayers.Size = new System.Drawing.Size(99, 35);
+            this.button_savePlayers.TabIndex = 4;
+            this.button_savePlayers.Text = "Save";
+            this.button_savePlayers.UseVisualStyleBackColor = true;
+            this.button_savePlayers.Click += new System.EventHandler(this.button_savePlayers_Click);
+            // 
+            // button_loadPlayers
+            // 
+            this.button_loadPlayers.Location = new System.Drawing.Point(268, 1017);
+            this.button_loadPlayers.Name = "button_loadPlayers";
+            this.button_loadPlayers.Size = new System.Drawing.Size(99, 35);
+            this.button_loadPlayers.TabIndex = 3;
+            this.button_loadPlayers.Text = "Load";
+            this.button_loadPlayers.UseVisualStyleBackColor = true;
+            this.button_loadPlayers.Click += new System.EventHandler(this.button_loadPlayers_Click);
+            // 
+            // button_removeSelectedPlayer
+            // 
+            this.button_removeSelectedPlayer.Location = new System.Drawing.Point(6, 1057);
+            this.button_removeSelectedPlayer.Name = "button_removeSelectedPlayer";
+            this.button_removeSelectedPlayer.Size = new System.Drawing.Size(89, 34);
+            this.button_removeSelectedPlayer.TabIndex = 2;
+            this.button_removeSelectedPlayer.Text = "Remove";
+            this.button_removeSelectedPlayer.UseVisualStyleBackColor = true;
+            this.button_removeSelectedPlayer.Click += new System.EventHandler(this.button_removeSelectedPlayer_Click);
+            // 
             // button_addPlayer
             // 
-            this.button_addPlayer.Location = new System.Drawing.Point(9, 1070);
+            this.button_addPlayer.Location = new System.Drawing.Point(6, 1017);
             this.button_addPlayer.Name = "button_addPlayer";
-            this.button_addPlayer.Size = new System.Drawing.Size(112, 34);
+            this.button_addPlayer.Size = new System.Drawing.Size(89, 34);
             this.button_addPlayer.TabIndex = 1;
             this.button_addPlayer.Text = "Add";
             this.button_addPlayer.UseVisualStyleBackColor = true;
@@ -535,7 +583,7 @@
             this.listBox_players.ItemHeight = 25;
             this.listBox_players.Location = new System.Drawing.Point(5, 7);
             this.listBox_players.Name = "listBox_players";
-            this.listBox_players.Size = new System.Drawing.Size(362, 1054);
+            this.listBox_players.Size = new System.Drawing.Size(362, 1004);
             this.listBox_players.TabIndex = 0;
             // 
             // tabPage16
@@ -548,15 +596,16 @@
             this.tabPage16.Text = "Squadrons";
             this.tabPage16.UseVisualStyleBackColor = true;
             // 
-            // button_removeSelectedPlayer
+            // radioButton_includePlayerStatistic
             // 
-            this.button_removeSelectedPlayer.Location = new System.Drawing.Point(127, 1070);
-            this.button_removeSelectedPlayer.Name = "button_removeSelectedPlayer";
-            this.button_removeSelectedPlayer.Size = new System.Drawing.Size(106, 34);
-            this.button_removeSelectedPlayer.TabIndex = 2;
-            this.button_removeSelectedPlayer.Text = "Remove";
-            this.button_removeSelectedPlayer.UseVisualStyleBackColor = true;
-            this.button_removeSelectedPlayer.Click += new System.EventHandler(this.button_removeSelectedPlayer_Click);
+            this.radioButton_includePlayerStatistic.AutoSize = true;
+            this.radioButton_includePlayerStatistic.Location = new System.Drawing.Point(11, 199);
+            this.radioButton_includePlayerStatistic.Name = "radioButton_includePlayerStatistic";
+            this.radioButton_includePlayerStatistic.Size = new System.Drawing.Size(155, 29);
+            this.radioButton_includePlayerStatistic.TabIndex = 7;
+            this.radioButton_includePlayerStatistic.TabStop = true;
+            this.radioButton_includePlayerStatistic.Text = "Include players";
+            this.radioButton_includePlayerStatistic.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -636,5 +685,9 @@
         private ListBox listBox_players;
         private Button button_addPlayer;
         private Button button_removeSelectedPlayer;
+        private Button button_loadPlayers;
+        private Button button_savePlayers;
+        private Button button_newPlayerList;
+        private RadioButton radioButton_includePlayerStatistic;
     }
 }

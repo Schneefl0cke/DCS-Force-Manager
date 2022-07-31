@@ -8,6 +8,7 @@ namespace Facade
 {
     public class KillStatistic_ByUnitType
     {
+        //TODO: raus da und anders machen
         public string Display
         {
             get { return $"{UnitTypeName}: \n" +

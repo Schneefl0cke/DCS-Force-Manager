@@ -69,7 +69,7 @@ namespace Force_Manager
         {
             try
             {
-                killStatisticSingleMission = SingleMissionHandler.AnalzyeSingleMission(path_singleMission);
+                killStatisticSingleMission = SingleMissionHandler.AnalzyeSingleMission(path_singleMission, radioButton_includePlayerStatistic.Checked);
                 FillListBoxes_SingleMission_Red();
                 FillListBoxes_SingleMission_Blue();
             }
@@ -226,7 +226,16 @@ namespace Force_Manager
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     var safePath = saveFileDialog.FileName;
-                    CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, killStatisticSingleMission);
+                    //TODO: not nice
+                    if (radioButton_includePlayerStatistic.Checked == false)
+                    {
+                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, killStatisticSingleMission, radioButton_includePlayerStatistic.Checked, new List<Player>());
+                    }
+                    else
+                    {
+                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, killStatisticSingleMission, radioButton_includePlayerStatistic.Checked, SourceManager.Players);
+                    }
+                   
                 }
             }
             else
@@ -258,6 +267,42 @@ namespace Force_Manager
         {
             var selectedPlayer = (Player) listBox_players.SelectedItem;
             SourceManager.Players.Remove(selectedPlayer);
+            ShowPlayers();
+        }
+
+        private void button_loadPlayers_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            dialog.Filter = "xml files (*.xml)|*.xml|All Files (*.*)|*.*";
+            dialog.FilterIndex = 1;
+            dialog.RestoreDirectory = true;
+
+            if (dialog.ShowDialog() == DialogResult.OK && dialog.CheckFileExists)
+            {
+                var savePath = dialog.FileName;
+                SourceManager.LoadPlayerFile(savePath);
+                ShowPlayers();
+            }
+        }
+
+        private void button_savePlayers_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            saveFileDialog.Filter = "xml files (*.xml)|*.xml|All Files (*.*)|*.*";
+            saveFileDialog.FilterIndex = 1;
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                var savePath = saveFileDialog.FileName;
+                SourceManager.SavePlayerList(savePath);
+            }
+        }
+
+        private void button_newPlayerList_Click(object sender, EventArgs e)
+        {
+            SourceManager.Players = new List<Player>();
             ShowPlayers();
         }
     }
