@@ -32,6 +32,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.radioButton_includePlayerStatistic = new System.Windows.Forms.RadioButton();
             this.button_sm_reanalyze = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -72,7 +73,7 @@
             this.button_addPlayer = new System.Windows.Forms.Button();
             this.listBox_players = new System.Windows.Forms.ListBox();
             this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.radioButton_includePlayerStatistic = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -92,6 +93,7 @@
             this.tabPage10.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage15.SuspendLayout();
+            this.tabPage16.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -145,6 +147,17 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Single Mission";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_includePlayerStatistic
+            // 
+            this.radioButton_includePlayerStatistic.AutoSize = true;
+            this.radioButton_includePlayerStatistic.Location = new System.Drawing.Point(11, 199);
+            this.radioButton_includePlayerStatistic.Name = "radioButton_includePlayerStatistic";
+            this.radioButton_includePlayerStatistic.Size = new System.Drawing.Size(155, 29);
+            this.radioButton_includePlayerStatistic.TabIndex = 7;
+            this.radioButton_includePlayerStatistic.TabStop = true;
+            this.radioButton_includePlayerStatistic.Text = "Include players";
+            this.radioButton_includePlayerStatistic.UseVisualStyleBackColor = true;
             // 
             // button_sm_reanalyze
             // 
@@ -588,6 +601,7 @@
             // 
             // tabPage16
             // 
+            this.tabPage16.Controls.Add(this.label4);
             this.tabPage16.Location = new System.Drawing.Point(4, 34);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
@@ -596,16 +610,14 @@
             this.tabPage16.Text = "Squadrons";
             this.tabPage16.UseVisualStyleBackColor = true;
             // 
-            // radioButton_includePlayerStatistic
+            // label4
             // 
-            this.radioButton_includePlayerStatistic.AutoSize = true;
-            this.radioButton_includePlayerStatistic.Location = new System.Drawing.Point(11, 199);
-            this.radioButton_includePlayerStatistic.Name = "radioButton_includePlayerStatistic";
-            this.radioButton_includePlayerStatistic.Size = new System.Drawing.Size(155, 29);
-            this.radioButton_includePlayerStatistic.TabIndex = 7;
-            this.radioButton_includePlayerStatistic.TabStop = true;
-            this.radioButton_includePlayerStatistic.Text = "Include players";
-            this.radioButton_includePlayerStatistic.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(44, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(139, 25);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "In Development";
             // 
             // Form1
             // 
@@ -638,6 +650,8 @@
             this.tabPage10.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage15.ResumeLayout(false);
+            this.tabPage16.ResumeLayout(false);
+            this.tabPage16.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -689,5 +703,6 @@
         private Button button_savePlayers;
         private Button button_newPlayerList;
         private RadioButton radioButton_includePlayerStatistic;
+        private Label label4;
     }
 }
