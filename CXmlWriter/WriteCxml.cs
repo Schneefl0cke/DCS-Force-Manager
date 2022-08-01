@@ -6,7 +6,7 @@ namespace CXmlWriter
 {
     public static class WriteCxml
     {
-        public static void WriteKillStatistics_SingleMission(string safePath, KillStatisticSingleMission statistic, bool includePlayers, List<Player> players)
+        public static void WriteKillStatistics_SingleMission(string savePath, KillStatisticSingleMission statistic, bool includePlayers, List<Player> players)
         {
             using (var workbook = new XLWorkbook())
             {
@@ -40,7 +40,7 @@ namespace CXmlWriter
                     }
                 }
 
-                workbook.SaveAs(safePath + ".xlsx");
+                workbook.SaveAs(savePath);
             }
         }
 

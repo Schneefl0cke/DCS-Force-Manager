@@ -36,7 +36,7 @@ namespace FlightLogReaderTests
             Assert.IsNotNull(d_Enemies);
 
             var safePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            WriteCxml.WriteKillStatistics_SingleMission(safePath, statistic);
+            WriteCxml.WriteKillStatistics_SingleMission(safePath, statistic, false, new List<Player>());
         }
     }
 }
