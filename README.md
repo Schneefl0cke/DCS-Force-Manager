@@ -8,7 +8,7 @@ This is a beta version! I am not a UI guy. Thats why the UI is somewhat ugly, bu
 To analyze a mission (either a single mission or a campaign), you need to get the corresponding tacview and export the flight log.
 The Force Manager can only read a TacView flight log!
 
-The UI only displays a brief overview of the statistic, to get a much nicer view you need to export it!
+The UI only displays a brief overview of the statistic, to get a much nicer view you need to export it! The export will generate an excel file that will contain the data and will be easier to read, edit and work on.
 
 # Features:
 - Generate statistics about a single mission
