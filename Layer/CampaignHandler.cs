@@ -27,10 +27,19 @@ namespace Layer
                 PlayerStatisticSorter.Sort(eventsInMission, PlayerHandler.Players);
             }
 
-            //Merge
-            Campaign.CampaignStatistic = HasBeenDestroyedEventSorter.MergeMissions(Campaign.CampaignStatistic, statistic);
+            CalculateCampaignStatistic();
 
             return statistic;
+        }
+
+        public static void CalculateCampaignStatistic()
+        {
+            var completeStatistic = new KillStatisticSingleMission();
+            foreach (var mission in Campaign.CampaignMissions)
+            {
+                completeStatistic = HasBeenDestroyedEventSorter.MergeMissions(mission, completeStatistic);
+            }
+            Campaign.CampaignStatistic = completeStatistic;
         }
 
         private static XmlDocument ReadFlightLog(string path)

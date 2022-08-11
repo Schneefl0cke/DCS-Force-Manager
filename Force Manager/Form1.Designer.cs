@@ -30,6 +30,39 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button_campaign_remove = new System.Windows.Forms.Button();
+            this.button_campaign_decreaseDisplay = new System.Windows.Forms.Button();
+            this.button_campaign_increaseDisplay = new System.Windows.Forms.Button();
+            this.label_displayCampaignMission = new System.Windows.Forms.Label();
+            this.listBox_sam_campaign_blue = new System.Windows.Forms.TabControl();
+            this.tabPage23 = new System.Windows.Forms.TabPage();
+            this.listBox_aircraft_campaign_blue = new System.Windows.Forms.ListBox();
+            this.tabPage24 = new System.Windows.Forms.TabPage();
+            this.listBox_helicopter_campaign_blue = new System.Windows.Forms.ListBox();
+            this.tabPage25 = new System.Windows.Forms.TabPage();
+            this.listBox_aaa_campaign_blue = new System.Windows.Forms.ListBox();
+            this.tabPage26 = new System.Windows.Forms.TabPage();
+            this.listBox_tank_campaign_blue = new System.Windows.Forms.ListBox();
+            this.tabPage27 = new System.Windows.Forms.TabPage();
+            this.listBox_ship_campaign_blue = new System.Windows.Forms.ListBox();
+            this.tabPage28 = new System.Windows.Forms.TabPage();
+            this.listBox_other_campaign_blue = new System.Windows.Forms.ListBox();
+            this.listBox_helicopter_campaign_red = new System.Windows.Forms.TabControl();
+            this.tabPage17 = new System.Windows.Forms.TabPage();
+            this.listBox_aircraft_campaign_red = new System.Windows.Forms.ListBox();
+            this.tabPage18 = new System.Windows.Forms.TabPage();
+            this.listBox_heli_campaign_red = new System.Windows.Forms.ListBox();
+            this.tabPage19 = new System.Windows.Forms.TabPage();
+            this.listBox_sam_campaign_red = new System.Windows.Forms.ListBox();
+            this.tabPage20 = new System.Windows.Forms.TabPage();
+            this.listBox_tank_campaign_red = new System.Windows.Forms.ListBox();
+            this.tabPage21 = new System.Windows.Forms.TabPage();
+            this.listBox_ship_campaign_red = new System.Windows.Forms.ListBox();
+            this.tabPage22 = new System.Windows.Forms.TabPage();
+            this.listBox_other_campaign_red = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label_missionCountCampaign = new System.Windows.Forms.Label();
             this.radioButton_campaign_includePlayer = new System.Windows.Forms.RadioButton();
             this.button_Campaign_exportCampaignStatistic = new System.Windows.Forms.Button();
             this.button_Campaign_ExportCurrentMission = new System.Windows.Forms.Button();
@@ -80,9 +113,22 @@
             this.listBox_players = new System.Windows.Forms.ListBox();
             this.tabPage16 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
-            this.label_missionCountCampaign = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.listBox_sam_campaign_blue.SuspendLayout();
+            this.tabPage23.SuspendLayout();
+            this.tabPage24.SuspendLayout();
+            this.tabPage25.SuspendLayout();
+            this.tabPage26.SuspendLayout();
+            this.tabPage27.SuspendLayout();
+            this.tabPage28.SuspendLayout();
+            this.listBox_helicopter_campaign_red.SuspendLayout();
+            this.tabPage17.SuspendLayout();
+            this.tabPage18.SuspendLayout();
+            this.tabPage19.SuspendLayout();
+            this.tabPage20.SuspendLayout();
+            this.tabPage21.SuspendLayout();
+            this.tabPage22.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabControl_sm_redSide.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -116,6 +162,14 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button_campaign_remove);
+            this.tabPage1.Controls.Add(this.button_campaign_decreaseDisplay);
+            this.tabPage1.Controls.Add(this.button_campaign_increaseDisplay);
+            this.tabPage1.Controls.Add(this.label_displayCampaignMission);
+            this.tabPage1.Controls.Add(this.listBox_sam_campaign_blue);
+            this.tabPage1.Controls.Add(this.listBox_helicopter_campaign_red);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.label_missionCountCampaign);
             this.tabPage1.Controls.Add(this.radioButton_campaign_includePlayer);
             this.tabPage1.Controls.Add(this.button_Campaign_exportCampaignStatistic);
@@ -133,10 +187,379 @@
             this.tabPage1.Text = "Campaign";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // button_campaign_remove
+            // 
+            this.button_campaign_remove.Location = new System.Drawing.Point(7, 223);
+            this.button_campaign_remove.Name = "button_campaign_remove";
+            this.button_campaign_remove.Size = new System.Drawing.Size(236, 36);
+            this.button_campaign_remove.TabIndex = 16;
+            this.button_campaign_remove.Text = "Remove displayed mission";
+            this.button_campaign_remove.UseVisualStyleBackColor = true;
+            this.button_campaign_remove.Click += new System.EventHandler(this.button_campaign_remove_Click);
+            // 
+            // button_campaign_decreaseDisplay
+            // 
+            this.button_campaign_decreaseDisplay.Location = new System.Drawing.Point(667, 42);
+            this.button_campaign_decreaseDisplay.Name = "button_campaign_decreaseDisplay";
+            this.button_campaign_decreaseDisplay.Size = new System.Drawing.Size(42, 37);
+            this.button_campaign_decreaseDisplay.TabIndex = 15;
+            this.button_campaign_decreaseDisplay.Text = "<";
+            this.button_campaign_decreaseDisplay.UseVisualStyleBackColor = true;
+            this.button_campaign_decreaseDisplay.Click += new System.EventHandler(this.button_campaign_decreaseDisplay_Click);
+            // 
+            // button_campaign_increaseDisplay
+            // 
+            this.button_campaign_increaseDisplay.Location = new System.Drawing.Point(715, 42);
+            this.button_campaign_increaseDisplay.Name = "button_campaign_increaseDisplay";
+            this.button_campaign_increaseDisplay.Size = new System.Drawing.Size(39, 37);
+            this.button_campaign_increaseDisplay.TabIndex = 14;
+            this.button_campaign_increaseDisplay.Text = ">";
+            this.button_campaign_increaseDisplay.UseVisualStyleBackColor = true;
+            this.button_campaign_increaseDisplay.Click += new System.EventHandler(this.button_campaign_increaseDisplay_Click);
+            // 
+            // label_displayCampaignMission
+            // 
+            this.label_displayCampaignMission.AutoSize = true;
+            this.label_displayCampaignMission.Location = new System.Drawing.Point(537, 8);
+            this.label_displayCampaignMission.Name = "label_displayCampaignMission";
+            this.label_displayCampaignMission.Size = new System.Drawing.Size(140, 25);
+            this.label_displayCampaignMission.TabIndex = 13;
+            this.label_displayCampaignMission.Text = "Display Mission:";
+            // 
+            // listBox_sam_campaign_blue
+            // 
+            this.listBox_sam_campaign_blue.Controls.Add(this.tabPage23);
+            this.listBox_sam_campaign_blue.Controls.Add(this.tabPage24);
+            this.listBox_sam_campaign_blue.Controls.Add(this.tabPage25);
+            this.listBox_sam_campaign_blue.Controls.Add(this.tabPage26);
+            this.listBox_sam_campaign_blue.Controls.Add(this.tabPage27);
+            this.listBox_sam_campaign_blue.Controls.Add(this.tabPage28);
+            this.listBox_sam_campaign_blue.Location = new System.Drawing.Point(938, 96);
+            this.listBox_sam_campaign_blue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_sam_campaign_blue.Name = "listBox_sam_campaign_blue";
+            this.listBox_sam_campaign_blue.SelectedIndex = 0;
+            this.listBox_sam_campaign_blue.Size = new System.Drawing.Size(647, 970);
+            this.listBox_sam_campaign_blue.TabIndex = 12;
+            // 
+            // tabPage23
+            // 
+            this.tabPage23.Controls.Add(this.listBox_aircraft_campaign_blue);
+            this.tabPage23.Location = new System.Drawing.Point(4, 34);
+            this.tabPage23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage23.Name = "tabPage23";
+            this.tabPage23.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage23.Size = new System.Drawing.Size(639, 932);
+            this.tabPage23.TabIndex = 0;
+            this.tabPage23.Text = "Aircraft";
+            this.tabPage23.UseVisualStyleBackColor = true;
+            // 
+            // listBox_aircraft_campaign_blue
+            // 
+            this.listBox_aircraft_campaign_blue.FormattingEnabled = true;
+            this.listBox_aircraft_campaign_blue.HorizontalScrollbar = true;
+            this.listBox_aircraft_campaign_blue.ItemHeight = 25;
+            this.listBox_aircraft_campaign_blue.Location = new System.Drawing.Point(11, 10);
+            this.listBox_aircraft_campaign_blue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_aircraft_campaign_blue.Name = "listBox_aircraft_campaign_blue";
+            this.listBox_aircraft_campaign_blue.Size = new System.Drawing.Size(614, 904);
+            this.listBox_aircraft_campaign_blue.TabIndex = 0;
+            // 
+            // tabPage24
+            // 
+            this.tabPage24.Controls.Add(this.listBox_helicopter_campaign_blue);
+            this.tabPage24.Location = new System.Drawing.Point(4, 34);
+            this.tabPage24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage24.Name = "tabPage24";
+            this.tabPage24.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage24.Size = new System.Drawing.Size(639, 932);
+            this.tabPage24.TabIndex = 1;
+            this.tabPage24.Text = "Helicopter";
+            this.tabPage24.UseVisualStyleBackColor = true;
+            // 
+            // listBox_helicopter_campaign_blue
+            // 
+            this.listBox_helicopter_campaign_blue.FormattingEnabled = true;
+            this.listBox_helicopter_campaign_blue.HorizontalScrollbar = true;
+            this.listBox_helicopter_campaign_blue.ItemHeight = 25;
+            this.listBox_helicopter_campaign_blue.Location = new System.Drawing.Point(7, 13);
+            this.listBox_helicopter_campaign_blue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_helicopter_campaign_blue.Name = "listBox_helicopter_campaign_blue";
+            this.listBox_helicopter_campaign_blue.Size = new System.Drawing.Size(623, 879);
+            this.listBox_helicopter_campaign_blue.TabIndex = 0;
+            // 
+            // tabPage25
+            // 
+            this.tabPage25.Controls.Add(this.listBox_aaa_campaign_blue);
+            this.tabPage25.Location = new System.Drawing.Point(4, 34);
+            this.tabPage25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage25.Name = "tabPage25";
+            this.tabPage25.Size = new System.Drawing.Size(639, 932);
+            this.tabPage25.TabIndex = 2;
+            this.tabPage25.Text = "AAA/SAM";
+            this.tabPage25.UseVisualStyleBackColor = true;
+            // 
+            // listBox_aaa_campaign_blue
+            // 
+            this.listBox_aaa_campaign_blue.FormattingEnabled = true;
+            this.listBox_aaa_campaign_blue.HorizontalScrollbar = true;
+            this.listBox_aaa_campaign_blue.ItemHeight = 25;
+            this.listBox_aaa_campaign_blue.Location = new System.Drawing.Point(4, 8);
+            this.listBox_aaa_campaign_blue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_aaa_campaign_blue.Name = "listBox_aaa_campaign_blue";
+            this.listBox_aaa_campaign_blue.Size = new System.Drawing.Size(625, 904);
+            this.listBox_aaa_campaign_blue.TabIndex = 0;
+            // 
+            // tabPage26
+            // 
+            this.tabPage26.Controls.Add(this.listBox_tank_campaign_blue);
+            this.tabPage26.Location = new System.Drawing.Point(4, 34);
+            this.tabPage26.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage26.Name = "tabPage26";
+            this.tabPage26.Size = new System.Drawing.Size(639, 932);
+            this.tabPage26.TabIndex = 3;
+            this.tabPage26.Text = "Armored";
+            this.tabPage26.UseVisualStyleBackColor = true;
+            // 
+            // listBox_tank_campaign_blue
+            // 
+            this.listBox_tank_campaign_blue.FormattingEnabled = true;
+            this.listBox_tank_campaign_blue.HorizontalScrollbar = true;
+            this.listBox_tank_campaign_blue.ItemHeight = 25;
+            this.listBox_tank_campaign_blue.Location = new System.Drawing.Point(11, 15);
+            this.listBox_tank_campaign_blue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_tank_campaign_blue.Name = "listBox_tank_campaign_blue";
+            this.listBox_tank_campaign_blue.Size = new System.Drawing.Size(618, 879);
+            this.listBox_tank_campaign_blue.TabIndex = 0;
+            // 
+            // tabPage27
+            // 
+            this.tabPage27.Controls.Add(this.listBox_ship_campaign_blue);
+            this.tabPage27.Location = new System.Drawing.Point(4, 34);
+            this.tabPage27.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage27.Name = "tabPage27";
+            this.tabPage27.Size = new System.Drawing.Size(639, 932);
+            this.tabPage27.TabIndex = 4;
+            this.tabPage27.Text = "Ship";
+            this.tabPage27.UseVisualStyleBackColor = true;
+            // 
+            // listBox_ship_campaign_blue
+            // 
+            this.listBox_ship_campaign_blue.FormattingEnabled = true;
+            this.listBox_ship_campaign_blue.HorizontalScrollbar = true;
+            this.listBox_ship_campaign_blue.ItemHeight = 25;
+            this.listBox_ship_campaign_blue.Location = new System.Drawing.Point(14, 15);
+            this.listBox_ship_campaign_blue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_ship_campaign_blue.Name = "listBox_ship_campaign_blue";
+            this.listBox_ship_campaign_blue.Size = new System.Drawing.Size(615, 879);
+            this.listBox_ship_campaign_blue.TabIndex = 0;
+            // 
+            // tabPage28
+            // 
+            this.tabPage28.Controls.Add(this.listBox_other_campaign_blue);
+            this.tabPage28.Location = new System.Drawing.Point(4, 34);
+            this.tabPage28.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage28.Name = "tabPage28";
+            this.tabPage28.Size = new System.Drawing.Size(639, 932);
+            this.tabPage28.TabIndex = 5;
+            this.tabPage28.Text = "Other";
+            this.tabPage28.UseVisualStyleBackColor = true;
+            // 
+            // listBox_other_campaign_blue
+            // 
+            this.listBox_other_campaign_blue.FormattingEnabled = true;
+            this.listBox_other_campaign_blue.HorizontalScrollbar = true;
+            this.listBox_other_campaign_blue.ItemHeight = 25;
+            this.listBox_other_campaign_blue.Location = new System.Drawing.Point(16, 12);
+            this.listBox_other_campaign_blue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_other_campaign_blue.Name = "listBox_other_campaign_blue";
+            this.listBox_other_campaign_blue.Size = new System.Drawing.Size(600, 879);
+            this.listBox_other_campaign_blue.TabIndex = 0;
+            // 
+            // listBox_helicopter_campaign_red
+            // 
+            this.listBox_helicopter_campaign_red.Controls.Add(this.tabPage17);
+            this.listBox_helicopter_campaign_red.Controls.Add(this.tabPage18);
+            this.listBox_helicopter_campaign_red.Controls.Add(this.tabPage19);
+            this.listBox_helicopter_campaign_red.Controls.Add(this.tabPage20);
+            this.listBox_helicopter_campaign_red.Controls.Add(this.tabPage21);
+            this.listBox_helicopter_campaign_red.Controls.Add(this.tabPage22);
+            this.listBox_helicopter_campaign_red.Location = new System.Drawing.Point(250, 100);
+            this.listBox_helicopter_campaign_red.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_helicopter_campaign_red.Name = "listBox_helicopter_campaign_red";
+            this.listBox_helicopter_campaign_red.SelectedIndex = 0;
+            this.listBox_helicopter_campaign_red.Size = new System.Drawing.Size(647, 970);
+            this.listBox_helicopter_campaign_red.TabIndex = 11;
+            // 
+            // tabPage17
+            // 
+            this.tabPage17.Controls.Add(this.listBox_aircraft_campaign_red);
+            this.tabPage17.Location = new System.Drawing.Point(4, 34);
+            this.tabPage17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage17.Name = "tabPage17";
+            this.tabPage17.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage17.Size = new System.Drawing.Size(639, 932);
+            this.tabPage17.TabIndex = 0;
+            this.tabPage17.Text = "Aircraft";
+            this.tabPage17.UseVisualStyleBackColor = true;
+            // 
+            // listBox_aircraft_campaign_red
+            // 
+            this.listBox_aircraft_campaign_red.FormattingEnabled = true;
+            this.listBox_aircraft_campaign_red.HorizontalScrollbar = true;
+            this.listBox_aircraft_campaign_red.ItemHeight = 25;
+            this.listBox_aircraft_campaign_red.Location = new System.Drawing.Point(11, 10);
+            this.listBox_aircraft_campaign_red.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_aircraft_campaign_red.Name = "listBox_aircraft_campaign_red";
+            this.listBox_aircraft_campaign_red.Size = new System.Drawing.Size(614, 904);
+            this.listBox_aircraft_campaign_red.TabIndex = 0;
+            // 
+            // tabPage18
+            // 
+            this.tabPage18.Controls.Add(this.listBox_heli_campaign_red);
+            this.tabPage18.Location = new System.Drawing.Point(4, 34);
+            this.tabPage18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage18.Name = "tabPage18";
+            this.tabPage18.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage18.Size = new System.Drawing.Size(639, 932);
+            this.tabPage18.TabIndex = 1;
+            this.tabPage18.Text = "Helicopter";
+            this.tabPage18.UseVisualStyleBackColor = true;
+            // 
+            // listBox_heli_campaign_red
+            // 
+            this.listBox_heli_campaign_red.FormattingEnabled = true;
+            this.listBox_heli_campaign_red.HorizontalScrollbar = true;
+            this.listBox_heli_campaign_red.ItemHeight = 25;
+            this.listBox_heli_campaign_red.Location = new System.Drawing.Point(7, 13);
+            this.listBox_heli_campaign_red.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_heli_campaign_red.Name = "listBox_heli_campaign_red";
+            this.listBox_heli_campaign_red.Size = new System.Drawing.Size(623, 879);
+            this.listBox_heli_campaign_red.TabIndex = 0;
+            // 
+            // tabPage19
+            // 
+            this.tabPage19.Controls.Add(this.listBox_sam_campaign_red);
+            this.tabPage19.Location = new System.Drawing.Point(4, 34);
+            this.tabPage19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage19.Name = "tabPage19";
+            this.tabPage19.Size = new System.Drawing.Size(639, 932);
+            this.tabPage19.TabIndex = 2;
+            this.tabPage19.Text = "AAA/SAM";
+            this.tabPage19.UseVisualStyleBackColor = true;
+            // 
+            // listBox_sam_campaign_red
+            // 
+            this.listBox_sam_campaign_red.FormattingEnabled = true;
+            this.listBox_sam_campaign_red.HorizontalScrollbar = true;
+            this.listBox_sam_campaign_red.ItemHeight = 25;
+            this.listBox_sam_campaign_red.Location = new System.Drawing.Point(4, 8);
+            this.listBox_sam_campaign_red.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_sam_campaign_red.Name = "listBox_sam_campaign_red";
+            this.listBox_sam_campaign_red.Size = new System.Drawing.Size(625, 904);
+            this.listBox_sam_campaign_red.TabIndex = 0;
+            // 
+            // tabPage20
+            // 
+            this.tabPage20.Controls.Add(this.listBox_tank_campaign_red);
+            this.tabPage20.Location = new System.Drawing.Point(4, 34);
+            this.tabPage20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage20.Name = "tabPage20";
+            this.tabPage20.Size = new System.Drawing.Size(639, 932);
+            this.tabPage20.TabIndex = 3;
+            this.tabPage20.Text = "Armored";
+            this.tabPage20.UseVisualStyleBackColor = true;
+            // 
+            // listBox_tank_campaign_red
+            // 
+            this.listBox_tank_campaign_red.FormattingEnabled = true;
+            this.listBox_tank_campaign_red.HorizontalScrollbar = true;
+            this.listBox_tank_campaign_red.ItemHeight = 25;
+            this.listBox_tank_campaign_red.Location = new System.Drawing.Point(11, 15);
+            this.listBox_tank_campaign_red.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_tank_campaign_red.Name = "listBox_tank_campaign_red";
+            this.listBox_tank_campaign_red.Size = new System.Drawing.Size(618, 879);
+            this.listBox_tank_campaign_red.TabIndex = 0;
+            this.listBox_tank_campaign_red.SelectedIndexChanged += new System.EventHandler(this.listBox4_SelectedIndexChanged);
+            // 
+            // tabPage21
+            // 
+            this.tabPage21.Controls.Add(this.listBox_ship_campaign_red);
+            this.tabPage21.Location = new System.Drawing.Point(4, 34);
+            this.tabPage21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage21.Name = "tabPage21";
+            this.tabPage21.Size = new System.Drawing.Size(639, 932);
+            this.tabPage21.TabIndex = 4;
+            this.tabPage21.Text = "Ship";
+            this.tabPage21.UseVisualStyleBackColor = true;
+            // 
+            // listBox_ship_campaign_red
+            // 
+            this.listBox_ship_campaign_red.FormattingEnabled = true;
+            this.listBox_ship_campaign_red.HorizontalScrollbar = true;
+            this.listBox_ship_campaign_red.ItemHeight = 25;
+            this.listBox_ship_campaign_red.Location = new System.Drawing.Point(14, 15);
+            this.listBox_ship_campaign_red.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_ship_campaign_red.Name = "listBox_ship_campaign_red";
+            this.listBox_ship_campaign_red.Size = new System.Drawing.Size(615, 879);
+            this.listBox_ship_campaign_red.TabIndex = 0;
+            // 
+            // tabPage22
+            // 
+            this.tabPage22.Controls.Add(this.listBox_other_campaign_red);
+            this.tabPage22.Location = new System.Drawing.Point(4, 34);
+            this.tabPage22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage22.Name = "tabPage22";
+            this.tabPage22.Size = new System.Drawing.Size(639, 932);
+            this.tabPage22.TabIndex = 5;
+            this.tabPage22.Text = "Other";
+            this.tabPage22.UseVisualStyleBackColor = true;
+            // 
+            // listBox_other_campaign_red
+            // 
+            this.listBox_other_campaign_red.FormattingEnabled = true;
+            this.listBox_other_campaign_red.HorizontalScrollbar = true;
+            this.listBox_other_campaign_red.ItemHeight = 25;
+            this.listBox_other_campaign_red.Location = new System.Drawing.Point(16, 12);
+            this.listBox_other_campaign_red.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox_other_campaign_red.Name = "listBox_other_campaign_red";
+            this.listBox_other_campaign_red.Size = new System.Drawing.Size(600, 879);
+            this.listBox_other_campaign_red.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.Blue;
+            this.label5.Location = new System.Drawing.Point(938, 47);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 32);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Red Side";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(250, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 32);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Red Side";
+            // 
+            // label_missionCountCampaign
+            // 
+            this.label_missionCountCampaign.AutoSize = true;
+            this.label_missionCountCampaign.Location = new System.Drawing.Point(250, 8);
+            this.label_missionCountCampaign.Name = "label_missionCountCampaign";
+            this.label_missionCountCampaign.Size = new System.Drawing.Size(127, 25);
+            this.label_missionCountCampaign.TabIndex = 8;
+            this.label_missionCountCampaign.Text = "Mission count:";
+            // 
             // radioButton_campaign_includePlayer
             // 
             this.radioButton_campaign_includePlayer.AutoSize = true;
-            this.radioButton_campaign_includePlayer.Location = new System.Drawing.Point(9, 303);
+            this.radioButton_campaign_includePlayer.Location = new System.Drawing.Point(7, 392);
             this.radioButton_campaign_includePlayer.Name = "radioButton_campaign_includePlayer";
             this.radioButton_campaign_includePlayer.Size = new System.Drawing.Size(154, 29);
             this.radioButton_campaign_includePlayer.TabIndex = 7;
@@ -146,17 +569,17 @@
             // 
             // button_Campaign_exportCampaignStatistic
             // 
-            this.button_Campaign_exportCampaignStatistic.Location = new System.Drawing.Point(7, 256);
+            this.button_Campaign_exportCampaignStatistic.Location = new System.Drawing.Point(7, 307);
             this.button_Campaign_exportCampaignStatistic.Name = "button_Campaign_exportCampaignStatistic";
-            this.button_Campaign_exportCampaignStatistic.Size = new System.Drawing.Size(201, 30);
+            this.button_Campaign_exportCampaignStatistic.Size = new System.Drawing.Size(201, 79);
             this.button_Campaign_exportCampaignStatistic.TabIndex = 6;
-            this.button_Campaign_exportCampaignStatistic.Text = "Export campaign statistic";
+            this.button_Campaign_exportCampaignStatistic.Text = "Export complete campaign statistic";
             this.button_Campaign_exportCampaignStatistic.UseVisualStyleBackColor = true;
             this.button_Campaign_exportCampaignStatistic.Click += new System.EventHandler(this.button_Campaign_exportCampaignStatistic_Click);
             // 
             // button_Campaign_ExportCurrentMission
             // 
-            this.button_Campaign_ExportCurrentMission.Location = new System.Drawing.Point(7, 214);
+            this.button_Campaign_ExportCurrentMission.Location = new System.Drawing.Point(7, 265);
             this.button_Campaign_ExportCurrentMission.Name = "button_Campaign_ExportCurrentMission";
             this.button_Campaign_ExportCurrentMission.Size = new System.Drawing.Size(201, 36);
             this.button_Campaign_ExportCurrentMission.TabIndex = 5;
@@ -694,15 +1117,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "In Development";
             // 
-            // label_missionCountCampaign
-            // 
-            this.label_missionCountCampaign.AutoSize = true;
-            this.label_missionCountCampaign.Location = new System.Drawing.Point(250, 8);
-            this.label_missionCountCampaign.Name = "label_missionCountCampaign";
-            this.label_missionCountCampaign.Size = new System.Drawing.Size(127, 25);
-            this.label_missionCountCampaign.TabIndex = 8;
-            this.label_missionCountCampaign.Text = "Mission count:";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -716,6 +1130,20 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.listBox_sam_campaign_blue.ResumeLayout(false);
+            this.tabPage23.ResumeLayout(false);
+            this.tabPage24.ResumeLayout(false);
+            this.tabPage25.ResumeLayout(false);
+            this.tabPage26.ResumeLayout(false);
+            this.tabPage27.ResumeLayout(false);
+            this.tabPage28.ResumeLayout(false);
+            this.listBox_helicopter_campaign_red.ResumeLayout(false);
+            this.tabPage17.ResumeLayout(false);
+            this.tabPage18.ResumeLayout(false);
+            this.tabPage19.ResumeLayout(false);
+            this.tabPage20.ResumeLayout(false);
+            this.tabPage21.ResumeLayout(false);
+            this.tabPage22.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabControl_sm_redSide.ResumeLayout(false);
@@ -795,5 +1223,37 @@
         private Button button_Campaign_ExportCurrentMission;
         private Button button_Campaign_Add;
         private Label label_missionCountCampaign;
+        private TabControl listBox_sam_campaign_blue;
+        private TabPage tabPage23;
+        private ListBox listBox_aircraft_campaign_blue;
+        private TabPage tabPage24;
+        private ListBox listBox_helicopter_campaign_blue;
+        private TabPage tabPage25;
+        private ListBox listBox_aaa_campaign_blue;
+        private TabPage tabPage26;
+        private ListBox listBox_tank_campaign_blue;
+        private TabPage tabPage27;
+        private ListBox listBox_ship_campaign_blue;
+        private TabPage tabPage28;
+        private ListBox listBox_other_campaign_blue;
+        private TabControl listBox_helicopter_campaign_red;
+        private TabPage tabPage17;
+        private ListBox listBox_aircraft_campaign_red;
+        private TabPage tabPage18;
+        private ListBox listBox_heli_campaign_red;
+        private TabPage tabPage19;
+        private ListBox listBox_sam_campaign_red;
+        private TabPage tabPage20;
+        private ListBox listBox_tank_campaign_red;
+        private TabPage tabPage21;
+        private ListBox listBox_ship_campaign_red;
+        private TabPage tabPage22;
+        private ListBox listBox_other_campaign_red;
+        private Label label5;
+        private Label label1;
+        private Button button_campaign_decreaseDisplay;
+        private Button button_campaign_increaseDisplay;
+        private Label label_displayCampaignMission;
+        private Button button_campaign_remove;
     }
 }
