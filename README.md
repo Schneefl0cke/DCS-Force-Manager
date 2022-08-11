@@ -28,6 +28,7 @@ E.g.:
 Name in Force Manager: Schneeflocke
 
 Name in Mission: Viper 1-1 | Schneeflocke -> this is valid
+
 Name in Mission: Viper 1-1 | Schneeflocke | additional stuff -> this is also valid
 
 But if a different player in the mission is called "Schneeflocke2" then the force manager will add this players statistic to the statistic of "Schneeflocke"!
