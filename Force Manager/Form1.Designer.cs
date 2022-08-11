@@ -30,7 +30,13 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
+            this.radioButton_campaign_includePlayer = new System.Windows.Forms.RadioButton();
+            this.button_Campaign_exportCampaignStatistic = new System.Windows.Forms.Button();
+            this.button_Campaign_ExportCurrentMission = new System.Windows.Forms.Button();
+            this.button_Campaign_Add = new System.Windows.Forms.Button();
+            this.button_Campaign_Load = new System.Windows.Forms.Button();
+            this.button_Campaign_Safe = new System.Windows.Forms.Button();
+            this.button_Campaign_New = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.radioButton_includePlayerStatistic = new System.Windows.Forms.RadioButton();
             this.button_sm_reanalyze = new System.Windows.Forms.Button();
@@ -74,6 +80,7 @@
             this.listBox_players = new System.Windows.Forms.ListBox();
             this.tabPage16 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
+            this.label_missionCountCampaign = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -109,7 +116,14 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.label_missionCountCampaign);
+            this.tabPage1.Controls.Add(this.radioButton_campaign_includePlayer);
+            this.tabPage1.Controls.Add(this.button_Campaign_exportCampaignStatistic);
+            this.tabPage1.Controls.Add(this.button_Campaign_ExportCurrentMission);
+            this.tabPage1.Controls.Add(this.button_Campaign_Add);
+            this.tabPage1.Controls.Add(this.button_Campaign_Load);
+            this.tabPage1.Controls.Add(this.button_Campaign_Safe);
+            this.tabPage1.Controls.Add(this.button_Campaign_New);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
@@ -119,15 +133,76 @@
             this.tabPage1.Text = "Campaign";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // radioButton_campaign_includePlayer
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "In Development";
+            this.radioButton_campaign_includePlayer.AutoSize = true;
+            this.radioButton_campaign_includePlayer.Location = new System.Drawing.Point(9, 303);
+            this.radioButton_campaign_includePlayer.Name = "radioButton_campaign_includePlayer";
+            this.radioButton_campaign_includePlayer.Size = new System.Drawing.Size(154, 29);
+            this.radioButton_campaign_includePlayer.TabIndex = 7;
+            this.radioButton_campaign_includePlayer.TabStop = true;
+            this.radioButton_campaign_includePlayer.Text = "Include Players";
+            this.radioButton_campaign_includePlayer.UseVisualStyleBackColor = true;
+            // 
+            // button_Campaign_exportCampaignStatistic
+            // 
+            this.button_Campaign_exportCampaignStatistic.Location = new System.Drawing.Point(7, 256);
+            this.button_Campaign_exportCampaignStatistic.Name = "button_Campaign_exportCampaignStatistic";
+            this.button_Campaign_exportCampaignStatistic.Size = new System.Drawing.Size(201, 30);
+            this.button_Campaign_exportCampaignStatistic.TabIndex = 6;
+            this.button_Campaign_exportCampaignStatistic.Text = "Export campaign statistic";
+            this.button_Campaign_exportCampaignStatistic.UseVisualStyleBackColor = true;
+            this.button_Campaign_exportCampaignStatistic.Click += new System.EventHandler(this.button_Campaign_exportCampaignStatistic_Click);
+            // 
+            // button_Campaign_ExportCurrentMission
+            // 
+            this.button_Campaign_ExportCurrentMission.Location = new System.Drawing.Point(7, 214);
+            this.button_Campaign_ExportCurrentMission.Name = "button_Campaign_ExportCurrentMission";
+            this.button_Campaign_ExportCurrentMission.Size = new System.Drawing.Size(201, 36);
+            this.button_Campaign_ExportCurrentMission.TabIndex = 5;
+            this.button_Campaign_ExportCurrentMission.Text = "Export current mission";
+            this.button_Campaign_ExportCurrentMission.UseVisualStyleBackColor = true;
+            this.button_Campaign_ExportCurrentMission.Click += new System.EventHandler(this.button_Campaign_ExportCurrentMission_Click);
+            // 
+            // button_Campaign_Add
+            // 
+            this.button_Campaign_Add.Location = new System.Drawing.Point(7, 174);
+            this.button_Campaign_Add.Name = "button_Campaign_Add";
+            this.button_Campaign_Add.Size = new System.Drawing.Size(124, 34);
+            this.button_Campaign_Add.TabIndex = 4;
+            this.button_Campaign_Add.Text = "Add Mission";
+            this.button_Campaign_Add.UseVisualStyleBackColor = true;
+            this.button_Campaign_Add.Click += new System.EventHandler(this.button_Campaign_Add_Click);
+            // 
+            // button_Campaign_Load
+            // 
+            this.button_Campaign_Load.Location = new System.Drawing.Point(7, 88);
+            this.button_Campaign_Load.Name = "button_Campaign_Load";
+            this.button_Campaign_Load.Size = new System.Drawing.Size(112, 34);
+            this.button_Campaign_Load.TabIndex = 3;
+            this.button_Campaign_Load.Text = "Load";
+            this.button_Campaign_Load.UseVisualStyleBackColor = true;
+            this.button_Campaign_Load.Click += new System.EventHandler(this.button_Campaign_Load_Click);
+            // 
+            // button_Campaign_Safe
+            // 
+            this.button_Campaign_Safe.Location = new System.Drawing.Point(7, 48);
+            this.button_Campaign_Safe.Name = "button_Campaign_Safe";
+            this.button_Campaign_Safe.Size = new System.Drawing.Size(112, 34);
+            this.button_Campaign_Safe.TabIndex = 2;
+            this.button_Campaign_Safe.Text = "Safe";
+            this.button_Campaign_Safe.UseVisualStyleBackColor = true;
+            this.button_Campaign_Safe.Click += new System.EventHandler(this.button_Campaign_Safe_Click);
+            // 
+            // button_Campaign_New
+            // 
+            this.button_Campaign_New.Location = new System.Drawing.Point(7, 8);
+            this.button_Campaign_New.Name = "button_Campaign_New";
+            this.button_Campaign_New.Size = new System.Drawing.Size(112, 34);
+            this.button_Campaign_New.TabIndex = 1;
+            this.button_Campaign_New.Text = "New";
+            this.button_Campaign_New.UseVisualStyleBackColor = true;
+            this.button_Campaign_New.Click += new System.EventHandler(this.button_Campaign_New_Click);
             // 
             // tabPage2
             // 
@@ -619,6 +694,15 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "In Development";
             // 
+            // label_missionCountCampaign
+            // 
+            this.label_missionCountCampaign.AutoSize = true;
+            this.label_missionCountCampaign.Location = new System.Drawing.Point(250, 8);
+            this.label_missionCountCampaign.Name = "label_missionCountCampaign";
+            this.label_missionCountCampaign.Size = new System.Drawing.Size(127, 25);
+            this.label_missionCountCampaign.TabIndex = 8;
+            this.label_missionCountCampaign.Text = "Mission count:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -660,7 +744,6 @@
 
         private TabControl tabControl1;
         private TabPage tabPage1;
-        private Label label1;
         private TabPage tabPage2;
         private Button button_exportSingleMission;
         private Button button_loadSingleMission;
@@ -704,5 +787,13 @@
         private Button button_newPlayerList;
         private RadioButton radioButton_includePlayerStatistic;
         private Label label4;
+        private Button button_Campaign_New;
+        private Button button_Campaign_Load;
+        private Button button_Campaign_Safe;
+        private RadioButton radioButton_campaign_includePlayer;
+        private Button button_Campaign_exportCampaignStatistic;
+        private Button button_Campaign_ExportCurrentMission;
+        private Button button_Campaign_Add;
+        private Label label_missionCountCampaign;
     }
 }

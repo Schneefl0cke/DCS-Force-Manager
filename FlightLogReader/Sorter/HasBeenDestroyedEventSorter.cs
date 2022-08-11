@@ -47,6 +47,14 @@ namespace FlightLogReader.Sorter
             return ksSM;
         }
 
+        public static KillStatisticSingleMission MergeMissions(KillStatisticSingleMission mission1, KillStatisticSingleMission mission2)
+        {
+            var allHasBeenDestroyedEvents = mission1.DestroyedBlue.Concat(mission1.DestroyedRed).Concat(mission2.DestroyedBlue).Concat(mission2.DestroyedRed);
+
+            var statistic = Sort(allHasBeenDestroyedEvents.ToList());
+            return statistic;
+        }
+
         //KIA, TODO: MIA
         private static List<KillStatistic_ByUnitType> CalculateKillStatistic_ByUnitTypeName(List<HasBeenDestroyedEvent> list)
         {

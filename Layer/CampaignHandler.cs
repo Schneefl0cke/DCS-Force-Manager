@@ -1,9 +1,11 @@
 ﻿using Facade;
+using FlightLogReader.Sorter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace Layer
@@ -12,7 +14,33 @@ namespace Layer
     {
         public static Campaign Campaign = new Campaign();
 
-        public static void SavePlayerList(string path)
+        public static KillStatisticSingleMission AnalzyeSingleMission(string path, bool includePlayers)
+        {
+            var xml = ReadFlightLog(path);
+            var eventsInMission = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(xml);
+            var statistic = HasBeenDestroyedEventSorter.Sort(eventsInMission);
+            
+            Campaign.CampaignMissions.Add(statistic);
+
+            if (includePlayers)
+            {
+                PlayerStatisticSorter.Sort(eventsInMission, PlayerHandler.Players);
+            }
+
+            //Merge
+            Campaign.CampaignStatistic = HasBeenDestroyedEventSorter.MergeMissions(Campaign.CampaignStatistic, statistic);
+
+            return statistic;
+        }
+
+        private static XmlDocument ReadFlightLog(string path)
+        {
+            var xml = new XmlDocument();
+            xml.LoadXml(File.ReadAllText(path));
+            return xml;
+        }
+
+        public static void SaveCampaign(string path)
         {
             path = Path.Combine(path);
 
@@ -23,7 +51,7 @@ namespace Layer
             }
         }
 
-        public static void LoadPlayerFile(string path)
+        public static void LoadCampaign(string path)
         {
             if (File.Exists(path))
             {

@@ -10,12 +10,16 @@ namespace Force_Manager
         private string path_singleMission;
         private const string folderName = "ForceManager";
         private const string playerFile = "Players.xml";
+        private const string campaignFile = "Campaign.xml";
         private string playerFilePath;
+        private string campaignFilePath;
+        private string squadronFilePath;
 
         public Form1()
         {
             InitializeComponent();
             LoadPlayerList();
+            LoadCampaign();
             ShowPlayers();
         }
 
@@ -40,12 +44,27 @@ namespace Force_Manager
             }
         }
 
+        private void LoadCampaign()
+        {
+            var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            if (!Directory.Exists(Path.Combine(appDataPath, folderName)))
+                Directory.CreateDirectory(Path.Combine(appDataPath, folderName));
+
+            campaignFilePath = Path.Combine(appDataPath, folderName, campaignFile);
+            if (File.Exists(campaignFilePath))
+            {
+                CampaignHandler.LoadCampaign(campaignFilePath);
+            }
+            UpdateCampaign();
+        }
+
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            PlayerHandler.SavePlayerList(playerFilePath);
-
+            
             if (MessageBox.Show("Do you really want to exit?", "Force Manager", MessageBoxButtons.YesNo) == DialogResult.No)
             {
+                PlayerHandler.SavePlayerList(playerFilePath);
+                CampaignHandler.SaveCampaign(campaignFilePath);
                 e.Cancel = true;
             }
         }
@@ -304,6 +323,131 @@ namespace Force_Manager
         {
             PlayerHandler.Players = new List<Player>();
             ShowPlayers();
+        }
+
+        private void UpdateCampaign()
+        {
+            label_missionCountCampaign.Text = "Mission count: " + CampaignHandler.Campaign.CampaignMissions.Count.ToString();
+        }
+
+        private void button_Campaign_New_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Do you want to create a new campaign (this will overwrite the old safe!)", "New Campaign", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                CampaignHandler.Campaign = new Campaign();
+                UpdateCampaign();
+            }
+        }
+        private void button_Campaign_Safe_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            saveFileDialog.Filter = "xml files (*.xml)|*.xml|All Files (*.*)|*.*";
+            saveFileDialog.FilterIndex = 1;
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                var savePath = saveFileDialog.FileName;
+                CampaignHandler.SaveCampaign(savePath);
+                UpdateCampaign();
+            }
+        }
+
+        private void button_Campaign_Load_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            dialog.Filter = "xml files (*.xml)|*.xml|All Files (*.*)|*.*";
+            dialog.FilterIndex = 1;
+            dialog.RestoreDirectory = true;
+
+            if (dialog.ShowDialog() == DialogResult.OK && dialog.CheckFileExists)
+            {
+                var savePath = dialog.FileName;
+                CampaignHandler.LoadCampaign(savePath);
+                UpdateCampaign();
+            }
+        }
+
+        private void button_Campaign_Add_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            dialog.Filter = "xml files (*.xml)|*.xml|All Files (*.*)|*.*";
+            dialog.FilterIndex = 1;
+            dialog.RestoreDirectory = true;
+
+            if (dialog.ShowDialog() == DialogResult.OK && dialog.CheckFileExists)
+            {
+                var path = dialog.FileName;
+                CampaignHandler.AnalzyeSingleMission(path, radioButton_campaign_includePlayer.Checked);
+                UpdateCampaign();
+            }
+        }
+
+        private void button_Campaign_ExportCurrentMission_Click(object sender, EventArgs e)
+        {
+            if (CampaignHandler.Campaign.CampaignMissions.Count != 0)
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                saveFileDialog.Filter = "xlsx files (*.xlsx)|*.xlsx|All Files (*.*)|*.*";
+                saveFileDialog.FilterIndex = 1;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    var safePath = saveFileDialog.FileName;
+                    //TODO: not nice
+                    if (radioButton_includePlayerStatistic.Checked == false)
+                    {
+                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, CampaignHandler.Campaign.CampaignMissions.Last(), radioButton_includePlayerStatistic.Checked, new List<Player>());
+                    }
+                    else
+                    {
+                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, CampaignHandler.Campaign.CampaignMissions.Last(), radioButton_includePlayerStatistic.Checked, PlayerHandler.Players);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("No Mission has been provided yet! Please 'Load Single Mission' first!",
+                   "User Error",
+                   MessageBoxButtons.OK,
+                   MessageBoxIcon.Error);
+            }
+        }
+
+        private void button_Campaign_exportCampaignStatistic_Click(object sender, EventArgs e)
+        {
+            if (CampaignHandler.Campaign.CampaignMissions.Count != 0)
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                saveFileDialog.Filter = "xlsx files (*.xlsx)|*.xlsx|All Files (*.*)|*.*";
+                saveFileDialog.FilterIndex = 1;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    var safePath = saveFileDialog.FileName;
+                    //TODO: not nice
+                    if (radioButton_includePlayerStatistic.Checked == false)
+                    {
+                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, CampaignHandler.Campaign.CampaignStatistic, radioButton_includePlayerStatistic.Checked, new List<Player>());
+                    }
+                    else
+                    {
+                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, CampaignHandler.Campaign.CampaignStatistic, radioButton_includePlayerStatistic.Checked, PlayerHandler.Players);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("No Mission has been provided yet! Please 'Load Single Mission' first!",
+                   "User Error",
+                   MessageBoxButtons.OK,
+                   MessageBoxIcon.Error);
+            }
         }
     }
 }
