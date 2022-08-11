@@ -23,20 +23,20 @@ namespace FlightLogReaderTests
         }
 
         //manual test
-        [TestMethod]
-        public void Sort_Test()
-        {
-            var hasBeenDestroyedEvents = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(ReadXml());
-            var statistic = HasBeenDestroyedEventSorter.Sort(hasBeenDestroyedEvents);
+        //[TestMethod]
+        //public void Sort_Test()
+        //{
+        //    var hasBeenDestroyedEvents = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(ReadXml());
+        //    var statistic = HasBeenDestroyedEventSorter.Sort(hasBeenDestroyedEvents);
 
-            var d_Allies = statistic.DestroyedRed;
-           Assert.IsNotNull(d_Allies);
+        //    var d_Allies = statistic.DestroyedRed;
+        //   Assert.IsNotNull(d_Allies);
 
-            var d_Enemies = statistic.DestroyedBlue;
-            Assert.IsNotNull(d_Enemies);
+        //    var d_Enemies = statistic.DestroyedBlue;
+        //    Assert.IsNotNull(d_Enemies);
 
-            var safePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            WriteCxml.WriteKillStatistics_SingleMission(safePath, statistic, false, new List<Player>());
-        }
+        //    var safePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        //    WriteCxml.WriteKillStatistics_SingleMission(safePath, statistic, false, new List<Player>());
+        //}
     }
 }
