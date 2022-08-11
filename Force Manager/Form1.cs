@@ -22,7 +22,7 @@ namespace Force_Manager
         private void ShowPlayers()
         {
             listBox_players.DataSource = null;
-            listBox_players.DataSource = SourceManager.Players;
+            listBox_players.DataSource = PlayerHandler.Players;
             listBox_players.DisplayMember = "Name";
             listBox_players.Refresh();
         }
@@ -36,13 +36,13 @@ namespace Force_Manager
             playerFilePath = Path.Combine(appDataPath, folderName, playerFile);
             if (File.Exists(playerFilePath))
             {
-                SourceManager.LoadPlayerFile(playerFilePath);
+                PlayerHandler.LoadPlayerFile(playerFilePath);
             }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            SourceManager.SavePlayerList(playerFilePath);
+            PlayerHandler.SavePlayerList(playerFilePath);
 
             if (MessageBox.Show("Do you really want to exit?", "Force Manager", MessageBoxButtons.YesNo) == DialogResult.No)
             {
@@ -233,7 +233,7 @@ namespace Force_Manager
                     }
                     else
                     {
-                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, killStatisticSingleMission, radioButton_includePlayerStatistic.Checked, SourceManager.Players);
+                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, killStatisticSingleMission, radioButton_includePlayerStatistic.Checked, PlayerHandler.Players);
                     }
                    
                 }
@@ -258,7 +258,7 @@ namespace Force_Manager
             if (playerName.Trim() != null && playerName.Trim() != string.Empty)
             {
                 var player = new Player() { Name = playerName};
-                SourceManager.Players.Add(player);
+                PlayerHandler.Players.Add(player);
                 ShowPlayers();
             }
         }
@@ -266,7 +266,7 @@ namespace Force_Manager
         private void button_removeSelectedPlayer_Click(object sender, EventArgs e)
         {
             var selectedPlayer = (Player) listBox_players.SelectedItem;
-            SourceManager.Players.Remove(selectedPlayer);
+            PlayerHandler.Players.Remove(selectedPlayer);
             ShowPlayers();
         }
 
@@ -281,7 +281,7 @@ namespace Force_Manager
             if (dialog.ShowDialog() == DialogResult.OK && dialog.CheckFileExists)
             {
                 var savePath = dialog.FileName;
-                SourceManager.LoadPlayerFile(savePath);
+                PlayerHandler.LoadPlayerFile(savePath);
                 ShowPlayers();
             }
         }
@@ -296,13 +296,13 @@ namespace Force_Manager
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 var savePath = saveFileDialog.FileName;
-                SourceManager.SavePlayerList(savePath);
+                PlayerHandler.SavePlayerList(savePath);
             }
         }
 
         private void button_newPlayerList_Click(object sender, EventArgs e)
         {
-            SourceManager.Players = new List<Player>();
+            PlayerHandler.Players = new List<Player>();
             ShowPlayers();
         }
     }

@@ -22,7 +22,7 @@ namespace Layer
 
             if (includePlayers)
             {
-                PlayerStatisticSorter.Sort(eventsInMission, SourceManager.Players);
+                PlayerStatisticSorter.Sort(eventsInMission, PlayerHandler.Players);
             }
 
             return statistic;

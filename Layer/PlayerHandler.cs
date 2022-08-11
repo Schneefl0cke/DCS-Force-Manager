@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 
 namespace Layer
 {
-    public static class SourceManager
+    public static class PlayerHandler
     {
         public static List<Player> Players =   new List<Player>();
 
