@@ -62,11 +62,11 @@ namespace Force_Manager
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+            PlayerHandler.SavePlayerList(playerFilePath);
+            CampaignHandler.SaveCampaign(campaignFilePath);
+
             if (MessageBox.Show("Do you really want to exit?", "Force Manager", MessageBoxButtons.YesNo) == DialogResult.No)
             {
-                PlayerHandler.SavePlayerList(playerFilePath);
-                CampaignHandler.SaveCampaign(campaignFilePath);
                 e.Cancel = true;
             }
         }
