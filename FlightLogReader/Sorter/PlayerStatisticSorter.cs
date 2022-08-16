@@ -28,17 +28,17 @@ namespace FlightLogReader.Sorter
             }
         }
 
-        private static List<PlayerStatistic_ByUnitType> CalculateKillStatistic_ByUnitTypeName(List<HasBeenDestroyedEvent> list)
+        private static List<SimpleKillStatistic> CalculateKillStatistic_ByUnitTypeName(List<HasBeenDestroyedEvent> list)
         {
-            var killStatistics = new List<PlayerStatistic_ByUnitType>();
+            var killStatistics = new List<SimpleKillStatistic>();
 
             foreach (var unit in list)
             {
                var kill  = killStatistics.FirstOrDefault(x => x.UnitTypeName == unit.PrimaryUnitTypeName);
                 if (kill == null)
                 {
-                    var statistic = new PlayerStatistic_ByUnitType();
-                    statistic.Killed = 1;
+                    var statistic = new SimpleKillStatistic();
+                    statistic.KillCount = 1;
                     statistic.UnitTypeName = unit.PrimaryUnitTypeName;
                     statistic.Type = unit.PrimaryType;
 
@@ -46,16 +46,16 @@ namespace FlightLogReader.Sorter
                 }
                 else
                 {
-                    kill.Killed += 1;
+                    kill.KillCount += 1;
                 }
             }
 
             return killStatistics;
         }
 
-        private static List<PlayerStatistic_ByUnitType> CalculateDeathStatistic_ByUnitTypeName(List<HasBeenDestroyedEvent> list)
+        private static List<SimpleKillStatistic> CalculateDeathStatistic_ByUnitTypeName(List<HasBeenDestroyedEvent> list)
         {
-            var deathStatistic = new List<PlayerStatistic_ByUnitType>();
+            var deathStatistic = new List<SimpleKillStatistic>();
 
             foreach (var unit in list)
             {
@@ -64,8 +64,8 @@ namespace FlightLogReader.Sorter
 
                 if (death == null)
                 {
-                    var statistic = new PlayerStatistic_ByUnitType();
-                    statistic.Killed = 1;
+                    var statistic = new SimpleKillStatistic();
+                    statistic.KillCount = 1;
                     statistic.UnitTypeName = unit.SecondaryUnitTypeName;
                     statistic.Type = unit.PrimaryType;
 
@@ -73,7 +73,7 @@ namespace FlightLogReader.Sorter
                 }
                 else
                 {
-                    death.Killed += 1;
+                    death.KillCount += 1;
                 }
             }
 

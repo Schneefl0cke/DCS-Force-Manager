@@ -9,9 +9,9 @@ namespace FlightLogReader.Sorter
 {
     public static class HasBeenDestroyedEventSorter
     {
-        public static KillStatisticSingleMission Sort(List<HasBeenDestroyedEvent> hbdEvents)
+        public static LosStatistic_WholeMission Sort(List<HasBeenDestroyedEvent> hbdEvents)
         {
-            var ksSM = new KillStatisticSingleMission();
+            var ksSM = new LosStatistic_WholeMission();
 
             //Missile -> HasBeenfired
             ksSM.DestroyedRed = hbdEvents.FindAll(x => x.PrimaryCoalition == "Allies");
@@ -47,25 +47,17 @@ namespace FlightLogReader.Sorter
             return ksSM;
         }
 
-        public static KillStatisticSingleMission MergeMissions(KillStatisticSingleMission mission1, KillStatisticSingleMission mission2)
-        {
-            var allHasBeenDestroyedEvents = mission1.DestroyedBlue.Concat(mission1.DestroyedRed).Concat(mission2.DestroyedBlue).Concat(mission2.DestroyedRed);
-
-            var statistic = Sort(allHasBeenDestroyedEvents.ToList());
-            return statistic;
-        }
-
         //KIA, TODO: MIA
-        private static List<KillStatistic_ByUnitType> CalculateKillStatistic_ByUnitTypeName(List<HasBeenDestroyedEvent> list)
+        private static List<LossStatistic_UnitType> CalculateKillStatistic_ByUnitTypeName(List<HasBeenDestroyedEvent> list)
         {
-            var killStatistics = new List<KillStatistic_ByUnitType>();
+            var killStatistics = new List<LossStatistic_UnitType>();
 
             foreach (var unit in list)
             {
                 var entry = killStatistics.FirstOrDefault(x => x.UnitTypeName == unit.PrimaryUnitTypeName);
                 if (entry == null)
                 {
-                    var killStatistic = new KillStatistic_ByUnitType();
+                    var killStatistic = new LossStatistic_UnitType();
                     if (unit.PlayerKill)
                         killStatistic.PlayerKills++;
 
