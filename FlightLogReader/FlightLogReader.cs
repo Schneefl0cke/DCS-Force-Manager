@@ -9,11 +9,12 @@ namespace FlightLogReader
         private const string HasBeenDestroyedText = "HasBeenDestroyed";
         private const string PrimaryObjectText = "PrimaryObject";
         private const string SecondaryObjectText = "SecondaryObject";
-        private static List<string> players = new List<string>();
+        private static List<Player> players = new List<Player>();
 
 
-        public static List<HasBeenDestroyedEvent> ReadHasBeenDestroyedEvents(XmlDocument flightLog)
+        public static List<HasBeenDestroyedEvent> ReadHasBeenDestroyedEvents(XmlDocument flightLog, List<Player> players)
         {
+            FlightLogReader.players = players;
             var hasBeenDestroyedEvents = new List<HasBeenDestroyedEvent>();
             var cache = new List<HasBeenDestroyedEvent>();
 
@@ -144,7 +145,7 @@ namespace FlightLogReader
 
         private static bool PilotWasPlayer(string pilotName)
         {
-            var playerInList = players.FirstOrDefault(x => x.ToLower().Contains(pilotName.ToLower()));
+            var playerInList = players.FirstOrDefault(x => pilotName.Contains(x.Name));
             if (playerInList != null)
                 return true;
 

@@ -1,4 +1,5 @@
-﻿using Facade;
+﻿using AssetsManager;
+using Facade;
 using FlightLogReader;
 using FlightLogReader.Sorter;
 using System.Xml;
@@ -16,7 +17,13 @@ namespace Layer
         public static KillStatisticSingleMission AnalzyeSingleMission(string path, bool includePlayers)
         {
             var xml = ReadFlightLog(path);
-            var eventsInMission = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(xml);
+            List<Player> players = new List<Player>();
+            if (includePlayers)
+            {
+                players = PlayerHandler.Players;
+            }
+            var eventsInMission = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(xml, players);
+
             var statistic = FlightLogReader.Sorter.HasBeenDestroyedEventSorter.Sort(eventsInMission);
             MissionStatistic = statistic;
 

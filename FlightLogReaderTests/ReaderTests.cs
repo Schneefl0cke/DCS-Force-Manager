@@ -20,7 +20,7 @@ namespace FlightLogReaderTests
         [TestMethod()]
         public void ReadFlightLogTest_HasBeenDestroyedEvents()
         {
-            var hasBeenDestroyedEvents = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(ReadXml());
+            var hasBeenDestroyedEvents = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(ReadXml(), new List<Player>());
             Assert.IsTrue(hasBeenDestroyedEvents.Count > 0);
         }
     }
