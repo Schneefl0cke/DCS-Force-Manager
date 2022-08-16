@@ -1,11 +1,12 @@
-﻿using ClosedXML.Excel;
+﻿using AssetsManager;
+using ClosedXML.Excel;
 using Facade;
 
 namespace CXmlWriter
 {
     public static class WriteCxml
     {
-        public static void WriteKillStatistics_SingleMission(string safePath, LosStatistic_WholeMission statistic)
+        public static void WriteKillStatistics_SingleMission(string savePath, KillStatisticSingleMission statistic, bool includePlayers, List<Player> players)
         {
             using (var workbook = new XLWorkbook())
             {
@@ -30,11 +31,93 @@ namespace CXmlWriter
                     WriteTypeStatistic(enemyWorksheet, enemyLosses, ref position);
                 }
 
-                workbook.SaveAs(safePath + ".xlsx");
+                if (includePlayers)
+                {
+                    foreach (var player in players)
+                    {
+                        var playerWorksheet = workbook.AddWorksheet(player.Name);
+                        WritePlayerStatistic(playerWorksheet, player);
+                    }
+                }
+
+                workbook.SaveAs(savePath);
             }
         }
 
-        private static void WriteTypeStatistic(IXLWorksheet worksheet, List<LossStatistic_UnitType> statistic, ref int position)
+        private static void WritePlayerStatistic(IXLWorksheet worksheet, Player player)
+        {
+            worksheet.Cell("A1").Value = player.Name;
+            worksheet.Cell("A1").Style.Font.Bold = true;
+
+            worksheet.Cell("A2").Value = "Died in mission: ";
+            worksheet.Cell("A2").Style.Font.Bold = true;
+            worksheet.Cell("B2").Value = player.Deaths;
+
+            worksheet.Cell("A4").Value = "Player kills:";
+            worksheet.Cell("A4").Style.Font.Bold = true;
+
+            worksheet.Cell("A5").Value = "Type:";
+            worksheet.Cell("A5").Style.Font.Bold = true;
+            worksheet.Cell("B5").Value = "Unit Type:";
+            worksheet.Cell("B5").Style.Font.Bold = true;
+            worksheet.Cell("C5").Value = "Killcount:";
+            worksheet.Cell("C5").Style.Font.Bold = true;
+            int position = 6;
+
+            //TODO: do it in the sorter, this is a temporary solution
+            var airKills = player.CurrentMissionKills.FindAll(x => x.Type.ToLower() == "aircraft");
+            var heliKills = player.CurrentMissionKills.FindAll(x => x.Type.ToLower() == "helicopter");
+            var tankKills = player.CurrentMissionKills.FindAll(x => x.Type.ToLower() == "tank");
+            var samKills = player.CurrentMissionKills.FindAll(x => x.Type.ToLower() == "sam/aaa");
+            var shipKills = player.CurrentMissionKills.FindAll(x => x.Type.ToLower() == "ship");
+
+            foreach (var kill in airKills)
+            {
+                worksheet.Cell("A" + position).Value = kill.Type;
+                worksheet.Cell("B" + position).Value = kill.UnitTypeName;
+                worksheet.Cell("C" + position).Value = kill.Killed;
+                position++;
+            }
+
+            position++;
+            foreach (var kill in heliKills)
+            {
+                worksheet.Cell("A" + position).Value = kill.Type;
+                worksheet.Cell("B" + position).Value = kill.UnitTypeName;
+                worksheet.Cell("C" + position).Value = kill.Killed;
+                position++;
+            }
+
+            position++;
+            foreach (var kill in tankKills)
+            {
+                worksheet.Cell("A" + position).Value = kill.Type;
+                worksheet.Cell("B" + position).Value = kill.UnitTypeName;
+                worksheet.Cell("C" + position).Value = kill.Killed;
+                position++;
+            }
+
+            position++;
+            foreach (var kill in samKills)
+            {
+                worksheet.Cell("A" + position).Value = kill.Type;
+                worksheet.Cell("B" + position).Value = kill.UnitTypeName;
+                worksheet.Cell("C" + position).Value = kill.Killed;
+                position++;
+            }
+
+            position++;
+            foreach (var kill in shipKills)
+            {
+                worksheet.Cell("A" + position).Value = kill.Type;
+                worksheet.Cell("B" + position).Value = kill.UnitTypeName;
+                worksheet.Cell("C" + position).Value = kill.Killed;
+                position++;
+            }
+
+        }
+
+        private static void WriteTypeStatistic(IXLWorksheet worksheet, List<KillStatistic_ByUnitType> statistic, ref int position)
         {
             if (statistic.Count > 0)
             {

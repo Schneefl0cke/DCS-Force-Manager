@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Facade
 {
-    public class LossStatistic_UnitType
+    public class KillStatistic_ByUnitType
     {
         //TODO: raus da und anders machen
         public string Display

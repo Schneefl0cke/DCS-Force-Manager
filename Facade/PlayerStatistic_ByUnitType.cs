@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Facade
 {
-    public class SimpleKillStatistic
+    public class PlayerStatistic_ByUnitType
     {
         //public string Display
         //{
@@ -20,7 +20,7 @@ namespace Facade
         //            $"Total: {Killed + Destroyed} \n";
         //    }
         //}
-        public int KillCount { get; set; } = 0;
+        public int Killed { get; set; } = 0;
         public string Type { get; set; } = "";
         public string UnitTypeName { get; set; } = "";
     }

@@ -14,8 +14,8 @@ namespace AssetsManager
         public string Name { get; set; } = "";
         public int Missions { get; set; } = 0;
         public int Deaths { get; set; } = 0; //TODO: flesh out later
-        public List<SimpleKillStatistic> CurrentMissionKills = new List<SimpleKillStatistic>();
-        public List<SimpleKillStatistic> SummaryOfAllMissions = new List<SimpleKillStatistic>();
+        public List<PlayerStatistic_ByUnitType> CurrentMissionKills = new List<PlayerStatistic_ByUnitType>();
+        public List<PlayerStatistic_ByUnitType> KillStatistic = new List<PlayerStatistic_ByUnitType>();
         //Future: killed by
         //Ammonition used
     }

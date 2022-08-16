@@ -9,7 +9,7 @@ namespace Facade
     [Serializable]
     public class Campaign
     {
-        public List<LosStatistic_WholeMission> CampaignMissions = new List<LosStatistic_WholeMission> ();
-        public LosStatistic_WholeMission CampaignStatistic = new LosStatistic_WholeMission ();
+        public List<KillStatisticSingleMission> CampaignMissions = new List<KillStatisticSingleMission> ();
+        public KillStatisticSingleMission CampaignStatistic = new KillStatisticSingleMission ();
     }
 }

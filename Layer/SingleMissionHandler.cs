@@ -1,5 +1,6 @@
 ﻿using Facade;
 using FlightLogReader;
+using FlightLogReader.Sorter;
 using System.Xml;
 
 namespace Layer
@@ -10,24 +11,31 @@ namespace Layer
     //4. add player statistics
     public static class SingleMissionHandler
     {
-        public static LosStatistic_WholeMission? MissionStatistic;
+        public static KillStatisticSingleMission? MissionStatistic;
 
-        public static LosStatistic_WholeMission AnalzyeSingleMission(string path)
+        public static KillStatisticSingleMission AnalzyeSingleMission(string path, bool includePlayers)
         {
             var xml = ReadFlightLog(path);
             var eventsInMission = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(xml);
             var statistic = FlightLogReader.Sorter.HasBeenDestroyedEventSorter.Sort(eventsInMission);
             MissionStatistic = statistic;
+
+            if (includePlayers)
+            {
+                PlayerStatisticSorter.Sort(eventsInMission, PlayerHandler.Players);
+            }
+
             return statistic;
         }
 
-        public static void ExportSingleMissionStatisticAsXML(string path, LosStatistic_WholeMission statistic)
-        {
-            if (statistic != null)
-            {
-                CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(path, statistic);
-            }
-        }
+        //here or in Form 1?
+        //public static void ExportSingleMissionStatisticAsXML(string path, KillStatisticSingleMission statistic, bool includePlayers)
+        //{
+        //    if (statistic != null)
+        //    {
+        //        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(path, statistic, includePlayers);
+        //    }
+        //}
 
         private static XmlDocument ReadFlightLog(string path)
         {
