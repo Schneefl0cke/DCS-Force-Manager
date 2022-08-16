@@ -144,20 +144,11 @@ namespace FlightLogReader
 
         private static bool PilotWasPlayer(string pilotName)
         {
-            // Viper 1-1 | Schneeflocke -> Pilot, Unit123#123 -> AI
-            var splitted = pilotName.Split('|');
-            if (splitted.Count() == 2)
-            {
+            var playerInList = players.FirstOrDefault(x => x.ToLower().Contains(pilotName.ToLower()));
+            if (playerInList != null)
                 return true;
-            }
-            else
-            {
-                var playerInList = players.FirstOrDefault(x => x.ToLower().Contains(pilotName.ToLower()));
-                if (playerInList != null)
-                    return true;
 
-                return false;
-            }
+            return false;
         }
     }
 }
