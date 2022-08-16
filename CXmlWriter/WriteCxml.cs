@@ -4,6 +4,7 @@ using Facade;
 
 namespace CXmlWriter
 {
+    //TODO: export as text
     public static class WriteCxml
     {
         public static void WriteKillStatistics_SingleMission(string savePath, KillStatisticSingleMission statistic, bool includePlayers, List<Player> players)
