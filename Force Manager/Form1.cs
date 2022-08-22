@@ -1,6 +1,7 @@
 using AssetsManager;
 using Facade;
 using Layer;
+using SquadronManager;
 
 namespace Force_Manager
 {
@@ -10,18 +11,21 @@ namespace Force_Manager
         private string path_singleMission;
         private const string folderName = "ForceManager";
         private const string playerFile = "Players.xml";
+        private const string squadronFile = "Squadrons.xml";
         private const string campaignFile = "Campaign.xml";
         private string playerFilePath;
-        private string campaignFilePath;
         private string squadronFilePath;
+        private string campaignFilePath;
         private int campaign_displayMission = 1;
 
         public Form1()
         {
             InitializeComponent();
             LoadPlayerList();
+            LoadSquadronList();
             LoadCampaign();
             ShowPlayers();
+            ShowSquadrons();
             label_displayCampaignMission.Text = "Display Mission: " + campaign_displayMission;
         }
 
@@ -31,6 +35,27 @@ namespace Force_Manager
             listBox_players.DataSource = PlayerHandler.Players;
             listBox_players.DisplayMember = "Name";
             listBox_players.Refresh();
+        }
+
+        private void ShowSquadrons()
+        {
+            listBox_Squadrons.DataSource = null;
+            listBox_Squadrons.DataSource = SquadronHandler.Squadrons;
+            listBox_Squadrons.DisplayMember = "Name";
+            listBox_Squadrons.Refresh();
+        }
+
+        private void LoadSquadronList()
+        {
+            var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            if (!Directory.Exists(Path.Combine(appDataPath, folderName)))
+                Directory.CreateDirectory(Path.Combine(appDataPath, folderName));
+
+            squadronFilePath = Path.Combine(appDataPath, folderName, squadronFile);
+            if (File.Exists(squadronFilePath))
+            {
+                SquadronHandler.LoadSquadronFile(playerFilePath);
+            }
         }
 
         private void LoadPlayerList()
@@ -63,6 +88,7 @@ namespace Force_Manager
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             PlayerHandler.SavePlayerList(playerFilePath);
+            SquadronHandler.SaveSquadronList(playerFilePath);
             CampaignHandler.SaveCampaign(campaignFilePath);
 
             if (MessageBox.Show("Do you really want to exit?", "Force Manager", MessageBoxButtons.YesNo) == DialogResult.No)
@@ -90,7 +116,7 @@ namespace Force_Manager
         {
             try
             {
-                killStatisticSingleMission = SingleMissionHandler.AnalzyeSingleMission(path_singleMission, radioButton_includePlayerStatistic.Checked);
+                killStatisticSingleMission = SingleMissionHandler.AnalzyeSingleMission(path_singleMission, radioButton_includePlayerStatistic.Checked, radioButton_includeSquadrons_SM.Checked);
                 FillListBoxes_SingleMission_Red();
                 FillListBoxes_SingleMission_Blue();
             }
@@ -205,21 +231,6 @@ namespace Force_Manager
             }
         }
 
-        //private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
-        //{
-
-        //}
-
-        //private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        //{
-
-        //}
-
-        //private void tabPage2_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
         private void button_sm_reanalyze_Click(object sender, EventArgs e)
         {
             if (killStatisticSingleMission != null)
@@ -247,16 +258,17 @@ namespace Force_Manager
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     var safePath = saveFileDialog.FileName;
-                    //TODO: not nice
-                    if (radioButton_includePlayerStatistic.Checked == false)
-                    {
-                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, killStatisticSingleMission, radioButton_includePlayerStatistic.Checked, new List<Player>());
-                    }
-                    else
-                    {
-                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, killStatisticSingleMission, radioButton_includePlayerStatistic.Checked, PlayerHandler.Players);
-                    }
-                   
+
+                    var players = new List<Player>();
+                    if (radioButton_includePlayerStatistic.Checked == true)
+                        players = PlayerHandler.Players;
+
+                    var squadrons = new List<Squadron>();
+                    if (radioButton_includeSquadrons_SM.Checked == true)
+                        squadrons = SquadronHandler.Squadrons;
+
+                    CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, killStatisticSingleMission, radioButton_includePlayerStatistic.Checked, players, radioButton_includeSquadrons_SM.Checked, squadrons);
+
                 }
             }
             else
@@ -327,6 +339,7 @@ namespace Force_Manager
             ShowPlayers();
         }
 
+        #region campaign
         private void UpdateCampaign()
         {
             if (CampaignHandler.Campaign.CampaignMissions.Count >= campaign_displayMission)
@@ -335,7 +348,6 @@ namespace Force_Manager
                 DisplayCampaignMission();
             }
         }
-
         private void button_Campaign_New_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Do you want to create a new campaign (this will overwrite the old safe!)", "New Campaign", MessageBoxButtons.YesNo);
@@ -361,7 +373,6 @@ namespace Force_Manager
                 UpdateCampaign();
             }
         }
-
         private void button_Campaign_Load_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -377,7 +388,6 @@ namespace Force_Manager
                 UpdateCampaign();
             }
         }
-
         private void button_Campaign_Add_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -389,11 +399,10 @@ namespace Force_Manager
             if (dialog.ShowDialog() == DialogResult.OK && dialog.CheckFileExists)
             {
                 var path = dialog.FileName;
-                CampaignHandler.AnalzyeSingleMission(path, radioButton_campaign_includePlayer.Checked);
+                CampaignHandler.AnalzyeSingleMission(path, radioButton_campaign_includePlayer.Checked, radioButton_includeSquadrons.Checked);
                 UpdateCampaign();
             }
         }
-
         private void button_Campaign_ExportCurrentMission_Click(object sender, EventArgs e)
         {
             if (CampaignHandler.Campaign.CampaignMissions.Count != 0)
@@ -406,15 +415,16 @@ namespace Force_Manager
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     var safePath = saveFileDialog.FileName;
-                    //TODO: not nice
-                    if (radioButton_includePlayerStatistic.Checked == false)
-                    {
-                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, CampaignHandler.Campaign.CampaignMissions.Last(), radioButton_includePlayerStatistic.Checked, new List<Player>());
-                    }
-                    else
-                    {
-                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, CampaignHandler.Campaign.CampaignMissions.Last(), radioButton_includePlayerStatistic.Checked, PlayerHandler.Players);
-                    }
+
+                    var players = new List<Player>();
+                    if (radioButton_includePlayerStatistic.Checked == true)
+                        players = PlayerHandler.Players;
+
+                    var squadrons = new List<Squadron>();
+                    if (radioButton_includeSquadrons_SM.Checked == true)
+                        squadrons = SquadronHandler.Squadrons;
+
+                    CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, CampaignHandler.Campaign.CampaignMissions.Last(), radioButton_campaign_includePlayer.Checked, players, radioButton_includeSquadrons.Checked, squadrons);
                 }
             }
             else
@@ -425,7 +435,6 @@ namespace Force_Manager
                    MessageBoxIcon.Error);
             }
         }
-
         private void button_Campaign_exportCampaignStatistic_Click(object sender, EventArgs e)
         {
             if (CampaignHandler.Campaign.CampaignMissions.Count != 0)
@@ -438,15 +447,16 @@ namespace Force_Manager
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     var safePath = saveFileDialog.FileName;
-                    //TODO: not nice
-                    if (radioButton_includePlayerStatistic.Checked == false)
-                    {
-                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, CampaignHandler.Campaign.CampaignStatistic, radioButton_includePlayerStatistic.Checked, new List<Player>());
-                    }
-                    else
-                    {
-                        CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, CampaignHandler.Campaign.CampaignStatistic, radioButton_includePlayerStatistic.Checked, PlayerHandler.Players);
-                    }
+
+                    var players = new List<Player>();
+                    if (radioButton_includePlayerStatistic.Checked == true)
+                        players = PlayerHandler.Players;
+
+                    var squadrons = new List<Squadron>();
+                    if (radioButton_includeSquadrons_SM.Checked == true)
+                        squadrons = SquadronHandler.Squadrons;
+
+                    CXmlWriter.WriteCxml.WriteKillStatistics_SingleMission(safePath, CampaignHandler.Campaign.CampaignStatistic, radioButton_campaign_includePlayer.Checked, players, radioButton_includeSquadrons.Checked, squadrons);
                 }
             }
             else
@@ -457,7 +467,6 @@ namespace Force_Manager
                    MessageBoxIcon.Error);
             }
         }
-
         private void button_campaign_decreaseDisplay_Click(object sender, EventArgs e)
         {
             if (campaign_displayMission > 1)
@@ -467,7 +476,6 @@ namespace Force_Manager
                 DisplayCampaignMission();
             }
         }
-
         private void button_campaign_increaseDisplay_Click(object sender, EventArgs e)
         {
             if (campaign_displayMission < CampaignHandler.Campaign.CampaignMissions.Count)
@@ -492,8 +500,6 @@ namespace Force_Manager
                 }
             }
         }
-
-
         private void DisplayCampaignMission()
         {
             listBox_aircraft_campaign_blue.DataSource = null;
@@ -513,7 +519,6 @@ namespace Force_Manager
             FillListBoxes_CampaignMission_Red();
             FillListBoxes_CampaignMission_Blue();
         }
-
         private void FillListBoxes_CampaignMission_Blue()
         {
             var killedAircraft = CampaignHandler.Campaign.CampaignMissions[campaign_displayMission - 1].BlueStatistic.FirstOrDefault(x => x.Count > 0 && x[0].Type.ToLower() == "aircraft");
@@ -564,7 +569,6 @@ namespace Force_Manager
                 listBox_other_campaign_blue.DisplayMember = "Display";
             }
         }
-
         private void FillListBoxes_CampaignMission_Red()
         {
             var killedAircraft = CampaignHandler.Campaign.CampaignMissions[campaign_displayMission -1].RedStatistic.FirstOrDefault(x => x.Count > 0 && x[0].Type.ToLower() == "aircraft");
@@ -615,13 +619,74 @@ namespace Force_Manager
                 listBox_other_campaign_red.DisplayMember = "Display";
             }
         }
-
-
-
-
         private void listBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
+
+        #endregion
+
+        #region Squadron
+
+        private void button_squadron_add_Click(object sender, EventArgs e)
+        {
+            AddSquadronForm addPlayerForm = new AddSquadronForm(this);
+            addPlayerForm.Show();
+        }
+
+        public void Button_AddSquadron_Pressed(string squadronName)
+        {
+            if (squadronName.Trim() != null && squadronName.Trim() != string.Empty)
+            {
+                var squadron = new Squadron() { Name = squadronName };
+                SquadronHandler.Squadrons.Add(squadron);
+                ShowSquadrons();
+            }
+        }
+
+        private void button_squadron_remove_Click(object sender, EventArgs e)
+        {
+            var selectedSquadron = (Squadron)listBox_players.SelectedItem;
+            SquadronHandler.Squadrons.Remove(selectedSquadron);
+            ShowPlayers();
+        }
+
+        private void button_squadron_new_Click(object sender, EventArgs e)
+        {
+            SquadronHandler.Squadrons = new List<Squadron>();
+            ShowSquadrons();
+        }
+
+        private void button_squadron_load_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            dialog.Filter = "xml files (*.xml)|*.xml|All Files (*.*)|*.*";
+            dialog.FilterIndex = 1;
+            dialog.RestoreDirectory = true;
+
+            if (dialog.ShowDialog() == DialogResult.OK && dialog.CheckFileExists)
+            {
+                var savePath = dialog.FileName;
+                SquadronHandler.LoadSquadronFile(savePath);
+                ShowPlayers();
+            }
+        }
+
+        private void button_squadron_safe_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            saveFileDialog.Filter = "xml files (*.xml)|*.xml|All Files (*.*)|*.*";
+            saveFileDialog.FilterIndex = 1;
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                var savePath = saveFileDialog.FileName;
+                SquadronHandler.SaveSquadronList(savePath);
+            }
+        }
+
+        #endregion
     }
 }

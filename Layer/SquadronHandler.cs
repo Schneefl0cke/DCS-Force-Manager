@@ -13,7 +13,7 @@ namespace Layer
     {
         public static List<Squadron> Squadrons = new List<Squadron>();
 
-        public static void SavePlayerList(string path)
+        public static void SaveSquadronList(string path)
         {
             path = Path.Combine(path);
 
@@ -24,7 +24,7 @@ namespace Layer
             }
         }
 
-        public static void LoadPlayerFile(string path)
+        public static void LoadSquadronFile(string path)
         {
             if (File.Exists(path))
             {

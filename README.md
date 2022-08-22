@@ -13,11 +13,12 @@ The UI only displays a brief overview of the statistic, to get a much nicer view
 # Features:
 - Generate statistics about a single mission
 - Generate statistics about campaign missions
-- Generate a list player of players to get statistics about the players
+- Get statistics of Players
+- Get statistics of Squadrons
 
 # Planned Features:
 - fancy diagrams
-- Squadron/Airwing statistic
+- Detailed death statistic of players and squadrons
 - Squadron/Airwing managment (e.g.: how many planes does the squadron/airwing has left,...)
 - Generate Moose Code, so you can directly have an updated airwing in your Moose files
 
@@ -32,3 +33,6 @@ Name in Mission: Viper 1-1 | Schneeflocke -> this is valid
 Name in Mission: Viper 1-1 | Schneeflocke | additional stuff -> this is also valid
 
 But if a different player in the mission is called "Schneeflocke2" then the force manager will add this players statistic to the statistic of "Schneeflocke"!
+
+## Squadron names
+Works the same as players, but will check the group name instead of the pilot name. A Squadron can contain as many aircraft types and even ground units or ships at once as you wish, if they only share a similar group name. The death count is inacurate after that of course. In the future it is planned to provide a better death statistic so you can see what unit of which type was killed. That way you can display a whole brigade or airwing. 
