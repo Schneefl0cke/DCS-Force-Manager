@@ -2,6 +2,7 @@
 using Facade;
 using FlightLogReader;
 using FlightLogReader.Sorter;
+using SquadronManager;
 using System.Xml;
 
 namespace Layer
@@ -14,23 +15,27 @@ namespace Layer
     {
         public static KillStatisticSingleMission? MissionStatistic;
 
-        public static KillStatisticSingleMission AnalzyeSingleMission(string path, bool includePlayers)
+        public static KillStatisticSingleMission AnalzyeSingleMission(string path, bool includePlayers, bool includeSquadrons)
         {
             var xml = ReadFlightLog(path);
             List<Player> players = new List<Player>();
             if (includePlayers)
-            {
                 players = PlayerHandler.Players;
-            }
-            var eventsInMission = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(xml, players);
+
+            List<Squadron> squadrons = new List<Squadron>();
+            if (includeSquadrons)
+                squadrons = SquadronHandler.Squadrons;
+
+            var eventsInMission = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(xml, players, squadrons);
 
             var statistic = FlightLogReader.Sorter.HasBeenDestroyedEventSorter.Sort(eventsInMission);
             MissionStatistic = statistic;
 
             if (includePlayers)
-            {
                 PlayerStatisticSorter.Sort(eventsInMission, PlayerHandler.Players);
-            }
+
+            if (includeSquadrons)
+                SquadronStatisticSorter.Sort(eventsInMission, SquadronHandler.Squadrons);
 
             return statistic;
         }

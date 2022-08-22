@@ -1,6 +1,7 @@
 ﻿using System.Xml;
 using AssetsManager;
 using Facade;
+using SquadronManager;
 
 namespace FlightLogReader
 {
@@ -10,11 +11,14 @@ namespace FlightLogReader
         private const string PrimaryObjectText = "PrimaryObject";
         private const string SecondaryObjectText = "SecondaryObject";
         private static List<Player> players = new List<Player>();
+        private static List<Squadron> squadrons = new List<Squadron>();
 
 
-        public static List<HasBeenDestroyedEvent> ReadHasBeenDestroyedEvents(XmlDocument flightLog, List<Player> players)
+        public static List<HasBeenDestroyedEvent> ReadHasBeenDestroyedEvents(XmlDocument flightLog, List<Player> players, List<Squadron> squadrons)
         {
             FlightLogReader.players = players;
+            FlightLogReader.squadrons = squadrons;
+
             var hasBeenDestroyedEvents = new List<HasBeenDestroyedEvent>();
             var cache = new List<HasBeenDestroyedEvent>();
 

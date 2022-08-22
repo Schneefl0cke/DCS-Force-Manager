@@ -1,6 +1,7 @@
 ﻿using AssetsManager;
 using Facade;
 using FlightLogReader.Sorter;
+using SquadronManager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,23 +16,27 @@ namespace Layer
     {
         public static Campaign Campaign = new Campaign();
 
-        public static KillStatisticSingleMission AnalzyeSingleMission(string path, bool includePlayers)
+        public static KillStatisticSingleMission AnalzyeSingleMission(string path, bool includePlayers, bool includeSquadrons)
         {
             var xml = ReadFlightLog(path);
             List<Player> players = new List<Player>();
             if (includePlayers)
-            {
                 players = PlayerHandler.Players;
-            }
-            var eventsInMission = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(xml, players);
+
+            List<Squadron> squadrons = new List<Squadron>();
+            if (includeSquadrons)
+                squadrons = SquadronHandler.Squadrons;
+
+            var eventsInMission = FlightLogReader.FlightLogReader.ReadHasBeenDestroyedEvents(xml, players, squadrons);
             var statistic = HasBeenDestroyedEventSorter.Sort(eventsInMission);
             
             Campaign.CampaignMissions.Add(statistic);
 
             if (includePlayers)
-            {
                 PlayerStatisticSorter.Sort(eventsInMission, PlayerHandler.Players);
-            }
+
+            if (includeSquadrons)
+                SquadronStatisticSorter.Sort(eventsInMission, SquadronHandler.Squadrons);
 
             CalculateCampaignStatistic();
 
