@@ -1,13 +1,16 @@
 ﻿using AssetsManager;
 using ClosedXML.Excel;
 using Facade;
+using SquadronManager;
+using System.Numerics;
 
 namespace CXmlWriter
 {
     //TODO: export as text
     public static class WriteCxml
     {
-        public static void WriteKillStatistics_SingleMission(string savePath, KillStatisticSingleMission statistic, bool includePlayers, List<Player> players)
+        //Not really nice parameters, but I dont care rn
+        public static void WriteKillStatistics_SingleMission(string savePath, KillStatisticSingleMission statistic, bool includePlayers, List<Player> players, bool includeSquadrons, List<Squadron> squadrons)
         {
             using (var workbook = new XLWorkbook())
             {
@@ -41,7 +44,108 @@ namespace CXmlWriter
                     }
                 }
 
+                if (includeSquadrons)
+                {
+                    foreach (var squadron in squadrons)
+                    {
+                        var playerWorksheet = workbook.AddWorksheet(squadron.Name);
+                        WriteSquadronStatistic(playerWorksheet, squadron);
+                    }
+                }
+
                 workbook.SaveAs(savePath);
+            }
+        }
+
+        private static void WriteSquadronStatistic(IXLWorksheet worksheet, Squadron squadron)
+        {
+            worksheet.Cell("A1").Value = squadron.Name;
+            worksheet.Cell("A1").Style.Font.Bold = true;
+
+            worksheet.Cell("A2").Value = "Died in mission: ";
+            worksheet.Cell("A2").Style.Font.Bold = true;
+            worksheet.Cell("B2").Value = squadron.Deaths;
+
+            worksheet.Cell("A4").Value = "Player kills:";
+            worksheet.Cell("A4").Style.Font.Bold = true;
+
+            worksheet.Cell("A5").Value = "Type:";
+            worksheet.Cell("A5").Style.Font.Bold = true;
+            worksheet.Cell("B5").Value = "Unit Type:";
+            worksheet.Cell("B5").Style.Font.Bold = true;
+            worksheet.Cell("C5").Value = "Killcount:";
+            worksheet.Cell("C5").Style.Font.Bold = true;
+            int position = 6;
+
+            //TODO: do it in the sorter, this is a temporary solution
+            var airKills = squadron.CurrentMissionKills.FindAll(x => x.Type.ToLower() == "aircraft");
+            var heliKills = squadron.CurrentMissionKills.FindAll(x => x.Type.ToLower() == "helicopter");
+            var tankKills = squadron.CurrentMissionKills.FindAll(x => x.Type.ToLower() == "tank");
+            var samKills = squadron.CurrentMissionKills.FindAll(x => x.Type.ToLower() == "sam/aaa");
+            var shipKills = squadron.CurrentMissionKills.FindAll(x => x.Type.ToLower() == "ship");
+            var other = squadron.CurrentMissionKills.FindAll(x => x.Type.ToLower() != "ship" && x.Type.ToLower() != "sam/aaa" && x.Type.ToLower() != "tank" && x.Type.ToLower() != "helicopter" && x.Type.ToLower() != "aircraft");
+
+            foreach (var kill in airKills)
+            {
+                worksheet.Cell("A" + position).Value = kill.Type;
+                worksheet.Cell("B" + position).Value = kill.UnitTypeName;
+                worksheet.Cell("C" + position).Value = kill.Killed;
+                position++;
+            }
+
+            if (airKills.Count != 0)
+                position++;
+
+            foreach (var kill in heliKills)
+            {
+                worksheet.Cell("A" + position).Value = kill.Type;
+                worksheet.Cell("B" + position).Value = kill.UnitTypeName;
+                worksheet.Cell("C" + position).Value = kill.Killed;
+                position++;
+            }
+
+            if (heliKills.Count != 0)
+                position++;
+
+            foreach (var kill in tankKills)
+            {
+                worksheet.Cell("A" + position).Value = kill.Type;
+                worksheet.Cell("B" + position).Value = kill.UnitTypeName;
+                worksheet.Cell("C" + position).Value = kill.Killed;
+                position++;
+            }
+
+            if (tankKills.Count != 0)
+                position++;
+
+            foreach (var kill in samKills)
+            {
+                worksheet.Cell("A" + position).Value = kill.Type;
+                worksheet.Cell("B" + position).Value = kill.UnitTypeName;
+                worksheet.Cell("C" + position).Value = kill.Killed;
+                position++;
+            }
+
+            if (samKills.Count != 0)
+                position++;
+
+            foreach (var kill in shipKills)
+            {
+                worksheet.Cell("A" + position).Value = kill.Type;
+                worksheet.Cell("B" + position).Value = kill.UnitTypeName;
+                worksheet.Cell("C" + position).Value = kill.Killed;
+                position++;
+            }
+
+            if (shipKills.Count != 0)
+                position++;
+
+            foreach (var kill in other)
+            {
+                worksheet.Cell("A" + position).Value = kill.Type;
+                worksheet.Cell("B" + position).Value = kill.UnitTypeName;
+                worksheet.Cell("C" + position).Value = kill.Killed;
+                position++;
             }
         }
 
@@ -81,7 +185,7 @@ namespace CXmlWriter
                 position++;
             }
 
-            if(airKills.Count != 0) 
+            if (airKills.Count != 0)
                 position++;
 
             foreach (var kill in heliKills)
@@ -116,7 +220,7 @@ namespace CXmlWriter
 
             if (samKills.Count != 0)
                 position++;
-            
+
             foreach (var kill in shipKills)
             {
                 worksheet.Cell("A" + position).Value = kill.Type;
